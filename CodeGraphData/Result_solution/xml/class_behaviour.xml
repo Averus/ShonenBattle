@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_behaviour" kind="class" prot="public">
+    <compoundname>Behaviour</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_behaviour_1a08f3f3523a5b859666dba194460e5e90" prot="public" static="no" mutable="no">
+        <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+        <definition>BattleManager Behaviour.battleManager</definition>
+        <argsstring></argsstring>
+        <name>battleManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Behaviour.cs" line="7" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Behaviour.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_behaviour_1a4ef2d8a9c55b5d9cd67e1ec14df3328a" compoundref="_behaviour_8cs" startline="60" endline="66">Behaviour</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_behaviour_1ad5ab96a1100642a91a91d22024be347c" prot="public" static="no" mutable="no">
+        <type><ref refid="class_being" kindref="compound">Being</ref></type>
+        <definition>Being Behaviour.parentBeing</definition>
+        <argsstring></argsstring>
+        <name>parentBeing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Behaviour.cs" line="8" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Behaviour.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_behaviour_1a4ef2d8a9c55b5d9cd67e1ec14df3328a" compoundref="_behaviour_8cs" startline="60" endline="66">Behaviour</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_behaviour_1aafc5d2b0ae7f5f14dce7a33c11799ed9" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Behaviour.behaviourName</definition>
+        <argsstring></argsstring>
+        <name>behaviourName</name>
+        <initializer>= &quot;BLANK BEHAVIOUR&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Behaviour.cs" line="11" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Behaviour.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_behaviour_1a4ef2d8a9c55b5d9cd67e1ec14df3328a" compoundref="_behaviour_8cs" startline="60" endline="66">Behaviour</referencedby>
+        <referencedby refid="class_behaviour_1a8fb1e3415dda4b06c3bf7d08cbf10ecd" compoundref="_behaviour_8cs" startline="17" endline="30">CanThisBeDone</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_behaviour_1a04af641f94492bf25646eccd0eb717e6" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_condition" kindref="compound">Condition</ref> &gt;</type>
+        <definition>List&lt;Condition&gt; Behaviour.conditions</definition>
+        <argsstring></argsstring>
+        <name>conditions</name>
+        <initializer>= new List&lt;<ref refid="class_condition" kindref="compound">Condition</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Behaviour.cs" line="13" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Behaviour.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_behaviour_1a8fb1e3415dda4b06c3bf7d08cbf10ecd" compoundref="_behaviour_8cs" startline="17" endline="30">CanThisBeDone</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_behaviour_1ac0a19314976b037f24fe91f1f5ff3317" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_selection_criteria" kindref="compound">SelectionCriteria</ref> &gt;</type>
+        <definition>List&lt;SelectionCriteria&gt; Behaviour.selectionCriteria</definition>
+        <argsstring></argsstring>
+        <name>selectionCriteria</name>
+        <initializer>= new List&lt;<ref refid="class_selection_criteria" kindref="compound">SelectionCriteria</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Behaviour.cs" line="14" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Behaviour.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_behaviour_1a33fa649883ed7d5adbe6ac9c2f420665" compoundref="_behaviour_8cs" startline="32" endline="58">GetAppropriateAbilities</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_behaviour_1a8fb1e3415dda4b06c3bf7d08cbf10ecd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Behaviour.CanThisBeDone</definition>
+        <argsstring>()</argsstring>
+        <name>CanThisBeDone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Behaviour.cs" line="17" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Behaviour.cs" bodystart="17" bodyend="30"/>
+        <references refid="class_behaviour_1aafc5d2b0ae7f5f14dce7a33c11799ed9" compoundref="_behaviour_8cs" startline="11">behaviourName</references>
+        <references refid="class_behaviour_1a04af641f94492bf25646eccd0eb717e6" compoundref="_behaviour_8cs" startline="13">conditions</references>
+      </memberdef>
+      <memberdef kind="function" id="class_behaviour_1a33fa649883ed7d5adbe6ac9c2f420665" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_ability" kindref="compound">Ability</ref> &gt;</type>
+        <definition>List&lt;Ability&gt; Behaviour.GetAppropriateAbilities</definition>
+        <argsstring>(List&lt; Ability &gt; abil)</argsstring>
+        <name>GetAppropriateAbilities</name>
+        <param>
+          <type>List&lt; <ref refid="class_ability" kindref="compound">Ability</ref> &gt;</type>
+          <declname>abil</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Behaviour.cs" line="32" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Behaviour.cs" bodystart="32" bodyend="58"/>
+        <references refid="class_behaviour_1ac0a19314976b037f24fe91f1f5ff3317" compoundref="_behaviour_8cs" startline="14">selectionCriteria</references>
+      </memberdef>
+      <memberdef kind="function" id="class_behaviour_1a4ef2d8a9c55b5d9cd67e1ec14df3328a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Behaviour.Behaviour</definition>
+        <argsstring>(BattleManager battleManager, Being parentBeing, string behaviourName)</argsstring>
+        <name>Behaviour</name>
+        <param>
+          <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+          <declname>battleManager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>parentBeing</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>behaviourName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Behaviour.cs" line="60" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Behaviour.cs" bodystart="60" bodyend="66"/>
+        <references refid="class_behaviour_1a08f3f3523a5b859666dba194460e5e90" compoundref="_behaviour_8cs" startline="7">battleManager</references>
+        <references refid="class_behaviour_1aafc5d2b0ae7f5f14dce7a33c11799ed9" compoundref="_behaviour_8cs" startline="11">behaviourName</references>
+        <references refid="class_behaviour_1ad5ab96a1100642a91a91d22024be347c" compoundref="_behaviour_8cs" startline="8">parentBeing</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="34">
+        <label>Condition</label>
+        <link refid="class_condition"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>parentAbility</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>Being</label>
+        <link refid="class_being"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>selectedAbility</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>condition</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>Ability</label>
+        <link refid="class_ability"/>
+        <childnode refid="30" relation="usage">
+          <edgelabel>battlemanager</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>Behaviour</label>
+        <link refid="class_behaviour"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>BattleManager</label>
+        <link refid="class_battle_manager"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>mainState</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="33">
+        <label>BeingFactory</label>
+        <link refid="class_being_factory"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Behaviour.cs" line="5" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Behaviour.cs" bodystart="5" bodyend="68"/>
+    <listofallmembers>
+      <member refid="class_behaviour_1a08f3f3523a5b859666dba194460e5e90" prot="public" virt="non-virtual"><scope>Behaviour</scope><name>battleManager</name></member>
+      <member refid="class_behaviour_1a4ef2d8a9c55b5d9cd67e1ec14df3328a" prot="public" virt="non-virtual"><scope>Behaviour</scope><name>Behaviour</name></member>
+      <member refid="class_behaviour_1aafc5d2b0ae7f5f14dce7a33c11799ed9" prot="public" virt="non-virtual"><scope>Behaviour</scope><name>behaviourName</name></member>
+      <member refid="class_behaviour_1a8fb1e3415dda4b06c3bf7d08cbf10ecd" prot="public" virt="non-virtual"><scope>Behaviour</scope><name>CanThisBeDone</name></member>
+      <member refid="class_behaviour_1a04af641f94492bf25646eccd0eb717e6" prot="public" virt="non-virtual"><scope>Behaviour</scope><name>conditions</name></member>
+      <member refid="class_behaviour_1a33fa649883ed7d5adbe6ac9c2f420665" prot="public" virt="non-virtual"><scope>Behaviour</scope><name>GetAppropriateAbilities</name></member>
+      <member refid="class_behaviour_1ad5ab96a1100642a91a91d22024be347c" prot="public" virt="non-virtual"><scope>Behaviour</scope><name>parentBeing</name></member>
+      <member refid="class_behaviour_1ac0a19314976b037f24fe91f1f5ff3317" prot="public" virt="non-virtual"><scope>Behaviour</scope><name>selectionCriteria</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

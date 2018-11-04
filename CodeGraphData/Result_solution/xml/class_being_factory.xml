@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_being_factory" kind="class" prot="public">
+    <compoundname>BeingFactory</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_being_factory_1ad4a540dd284e45cc024d5193263d9d3a" prot="public" static="no" mutable="no">
+        <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+        <definition>BattleManager BeingFactory.battleManager</definition>
+        <argsstring></argsstring>
+        <name>battleManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BeingFactory.cs" line="7" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/BeingFactory.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_being_factory_1a62ec2f35a163d5306d1e3c4bdb40956a" compoundref="_being_factory_8cs" startline="124" endline="127">BeingFactory</referencedby>
+        <referencedby refid="class_being_factory_1a6f8600623467feda4535cb420b0a6690" compoundref="_being_factory_8cs" startline="21" endline="122">CreateBeing</referencedby>
+        <referencedby refid="class_being_factory_1a0f2ea0a58361d393c01e95eba1822ca5" compoundref="_being_factory_8cs" startline="12" endline="19">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_being_factory_1a0f2ea0a58361d393c01e95eba1822ca5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BeingFactory.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BeingFactory.cs" line="12" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/BeingFactory.cs" bodystart="12" bodyend="19"/>
+        <references refid="class_being_factory_1ad4a540dd284e45cc024d5193263d9d3a" compoundref="_being_factory_8cs" startline="7">battleManager</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_being_factory_1a6f8600623467feda4535cb420b0a6690" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_being" kindref="compound">Being</ref></type>
+        <definition>Being BeingFactory.CreateBeing</definition>
+        <argsstring>(string name)</argsstring>
+        <name>CreateBeing</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BeingFactory.cs" line="21" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/BeingFactory.cs" bodystart="21" bodyend="122"/>
+        <references refid="class_being_factory_1ad4a540dd284e45cc024d5193263d9d3a" compoundref="_being_factory_8cs" startline="7">battleManager</references>
+      </memberdef>
+      <memberdef kind="function" id="class_being_factory_1a62ec2f35a163d5306d1e3c4bdb40956a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BeingFactory.BeingFactory</definition>
+        <argsstring>(BattleManager bm)</argsstring>
+        <name>BeingFactory</name>
+        <param>
+          <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+          <declname>bm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BeingFactory.cs" line="124" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/BeingFactory.cs" bodystart="124" bodyend="127"/>
+        <references refid="class_being_factory_1ad4a540dd284e45cc024d5193263d9d3a" compoundref="_being_factory_8cs" startline="7">battleManager</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="44">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="43">
+        <label>BeingFactory</label>
+        <link refid="class_being_factory"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="47">
+        <label>BattleManager</label>
+        <link refid="class_battle_manager"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+        <childnode refid="48" relation="usage">
+          <edgelabel>mainState</edgelabel>
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="46">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="45">
+        <label>BeingFactory</label>
+        <link refid="class_being_factory"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+        <childnode refid="47" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="48">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+        <childnode refid="47" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BeingFactory.cs" line="5" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/BeingFactory.cs" bodystart="5" bodyend="130"/>
+    <listofallmembers>
+      <member refid="class_being_factory_1ad4a540dd284e45cc024d5193263d9d3a" prot="public" virt="non-virtual"><scope>BeingFactory</scope><name>battleManager</name></member>
+      <member refid="class_being_factory_1a62ec2f35a163d5306d1e3c4bdb40956a" prot="public" virt="non-virtual"><scope>BeingFactory</scope><name>BeingFactory</name></member>
+      <member refid="class_being_factory_1a6f8600623467feda4535cb420b0a6690" prot="public" virt="non-virtual"><scope>BeingFactory</scope><name>CreateBeing</name></member>
+      <member refid="class_being_factory_1a0f2ea0a58361d393c01e95eba1822ca5" prot="private" virt="non-virtual"><scope>BeingFactory</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

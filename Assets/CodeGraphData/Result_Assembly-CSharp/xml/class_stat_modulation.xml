@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_stat_modulation" kind="class" prot="public">
+    <compoundname>StatModulation</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_stat_modulation_1a9db10adbfedc8cd460f455e365677168" prot="private" static="no" mutable="no">
+        <type><ref refid="class_stat" kindref="compound">Stat</ref></type>
+        <definition>Stat StatModulation.targetStat</definition>
+        <argsstring></argsstring>
+        <name>targetStat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/StatModulation.cs" line="11" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/StatModulation.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_stat_modulation_1a705e63abf491aaa3c23a36240401f9f1" compoundref="_stat_modulation_8cs" startline="38" endline="43">StatModulation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stat_modulation_1a1241091ab9ef08f721d7b3718dc3e95a" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string StatModulation.modifier</definition>
+        <argsstring></argsstring>
+        <name>modifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/StatModulation.cs" line="12" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/StatModulation.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_stat_modulation_1a705e63abf491aaa3c23a36240401f9f1" compoundref="_stat_modulation_8cs" startline="38" endline="43">StatModulation</referencedby>
+        <referencedby refid="class_stat_modulation_1a50c45f790343c2496c17946a789d646c" compoundref="_stat_modulation_8cs" startline="15" endline="36">Use</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stat_modulation_1aea376ba46da590ec66b35980ca86b572" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int StatModulation.value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/StatModulation.cs" line="13" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/StatModulation.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_stat_modulation_1a705e63abf491aaa3c23a36240401f9f1" compoundref="_stat_modulation_8cs" startline="38" endline="43">StatModulation</referencedby>
+        <referencedby refid="class_stat_modulation_1a50c45f790343c2496c17946a789d646c" compoundref="_stat_modulation_8cs" startline="15" endline="36">Use</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_stat_modulation_1a50c45f790343c2496c17946a789d646c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatModulation.Use</definition>
+        <argsstring>()</argsstring>
+        <name>Use</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/StatModulation.cs" line="15" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/StatModulation.cs" bodystart="15" bodyend="36"/>
+        <references refid="class_stat_modulation_1a1241091ab9ef08f721d7b3718dc3e95a" compoundref="_stat_modulation_8cs" startline="12">modifier</references>
+        <references refid="class_stat_modulation_1aea376ba46da590ec66b35980ca86b572" compoundref="_stat_modulation_8cs" startline="13">value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_stat_modulation_1a705e63abf491aaa3c23a36240401f9f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>StatModulation.StatModulation</definition>
+        <argsstring>(Stat targetStat, string modifier, int value)</argsstring>
+        <name>StatModulation</name>
+        <param>
+          <type><ref refid="class_stat" kindref="compound">Stat</ref></type>
+          <declname>targetStat</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>modifier</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/StatModulation.cs" line="38" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/StatModulation.cs" bodystart="38" bodyend="43"/>
+        <references refid="class_stat_modulation_1a1241091ab9ef08f721d7b3718dc3e95a" compoundref="_stat_modulation_8cs" startline="12">modifier</references>
+        <references refid="class_stat_modulation_1a9db10adbfedc8cd460f455e365677168" compoundref="_stat_modulation_8cs" startline="11">targetStat</references>
+        <references refid="class_stat_modulation_1aea376ba46da590ec66b35980ca86b572" compoundref="_stat_modulation_8cs" startline="13">value</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="240">
+        <label>Stat</label>
+        <link refid="class_stat"/>
+      </node>
+      <node id="239">
+        <label>StatModulation</label>
+        <link refid="class_stat_modulation"/>
+        <childnode refid="240" relation="usage">
+          <edgelabel>targetStat</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/StatModulation.cs" line="5" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/StatModulation.cs" bodystart="5" bodyend="44"/>
+    <listofallmembers>
+      <member refid="class_stat_modulation_1a1241091ab9ef08f721d7b3718dc3e95a" prot="private" virt="non-virtual"><scope>StatModulation</scope><name>modifier</name></member>
+      <member refid="class_stat_modulation_1a705e63abf491aaa3c23a36240401f9f1" prot="public" virt="non-virtual"><scope>StatModulation</scope><name>StatModulation</name></member>
+      <member refid="class_stat_modulation_1a9db10adbfedc8cd460f455e365677168" prot="private" virt="non-virtual"><scope>StatModulation</scope><name>targetStat</name></member>
+      <member refid="class_stat_modulation_1a50c45f790343c2496c17946a789d646c" prot="public" virt="non-virtual"><scope>StatModulation</scope><name>Use</name></member>
+      <member refid="class_stat_modulation_1aea376ba46da590ec66b35980ca86b572" prot="private" virt="non-virtual"><scope>StatModulation</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

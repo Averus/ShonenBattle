@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_damage" kind="class" prot="public">
+    <compoundname>Damage</compoundname>
+    <basecompoundref refid="class_effect" prot="public" virt="non-virtual">Effect</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_damage_1aceaa410b10e5c0fc6511c505fe3c9bd7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Damage.damage</definition>
+        <argsstring></argsstring>
+        <name>damage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/Damage.cs" line="8" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/Damage.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_damage_1a53cf208ad633117a427134e5d13ca19e" compoundref="_damage_8cs" startline="23" endline="26">Damage</referencedby>
+        <referencedby refid="class_damage_1a3ecf5a9b32a1120fc560069e10ce398f" compoundref="_damage_8cs" startline="12" endline="20">Use</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_damage_1a3ecf5a9b32a1120fc560069e10ce398f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Damage.Use</definition>
+        <argsstring>(Being target)</argsstring>
+        <name>Use</name>
+        <reimplements refid="class_effect_1abdeb43a60f3aaba84f676eadbf0b7efc">Use</reimplements>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/Damage.cs" line="12" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/Damage.cs" bodystart="12" bodyend="20"/>
+        <references refid="class_damage_1aceaa410b10e5c0fc6511c505fe3c9bd7" compoundref="_damage_8cs" startline="8">damage</references>
+        <references refid="class_being_1a64fc2a2159c66931f2cda151df0451ff" compoundref="_being_8cs" startline="73" endline="93">Being.GetStat</references>
+      </memberdef>
+      <memberdef kind="function" id="class_damage_1a53cf208ad633117a427134e5d13ca19e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Damage.Damage</definition>
+        <argsstring>(BattleManager battleManager, Being parentBeing, Ability parentAbility, string effectName, int damage)</argsstring>
+        <name>Damage</name>
+        <param>
+          <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+          <declname>battleManager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>parentBeing</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ability" kindref="compound">Ability</ref></type>
+          <declname>parentAbility</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>effectName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>damage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/Damage.cs" line="23" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/Damage.cs" bodystart="23" bodyend="26"/>
+        <references refid="class_damage_1aceaa410b10e5c0fc6511c505fe3c9bd7" compoundref="_damage_8cs" startline="8">damage</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="94">
+        <label>Damage</label>
+        <link refid="class_damage"/>
+        <childnode refid="95" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>Effect</label>
+        <link refid="class_effect"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="104">
+        <label>Condition</label>
+        <link refid="class_condition"/>
+        <childnode refid="98" relation="usage">
+          <edgelabel>parentAbility</edgelabel>
+        </childnode>
+        <childnode refid="103" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="99" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="96">
+        <label>Damage</label>
+        <link refid="class_damage"/>
+        <childnode refid="97" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="103">
+        <label>Being</label>
+        <link refid="class_being"/>
+        <childnode refid="98" relation="usage">
+          <edgelabel>selectedAbility</edgelabel>
+        </childnode>
+        <childnode refid="104" relation="usage">
+          <edgelabel>condition</edgelabel>
+        </childnode>
+      </node>
+      <node id="98">
+        <label>Ability</label>
+        <link refid="class_ability"/>
+        <childnode refid="99" relation="usage">
+          <edgelabel>battlemanager</edgelabel>
+        </childnode>
+      </node>
+      <node id="99">
+        <label>BattleManager</label>
+        <link refid="class_battle_manager"/>
+        <childnode refid="100" relation="public-inheritance">
+        </childnode>
+        <childnode refid="101" relation="usage">
+          <edgelabel>mainState</edgelabel>
+        </childnode>
+        <childnode refid="102" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="100">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="102">
+        <label>BeingFactory</label>
+        <link refid="class_being_factory"/>
+        <childnode refid="100" relation="public-inheritance">
+        </childnode>
+        <childnode refid="99" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="97">
+        <label>Effect</label>
+        <link refid="class_effect"/>
+        <childnode refid="98" relation="usage">
+          <edgelabel>parentAbility</edgelabel>
+        </childnode>
+        <childnode refid="103" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="99" relation="usage">
+          <edgelabel>UsedInState</edgelabel>
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="101">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="100" relation="public-inheritance">
+        </childnode>
+        <childnode refid="99" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+        <childnode refid="102" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/Damage.cs" line="6" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/Damage.cs" bodystart="5" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_effect_1ac5dffe56d653b75f816b7855c90f1d87" prot="public" virt="non-virtual"><scope>Damage</scope><name>battleManager</name></member>
+      <member refid="class_damage_1aceaa410b10e5c0fc6511c505fe3c9bd7" prot="private" virt="non-virtual"><scope>Damage</scope><name>damage</name></member>
+      <member refid="class_damage_1a53cf208ad633117a427134e5d13ca19e" prot="public" virt="non-virtual"><scope>Damage</scope><name>Damage</name></member>
+      <member refid="class_effect_1aeb5675bc461e64280c6381979d0fae60" prot="public" virt="non-virtual"><scope>Damage</scope><name>Effect</name></member>
+      <member refid="class_effect_1ab0d2647d792f5374565264e4494b85a9" prot="public" virt="non-virtual"><scope>Damage</scope><name>effectName</name></member>
+      <member refid="class_effect_1aab3f7eee5bc2a8eaf2cbe0ed4313f427" prot="public" virt="non-virtual"><scope>Damage</scope><name>parentAbility</name></member>
+      <member refid="class_effect_1aeb4b0db75413b945faae306f2650a854" prot="public" virt="non-virtual"><scope>Damage</scope><name>parentBeing</name></member>
+      <member refid="class_damage_1a3ecf5a9b32a1120fc560069e10ce398f" prot="public" virt="virtual"><scope>Damage</scope><name>Use</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

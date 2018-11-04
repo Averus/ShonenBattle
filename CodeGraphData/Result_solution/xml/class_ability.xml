@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_ability" kind="class" prot="public">
+    <compoundname>Ability</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ability_1a6eebb7b0147bfa79aa971f3fe16a0c0e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+        <definition>BattleManager Ability.battlemanager</definition>
+        <argsstring></argsstring>
+        <name>battlemanager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" line="7" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_ability_1a4362f7581e6d1a6176c9eb775ba0318b" compoundref="_ability_8cs" startline="50" endline="72">CanThisBeUsed</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_ability_1ad1a1f24d99c8b5d6d8cb570a06403eb3" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Ability.abilityName</definition>
+        <argsstring></argsstring>
+        <name>abilityName</name>
+        <initializer>= &quot;BLANK ABILITY&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" line="8" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_ability_1a4362f7581e6d1a6176c9eb775ba0318b" compoundref="_ability_8cs" startline="50" endline="72">CanThisBeUsed</referencedby>
+        <referencedby refid="class_ability_1aedfd1c0855381a203798f8aaa0876dbb" compoundref="_ability_8cs" startline="20" endline="48">checkForValidTargets</referencedby>
+        <referencedby refid="class_ability_1a0472d3aca8ab9280471162179ce13d8b" compoundref="_ability_8cs" startline="74" endline="81">Use</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ability_1af93f467e81307b0cc85fbaf39d0e6da9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Ability.ranks</definition>
+        <argsstring></argsstring>
+        <name>ranks</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" line="9" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ability_1ae67754da6c99d99e70275e90ca1e492f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Ability.numberOfTargets</definition>
+        <argsstring></argsstring>
+        <name>numberOfTargets</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" line="11" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_ability_1a958c59da6ae71a434d370d58302c66eb" compoundref="_ability_8cs" startline="83" endline="100">Use</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ability_1a2d3ccff2472c6e66303c24bd02ce466d" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_condition" kindref="compound">Condition</ref> &gt;</type>
+        <definition>List&lt;Condition&gt; Ability.conditions</definition>
+        <argsstring></argsstring>
+        <name>conditions</name>
+        <initializer>= new List&lt;<ref refid="class_condition" kindref="compound">Condition</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" line="13" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_ability_1a4362f7581e6d1a6176c9eb775ba0318b" compoundref="_ability_8cs" startline="50" endline="72">CanThisBeUsed</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ability_1a228ccfd5d79068dff64c36a8ddc7a39a" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_effect" kindref="compound">Effect</ref> &gt;</type>
+        <definition>List&lt;Effect&gt; Ability.effects</definition>
+        <argsstring></argsstring>
+        <name>effects</name>
+        <initializer>= new List&lt;<ref refid="class_effect" kindref="compound">Effect</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" line="14" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_battle_manager_1ae0caafb1566d5bdab37b39ac6d27c5b0" compoundref="_battle_manager_8cs" startline="110" endline="142">BattleManager.CalculateToHit</referencedby>
+        <referencedby refid="class_includes_effect_1ae3ecce8552949da9199f319e71feecdc" compoundref="_includes_effect_8cs" startline="11" endline="25">IncludesEffect.Check</referencedby>
+        <referencedby refid="class_ability_1a0472d3aca8ab9280471162179ce13d8b" compoundref="_ability_8cs" startline="74" endline="81">Use</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ability_1ae596bcf36c0d36cb3d1f376f4f7263ad" prot="public" static="no" mutable="no">
+        <type>List&lt; Animation &gt;</type>
+        <definition>List&lt;Animation&gt; Ability.animations</definition>
+        <argsstring></argsstring>
+        <name>animations</name>
+        <initializer>= new List&lt;Animation&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" line="15" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ability_1a085612b42ff4aab3f7f2edfb5d32aba3" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_targeting_criteria" kindref="compound">TargetingCriteria</ref> &gt;</type>
+        <definition>List&lt;TargetingCriteria&gt; Ability.targetingCriteria</definition>
+        <argsstring></argsstring>
+        <name>targetingCriteria</name>
+        <initializer>= new List&lt;<ref refid="class_targeting_criteria" kindref="compound">TargetingCriteria</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" line="16" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_ability_1aedfd1c0855381a203798f8aaa0876dbb" compoundref="_ability_8cs" startline="20" endline="48">checkForValidTargets</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ability_1ae9d85b6a143740687f32f0dd2ad40cd5" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_being" kindref="compound">Being</ref> &gt;</type>
+        <definition>List&lt;Being&gt; Ability.validTargets</definition>
+        <argsstring></argsstring>
+        <name>validTargets</name>
+        <initializer>= new List&lt;<ref refid="class_being" kindref="compound">Being</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" line="17" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_ability_1a4362f7581e6d1a6176c9eb775ba0318b" compoundref="_ability_8cs" startline="50" endline="72">CanThisBeUsed</referencedby>
+        <referencedby refid="class_ability_1a958c59da6ae71a434d370d58302c66eb" compoundref="_ability_8cs" startline="83" endline="100">Use</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ability_1aedfd1c0855381a203798f8aaa0876dbb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ability.checkForValidTargets</definition>
+        <argsstring>(List&lt; Being &gt; beings)</argsstring>
+        <name>checkForValidTargets</name>
+        <param>
+          <type>List&lt; <ref refid="class_being" kindref="compound">Being</ref> &gt;</type>
+          <declname>beings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" line="20" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" bodystart="20" bodyend="48"/>
+        <references refid="class_ability_1ad1a1f24d99c8b5d6d8cb570a06403eb3" compoundref="_ability_8cs" startline="8">abilityName</references>
+        <references refid="class_ability_1a085612b42ff4aab3f7f2edfb5d32aba3" compoundref="_ability_8cs" startline="16">targetingCriteria</references>
+        <referencedby refid="class_ability_1a4362f7581e6d1a6176c9eb775ba0318b" compoundref="_ability_8cs" startline="50" endline="72">CanThisBeUsed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ability_1a4362f7581e6d1a6176c9eb775ba0318b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Ability.CanThisBeUsed</definition>
+        <argsstring>()</argsstring>
+        <name>CanThisBeUsed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" line="50" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" bodystart="50" bodyend="72"/>
+        <references refid="class_ability_1ad1a1f24d99c8b5d6d8cb570a06403eb3" compoundref="_ability_8cs" startline="8">abilityName</references>
+        <references refid="class_ability_1a6eebb7b0147bfa79aa971f3fe16a0c0e" compoundref="_ability_8cs" startline="7">battlemanager</references>
+        <references refid="class_ability_1aedfd1c0855381a203798f8aaa0876dbb" compoundref="_ability_8cs" startline="20" endline="48">checkForValidTargets</references>
+        <references refid="class_battle_manager_1a14847f4442b25d631380fb1514f33949" compoundref="_battle_manager_8cs" startline="13">BattleManager.combatants</references>
+        <references refid="class_ability_1a2d3ccff2472c6e66303c24bd02ce466d" compoundref="_ability_8cs" startline="13">conditions</references>
+        <references refid="class_ability_1ae9d85b6a143740687f32f0dd2ad40cd5" compoundref="_ability_8cs" startline="17">validTargets</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ability_1a0472d3aca8ab9280471162179ce13d8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ability.Use</definition>
+        <argsstring>(Being target)</argsstring>
+        <name>Use</name>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" line="74" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" bodystart="74" bodyend="81"/>
+        <references refid="class_ability_1ad1a1f24d99c8b5d6d8cb570a06403eb3" compoundref="_ability_8cs" startline="8">abilityName</references>
+        <references refid="class_ability_1a228ccfd5d79068dff64c36a8ddc7a39a" compoundref="_ability_8cs" startline="14">effects</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ability_1a958c59da6ae71a434d370d58302c66eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ability.Use</definition>
+        <argsstring>()</argsstring>
+        <name>Use</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" line="83" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" bodystart="83" bodyend="100"/>
+        <references refid="class_ability_1ad1a1f24d99c8b5d6d8cb570a06403eb3" compoundref="_ability_8cs" startline="8">abilityName</references>
+        <references refid="class_ability_1a228ccfd5d79068dff64c36a8ddc7a39a" compoundref="_ability_8cs" startline="14">effects</references>
+        <references refid="class_ability_1ae67754da6c99d99e70275e90ca1e492f" compoundref="_ability_8cs" startline="11">numberOfTargets</references>
+        <references refid="class_ability_1ae9d85b6a143740687f32f0dd2ad40cd5" compoundref="_ability_8cs" startline="17">validTargets</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ability_1a07a26a3f1bc7f3142bffc087e2052800" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ability.Ability</definition>
+        <argsstring>(BattleManager bm, string name, bool active)</argsstring>
+        <name>Ability</name>
+        <param>
+          <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+          <declname>bm</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>active</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" line="103" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" bodystart="103" bodyend="107"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ability</label>
+        <link refid="class_ability"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>battlemanager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BattleManager</label>
+        <link refid="class_battle_manager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mainState</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="5">
+        <label>BeingFactory</label>
+        <link refid="class_being_factory"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" line="5" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Ability.cs" bodystart="5" bodyend="109"/>
+    <listofallmembers>
+      <member refid="class_ability_1a07a26a3f1bc7f3142bffc087e2052800" prot="public" virt="non-virtual"><scope>Ability</scope><name>Ability</name></member>
+      <member refid="class_ability_1ad1a1f24d99c8b5d6d8cb570a06403eb3" prot="public" virt="non-virtual"><scope>Ability</scope><name>abilityName</name></member>
+      <member refid="class_ability_1ae596bcf36c0d36cb3d1f376f4f7263ad" prot="public" virt="non-virtual"><scope>Ability</scope><name>animations</name></member>
+      <member refid="class_ability_1a6eebb7b0147bfa79aa971f3fe16a0c0e" prot="private" virt="non-virtual"><scope>Ability</scope><name>battlemanager</name></member>
+      <member refid="class_ability_1a4362f7581e6d1a6176c9eb775ba0318b" prot="public" virt="non-virtual"><scope>Ability</scope><name>CanThisBeUsed</name></member>
+      <member refid="class_ability_1aedfd1c0855381a203798f8aaa0876dbb" prot="public" virt="non-virtual"><scope>Ability</scope><name>checkForValidTargets</name></member>
+      <member refid="class_ability_1a2d3ccff2472c6e66303c24bd02ce466d" prot="public" virt="non-virtual"><scope>Ability</scope><name>conditions</name></member>
+      <member refid="class_ability_1a228ccfd5d79068dff64c36a8ddc7a39a" prot="public" virt="non-virtual"><scope>Ability</scope><name>effects</name></member>
+      <member refid="class_ability_1ae67754da6c99d99e70275e90ca1e492f" prot="public" virt="non-virtual"><scope>Ability</scope><name>numberOfTargets</name></member>
+      <member refid="class_ability_1af93f467e81307b0cc85fbaf39d0e6da9" prot="public" virt="non-virtual"><scope>Ability</scope><name>ranks</name></member>
+      <member refid="class_ability_1a085612b42ff4aab3f7f2edfb5d32aba3" prot="public" virt="non-virtual"><scope>Ability</scope><name>targetingCriteria</name></member>
+      <member refid="class_ability_1a0472d3aca8ab9280471162179ce13d8b" prot="public" virt="non-virtual"><scope>Ability</scope><name>Use</name></member>
+      <member refid="class_ability_1a958c59da6ae71a434d370d58302c66eb" prot="public" virt="non-virtual"><scope>Ability</scope><name>Use</name></member>
+      <member refid="class_ability_1ae9d85b6a143740687f32f0dd2ad40cd5" prot="public" virt="non-virtual"><scope>Ability</scope><name>validTargets</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

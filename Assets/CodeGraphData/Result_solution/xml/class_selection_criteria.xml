@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_selection_criteria" kind="class" prot="public" abstract="yes">
+    <compoundname>SelectionCriteria</compoundname>
+    <derivedcompoundref refid="class_includes_effect" prot="public" virt="non-virtual">IncludesEffect</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_selection_criteria_1a9d23c93479bf9df8fbc82ca7cfb3f078" prot="public" static="no" mutable="no">
+        <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+        <definition>BattleManager SelectionCriteria.battleManager</definition>
+        <argsstring></argsstring>
+        <name>battleManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria.cs" line="7" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_includes_effect_1a9b1ddd8d0ff47188f157cc86bf9fb043" compoundref="_includes_effect_8cs" startline="28" endline="34">IncludesEffect.IncludesEffect</referencedby>
+        <referencedby refid="class_selection_criteria_1af4b413d34d4b29f1618947f003db11b2" compoundref="_selection_criteria_8cs" startline="16" endline="21">SelectionCriteria</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_selection_criteria_1abe0caeb6ff8f8a62965f89af96b5977c" prot="public" static="no" mutable="no">
+        <type><ref refid="class_being" kindref="compound">Being</ref></type>
+        <definition>Being SelectionCriteria.parentBeing</definition>
+        <argsstring></argsstring>
+        <name>parentBeing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria.cs" line="8" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_includes_effect_1a9b1ddd8d0ff47188f157cc86bf9fb043" compoundref="_includes_effect_8cs" startline="28" endline="34">IncludesEffect.IncludesEffect</referencedby>
+        <referencedby refid="class_selection_criteria_1af4b413d34d4b29f1618947f003db11b2" compoundref="_selection_criteria_8cs" startline="16" endline="21">SelectionCriteria</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_selection_criteria_1ad0a73aea8531c8d0dcd1a76a42ddc7c2" prot="public" static="no" mutable="no">
+        <type><ref refid="class_ability" kindref="compound">Ability</ref></type>
+        <definition>Ability SelectionCriteria.parentAbility</definition>
+        <argsstring></argsstring>
+        <name>parentAbility</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria.cs" line="9" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_selection_criteria_1a43921a270333dde26742c522aa2400ef" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SelectionCriteria.selectionCriteriaName</definition>
+        <argsstring></argsstring>
+        <name>selectionCriteriaName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria.cs" line="10" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_selection_criteria_1af4b413d34d4b29f1618947f003db11b2" compoundref="_selection_criteria_8cs" startline="16" endline="21">SelectionCriteria</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_selection_criteria_1a8b1e44611916c1b4eba31dd4f9162a02" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract bool</type>
+        <definition>abstract bool SelectionCriteria.Check</definition>
+        <argsstring>(Ability abil)</argsstring>
+        <name>Check</name>
+        <reimplementedby refid="class_includes_effect_1ae3ecce8552949da9199f319e71feecdc">Check</reimplementedby>
+        <param>
+          <type><ref refid="class_ability" kindref="compound">Ability</ref></type>
+          <declname>abil</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria.cs" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_selection_criteria_1af4b413d34d4b29f1618947f003db11b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SelectionCriteria.SelectionCriteria</definition>
+        <argsstring>(BattleManager battleManager, Being parentBeing, string selectionCriteriaName)</argsstring>
+        <name>SelectionCriteria</name>
+        <param>
+          <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+          <declname>battleManager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>parentBeing</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>selectionCriteriaName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria.cs" line="16" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria.cs" bodystart="16" bodyend="21"/>
+        <references refid="class_selection_criteria_1a9d23c93479bf9df8fbc82ca7cfb3f078" compoundref="_selection_criteria_8cs" startline="7">battleManager</references>
+        <references refid="class_selection_criteria_1abe0caeb6ff8f8a62965f89af96b5977c" compoundref="_selection_criteria_8cs" startline="8">parentBeing</references>
+        <references refid="class_selection_criteria_1a43921a270333dde26742c522aa2400ef" compoundref="_selection_criteria_8cs" startline="10">selectionCriteriaName</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="215">
+        <label>SelectionCriteria</label>
+        <link refid="class_selection_criteria"/>
+      </node>
+      <node id="216">
+        <label>IncludesEffect</label>
+        <link refid="class_includes_effect"/>
+        <childnode refid="215" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="217">
+        <label>SelectionCriteria</label>
+        <link refid="class_selection_criteria"/>
+        <childnode refid="218" relation="usage">
+          <edgelabel>parentAbility</edgelabel>
+        </childnode>
+        <childnode refid="223" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="219" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="224">
+        <label>Condition</label>
+        <link refid="class_condition"/>
+        <childnode refid="218" relation="usage">
+          <edgelabel>parentAbility</edgelabel>
+        </childnode>
+        <childnode refid="223" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="219" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="223">
+        <label>Being</label>
+        <link refid="class_being"/>
+        <childnode refid="218" relation="usage">
+          <edgelabel>selectedAbility</edgelabel>
+        </childnode>
+        <childnode refid="224" relation="usage">
+          <edgelabel>condition</edgelabel>
+        </childnode>
+      </node>
+      <node id="218">
+        <label>Ability</label>
+        <link refid="class_ability"/>
+        <childnode refid="219" relation="usage">
+          <edgelabel>battlemanager</edgelabel>
+        </childnode>
+      </node>
+      <node id="219">
+        <label>BattleManager</label>
+        <link refid="class_battle_manager"/>
+        <childnode refid="220" relation="public-inheritance">
+        </childnode>
+        <childnode refid="221" relation="usage">
+          <edgelabel>mainState</edgelabel>
+        </childnode>
+        <childnode refid="222" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="220">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="222">
+        <label>BeingFactory</label>
+        <link refid="class_being_factory"/>
+        <childnode refid="220" relation="public-inheritance">
+        </childnode>
+        <childnode refid="219" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="221">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="220" relation="public-inheritance">
+        </childnode>
+        <childnode refid="219" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+        <childnode refid="222" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria.cs" line="4" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria.cs" bodystart="4" bodyend="23"/>
+    <listofallmembers>
+      <member refid="class_selection_criteria_1a9d23c93479bf9df8fbc82ca7cfb3f078" prot="public" virt="non-virtual"><scope>SelectionCriteria</scope><name>battleManager</name></member>
+      <member refid="class_selection_criteria_1a8b1e44611916c1b4eba31dd4f9162a02" prot="public" virt="pure-virtual"><scope>SelectionCriteria</scope><name>Check</name></member>
+      <member refid="class_selection_criteria_1ad0a73aea8531c8d0dcd1a76a42ddc7c2" prot="public" virt="non-virtual"><scope>SelectionCriteria</scope><name>parentAbility</name></member>
+      <member refid="class_selection_criteria_1abe0caeb6ff8f8a62965f89af96b5977c" prot="public" virt="non-virtual"><scope>SelectionCriteria</scope><name>parentBeing</name></member>
+      <member refid="class_selection_criteria_1af4b413d34d4b29f1618947f003db11b2" prot="public" virt="non-virtual"><scope>SelectionCriteria</scope><name>SelectionCriteria</name></member>
+      <member refid="class_selection_criteria_1a43921a270333dde26742c522aa2400ef" prot="public" virt="non-virtual"><scope>SelectionCriteria</scope><name>selectionCriteriaName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

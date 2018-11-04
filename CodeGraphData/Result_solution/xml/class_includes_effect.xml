@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_includes_effect" kind="class" prot="public">
+    <compoundname>IncludesEffect</compoundname>
+    <basecompoundref refid="class_selection_criteria" prot="public" virt="non-virtual">SelectionCriteria</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_includes_effect_1acc36c04b6b2fc1981c1a7732f3ca079e" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String IncludesEffect.effectName</definition>
+        <argsstring></argsstring>
+        <name>effectName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria/IncludesEffect.cs" line="8" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria/IncludesEffect.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_includes_effect_1ae3ecce8552949da9199f319e71feecdc" compoundref="_includes_effect_8cs" startline="11" endline="25">Check</referencedby>
+        <referencedby refid="class_includes_effect_1a9b1ddd8d0ff47188f157cc86bf9fb043" compoundref="_includes_effect_8cs" startline="28" endline="34">IncludesEffect</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_includes_effect_1ae3ecce8552949da9199f319e71feecdc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool IncludesEffect.Check</definition>
+        <argsstring>(Ability abil)</argsstring>
+        <name>Check</name>
+        <reimplements refid="class_selection_criteria_1a8b1e44611916c1b4eba31dd4f9162a02">Check</reimplements>
+        <param>
+          <type><ref refid="class_ability" kindref="compound">Ability</ref></type>
+          <declname>abil</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria/IncludesEffect.cs" line="11" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria/IncludesEffect.cs" bodystart="11" bodyend="25"/>
+        <references refid="class_includes_effect_1acc36c04b6b2fc1981c1a7732f3ca079e" compoundref="_includes_effect_8cs" startline="8">effectName</references>
+        <references refid="class_ability_1a228ccfd5d79068dff64c36a8ddc7a39a" compoundref="_ability_8cs" startline="14">Ability.effects</references>
+      </memberdef>
+      <memberdef kind="function" id="class_includes_effect_1a9b1ddd8d0ff47188f157cc86bf9fb043" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IncludesEffect.IncludesEffect</definition>
+        <argsstring>(BattleManager battleManager, Being parentBeing, string selectionCriteriaName, string effectName)</argsstring>
+        <name>IncludesEffect</name>
+        <param>
+          <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+          <declname>battleManager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>parentBeing</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>selectionCriteriaName</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>effectName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria/IncludesEffect.cs" line="28" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria/IncludesEffect.cs" bodystart="28" bodyend="34"/>
+        <references refid="class_selection_criteria_1a9d23c93479bf9df8fbc82ca7cfb3f078" compoundref="_selection_criteria_8cs" startline="7">SelectionCriteria.battleManager</references>
+        <references refid="class_includes_effect_1acc36c04b6b2fc1981c1a7732f3ca079e" compoundref="_includes_effect_8cs" startline="8">effectName</references>
+        <references refid="class_selection_criteria_1abe0caeb6ff8f8a62965f89af96b5977c" compoundref="_selection_criteria_8cs" startline="8">SelectionCriteria.parentBeing</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="153">
+        <label>SelectionCriteria</label>
+        <link refid="class_selection_criteria"/>
+      </node>
+      <node id="152">
+        <label>IncludesEffect</label>
+        <link refid="class_includes_effect"/>
+        <childnode refid="153" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="155">
+        <label>SelectionCriteria</label>
+        <link refid="class_selection_criteria"/>
+        <childnode refid="156" relation="usage">
+          <edgelabel>parentAbility</edgelabel>
+        </childnode>
+        <childnode refid="161" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="157" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="162">
+        <label>Condition</label>
+        <link refid="class_condition"/>
+        <childnode refid="156" relation="usage">
+          <edgelabel>parentAbility</edgelabel>
+        </childnode>
+        <childnode refid="161" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="157" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="161">
+        <label>Being</label>
+        <link refid="class_being"/>
+        <childnode refid="156" relation="usage">
+          <edgelabel>selectedAbility</edgelabel>
+        </childnode>
+        <childnode refid="162" relation="usage">
+          <edgelabel>condition</edgelabel>
+        </childnode>
+      </node>
+      <node id="156">
+        <label>Ability</label>
+        <link refid="class_ability"/>
+        <childnode refid="157" relation="usage">
+          <edgelabel>battlemanager</edgelabel>
+        </childnode>
+      </node>
+      <node id="157">
+        <label>BattleManager</label>
+        <link refid="class_battle_manager"/>
+        <childnode refid="158" relation="public-inheritance">
+        </childnode>
+        <childnode refid="159" relation="usage">
+          <edgelabel>mainState</edgelabel>
+        </childnode>
+        <childnode refid="160" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="158">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="154">
+        <label>IncludesEffect</label>
+        <link refid="class_includes_effect"/>
+        <childnode refid="155" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="160">
+        <label>BeingFactory</label>
+        <link refid="class_being_factory"/>
+        <childnode refid="158" relation="public-inheritance">
+        </childnode>
+        <childnode refid="157" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="159">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="158" relation="public-inheritance">
+        </childnode>
+        <childnode refid="157" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+        <childnode refid="160" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria/IncludesEffect.cs" line="6" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria/IncludesEffect.cs" bodystart="5" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_selection_criteria_1a9d23c93479bf9df8fbc82ca7cfb3f078" prot="public" virt="non-virtual"><scope>IncludesEffect</scope><name>battleManager</name></member>
+      <member refid="class_includes_effect_1ae3ecce8552949da9199f319e71feecdc" prot="public" virt="virtual"><scope>IncludesEffect</scope><name>Check</name></member>
+      <member refid="class_includes_effect_1acc36c04b6b2fc1981c1a7732f3ca079e" prot="private" virt="non-virtual"><scope>IncludesEffect</scope><name>effectName</name></member>
+      <member refid="class_includes_effect_1a9b1ddd8d0ff47188f157cc86bf9fb043" prot="public" virt="non-virtual"><scope>IncludesEffect</scope><name>IncludesEffect</name></member>
+      <member refid="class_selection_criteria_1ad0a73aea8531c8d0dcd1a76a42ddc7c2" prot="public" virt="non-virtual"><scope>IncludesEffect</scope><name>parentAbility</name></member>
+      <member refid="class_selection_criteria_1abe0caeb6ff8f8a62965f89af96b5977c" prot="public" virt="non-virtual"><scope>IncludesEffect</scope><name>parentBeing</name></member>
+      <member refid="class_selection_criteria_1af4b413d34d4b29f1618947f003db11b2" prot="public" virt="non-virtual"><scope>IncludesEffect</scope><name>SelectionCriteria</name></member>
+      <member refid="class_selection_criteria_1a43921a270333dde26742c522aa2400ef" prot="public" virt="non-virtual"><scope>IncludesEffect</scope><name>selectionCriteriaName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

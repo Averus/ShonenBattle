@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_costs_m_p" kind="class" prot="public">
+    <compoundname>CostsMP</compoundname>
+    <basecompoundref refid="class_effect" prot="public" virt="non-virtual">Effect</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_costs_m_p_1a2a36da3975bf3021f3d152255b7baaeb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CostsMP.cost</definition>
+        <argsstring></argsstring>
+        <name>cost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/CostsMP.cs" line="7" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/CostsMP.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_costs_m_p_1a0bb43dc719b7d6581d91564d1164f25c" compoundref="_costs_m_p_8cs" startline="20" endline="26">CostsMP</referencedby>
+        <referencedby refid="class_costs_m_p_1a174877b5cbb4bb7eaa88846b205bf11c" compoundref="_costs_m_p_8cs" startline="9" endline="18">Use</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_costs_m_p_1a174877b5cbb4bb7eaa88846b205bf11c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void CostsMP.Use</definition>
+        <argsstring>(Being target)</argsstring>
+        <name>Use</name>
+        <reimplements refid="class_effect_1abdeb43a60f3aaba84f676eadbf0b7efc">Use</reimplements>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/CostsMP.cs" line="9" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/CostsMP.cs" bodystart="9" bodyend="18"/>
+        <references refid="class_costs_m_p_1a2a36da3975bf3021f3d152255b7baaeb" compoundref="_costs_m_p_8cs" startline="7">cost</references>
+        <references refid="class_being_1a64fc2a2159c66931f2cda151df0451ff" compoundref="_being_8cs" startline="73" endline="93">Being.GetStat</references>
+      </memberdef>
+      <memberdef kind="function" id="class_costs_m_p_1a0bb43dc719b7d6581d91564d1164f25c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CostsMP.CostsMP</definition>
+        <argsstring>(BattleManager battleManager, Being parentBeing, Ability parentAbility, String effectName, int cost)</argsstring>
+        <name>CostsMP</name>
+        <param>
+          <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+          <declname>battleManager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>parentBeing</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ability" kindref="compound">Ability</ref></type>
+          <declname>parentAbility</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>effectName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/CostsMP.cs" line="20" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/CostsMP.cs" bodystart="20" bodyend="26"/>
+        <references refid="class_effect_1ac5dffe56d653b75f816b7855c90f1d87" compoundref="_effect_8cs" startline="6">Effect.battleManager</references>
+        <references refid="class_costs_m_p_1a2a36da3975bf3021f3d152255b7baaeb" compoundref="_costs_m_p_8cs" startline="7">cost</references>
+        <references refid="class_effect_1aab3f7eee5bc2a8eaf2cbe0ed4313f427" compoundref="_effect_8cs" startline="8">Effect.parentAbility</references>
+        <references refid="class_effect_1aeb4b0db75413b945faae306f2650a854" compoundref="_effect_8cs" startline="7">Effect.parentBeing</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="83">
+        <label>CostsMP</label>
+        <link refid="class_costs_m_p"/>
+        <childnode refid="84" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>Effect</label>
+        <link refid="class_effect"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="93">
+        <label>Condition</label>
+        <link refid="class_condition"/>
+        <childnode refid="87" relation="usage">
+          <edgelabel>parentAbility</edgelabel>
+        </childnode>
+        <childnode refid="92" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="88" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="92">
+        <label>Being</label>
+        <link refid="class_being"/>
+        <childnode refid="87" relation="usage">
+          <edgelabel>selectedAbility</edgelabel>
+        </childnode>
+        <childnode refid="93" relation="usage">
+          <edgelabel>condition</edgelabel>
+        </childnode>
+      </node>
+      <node id="85">
+        <label>CostsMP</label>
+        <link refid="class_costs_m_p"/>
+        <childnode refid="86" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>Ability</label>
+        <link refid="class_ability"/>
+        <childnode refid="88" relation="usage">
+          <edgelabel>battlemanager</edgelabel>
+        </childnode>
+      </node>
+      <node id="88">
+        <label>BattleManager</label>
+        <link refid="class_battle_manager"/>
+        <childnode refid="89" relation="public-inheritance">
+        </childnode>
+        <childnode refid="90" relation="usage">
+          <edgelabel>mainState</edgelabel>
+        </childnode>
+        <childnode refid="91" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="89">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="91">
+        <label>BeingFactory</label>
+        <link refid="class_being_factory"/>
+        <childnode refid="89" relation="public-inheritance">
+        </childnode>
+        <childnode refid="88" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="86">
+        <label>Effect</label>
+        <link refid="class_effect"/>
+        <childnode refid="87" relation="usage">
+          <edgelabel>parentAbility</edgelabel>
+        </childnode>
+        <childnode refid="92" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="88" relation="usage">
+          <edgelabel>UsedInState</edgelabel>
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="90">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="89" relation="public-inheritance">
+        </childnode>
+        <childnode refid="88" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+        <childnode refid="91" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/CostsMP.cs" line="5" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/CostsMP.cs" bodystart="5" bodyend="27"/>
+    <listofallmembers>
+      <member refid="class_effect_1ac5dffe56d653b75f816b7855c90f1d87" prot="public" virt="non-virtual"><scope>CostsMP</scope><name>battleManager</name></member>
+      <member refid="class_costs_m_p_1a2a36da3975bf3021f3d152255b7baaeb" prot="private" virt="non-virtual"><scope>CostsMP</scope><name>cost</name></member>
+      <member refid="class_costs_m_p_1a0bb43dc719b7d6581d91564d1164f25c" prot="public" virt="non-virtual"><scope>CostsMP</scope><name>CostsMP</name></member>
+      <member refid="class_effect_1aeb5675bc461e64280c6381979d0fae60" prot="public" virt="non-virtual"><scope>CostsMP</scope><name>Effect</name></member>
+      <member refid="class_effect_1ab0d2647d792f5374565264e4494b85a9" prot="public" virt="non-virtual"><scope>CostsMP</scope><name>effectName</name></member>
+      <member refid="class_effect_1aab3f7eee5bc2a8eaf2cbe0ed4313f427" prot="public" virt="non-virtual"><scope>CostsMP</scope><name>parentAbility</name></member>
+      <member refid="class_effect_1aeb4b0db75413b945faae306f2650a854" prot="public" virt="non-virtual"><scope>CostsMP</scope><name>parentBeing</name></member>
+      <member refid="class_costs_m_p_1a174877b5cbb4bb7eaa88846b205bf11c" prot="public" virt="virtual"><scope>CostsMP</scope><name>Use</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

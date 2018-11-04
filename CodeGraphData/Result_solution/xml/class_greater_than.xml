@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_greater_than" kind="class" prot="public">
+    <compoundname>GreaterThan</compoundname>
+    <basecompoundref refid="class_condition" prot="public" virt="non-virtual">Condition</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_greater_than_1ae10190cdb6202fa8306e76fbc005db9c" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GreaterThan.mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/GreaterThan.cs" line="7" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/GreaterThan.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_greater_than_1a43cda4ea92e4a4e723804de661e604cc" compoundref="_greater_than_8cs" startline="19" endline="24">GreaterThan</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_greater_than_1a4b11f7706dc4632ca863e343ce58dc72" prot="private" static="no" mutable="no">
+        <type><ref refid="class_being" kindref="compound">Being</ref></type>
+        <definition>Being GreaterThan.p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/GreaterThan.cs" line="9" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/GreaterThan.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_greater_than_1a43cda4ea92e4a4e723804de661e604cc" compoundref="_greater_than_8cs" startline="19" endline="24">GreaterThan</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_greater_than_1a3c6206b7c3b583946368571b1502de0b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GreaterThan.target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/GreaterThan.cs" line="10" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/GreaterThan.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_greater_than_1a43cda4ea92e4a4e723804de661e604cc" compoundref="_greater_than_8cs" startline="19" endline="24">GreaterThan</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_greater_than_1a968be964ff7485f6be1aa3dd7024dd56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool GreaterThan.CanThisBeUsed</definition>
+        <argsstring>()</argsstring>
+        <name>CanThisBeUsed</name>
+        <reimplements refid="class_condition_1ad3758954bf17f24844e813a5919a2874">CanThisBeUsed</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/GreaterThan.cs" line="13" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/GreaterThan.cs" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_greater_than_1a43cda4ea92e4a4e723804de661e604cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GreaterThan.GreaterThan</definition>
+        <argsstring>(BattleManager battleManager, Being parentBeing, string conditionName, string mode, Being p, int target)</argsstring>
+        <name>GreaterThan</name>
+        <param>
+          <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+          <declname>battleManager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>parentBeing</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>conditionName</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/GreaterThan.cs" line="19" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/GreaterThan.cs" bodystart="19" bodyend="24"/>
+        <references refid="class_greater_than_1ae10190cdb6202fa8306e76fbc005db9c" compoundref="_greater_than_8cs" startline="7">mode</references>
+        <references refid="class_greater_than_1a4b11f7706dc4632ca863e343ce58dc72" compoundref="_greater_than_8cs" startline="9">p</references>
+        <references refid="class_greater_than_1a3c6206b7c3b583946368571b1502de0b" compoundref="_greater_than_8cs" startline="10">target</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="132">
+        <label>Condition</label>
+        <link refid="class_condition"/>
+      </node>
+      <node id="131">
+        <label>GreaterThan</label>
+        <link refid="class_greater_than"/>
+        <childnode refid="132" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="134">
+        <label>Condition</label>
+        <link refid="class_condition"/>
+        <childnode refid="135" relation="usage">
+          <edgelabel>parentAbility</edgelabel>
+        </childnode>
+        <childnode refid="140" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="136" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="140">
+        <label>Being</label>
+        <link refid="class_being"/>
+        <childnode refid="135" relation="usage">
+          <edgelabel>selectedAbility</edgelabel>
+        </childnode>
+        <childnode refid="134" relation="usage">
+          <edgelabel>condition</edgelabel>
+        </childnode>
+      </node>
+      <node id="135">
+        <label>Ability</label>
+        <link refid="class_ability"/>
+        <childnode refid="136" relation="usage">
+          <edgelabel>battlemanager</edgelabel>
+        </childnode>
+      </node>
+      <node id="136">
+        <label>BattleManager</label>
+        <link refid="class_battle_manager"/>
+        <childnode refid="137" relation="public-inheritance">
+        </childnode>
+        <childnode refid="138" relation="usage">
+          <edgelabel>mainState</edgelabel>
+        </childnode>
+        <childnode refid="139" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="133">
+        <label>GreaterThan</label>
+        <link refid="class_greater_than"/>
+        <childnode refid="134" relation="public-inheritance">
+        </childnode>
+        <childnode refid="140" relation="usage">
+          <edgelabel>p</edgelabel>
+        </childnode>
+      </node>
+      <node id="137">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="139">
+        <label>BeingFactory</label>
+        <link refid="class_being_factory"/>
+        <childnode refid="137" relation="public-inheritance">
+        </childnode>
+        <childnode refid="136" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="138">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="137" relation="public-inheritance">
+        </childnode>
+        <childnode refid="136" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+        <childnode refid="139" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/GreaterThan.cs" line="6" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/GreaterThan.cs" bodystart="5" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_condition_1a7547a121ba397b441439d994cd8246b1" prot="public" virt="non-virtual"><scope>GreaterThan</scope><name>battleManager</name></member>
+      <member refid="class_greater_than_1a968be964ff7485f6be1aa3dd7024dd56" prot="public" virt="virtual"><scope>GreaterThan</scope><name>CanThisBeUsed</name></member>
+      <member refid="class_condition_1ad2270c61a0f492990cccb977faf4e007" prot="public" virt="non-virtual"><scope>GreaterThan</scope><name>Condition</name></member>
+      <member refid="class_condition_1a0d4dc76caf50991138b95d71408c18ff" prot="public" virt="non-virtual"><scope>GreaterThan</scope><name>GetConditionName</name></member>
+      <member refid="class_greater_than_1a43cda4ea92e4a4e723804de661e604cc" prot="public" virt="non-virtual"><scope>GreaterThan</scope><name>GreaterThan</name></member>
+      <member refid="class_greater_than_1ae10190cdb6202fa8306e76fbc005db9c" prot="private" virt="non-virtual"><scope>GreaterThan</scope><name>mode</name></member>
+      <member refid="class_greater_than_1a4b11f7706dc4632ca863e343ce58dc72" prot="private" virt="non-virtual"><scope>GreaterThan</scope><name>p</name></member>
+      <member refid="class_condition_1a9daca5094be459a0d023b8c1ecdec6b7" prot="public" virt="non-virtual"><scope>GreaterThan</scope><name>parentAbility</name></member>
+      <member refid="class_condition_1a5e1cc13cbc82d4a42cb20feb67646583" prot="public" virt="non-virtual"><scope>GreaterThan</scope><name>parentBeing</name></member>
+      <member refid="class_greater_than_1a3c6206b7c3b583946368571b1502de0b" prot="private" virt="non-virtual"><scope>GreaterThan</scope><name>target</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

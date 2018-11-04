@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_compare_two_values" kind="class" prot="public">
+    <compoundname>CompareTwoValues</compoundname>
+    <basecompoundref refid="class_condition" prot="public" virt="non-virtual">Condition</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_compare_two_values_1acb2c1ddcb8df248f6d2e344432eb4f9e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_being" kindref="compound">Being</ref></type>
+        <definition>Being CompareTwoValues.p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/CompareTwoValues.cs" line="9" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/CompareTwoValues.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_compare_two_values_1ac7e246af887a7ee46f774952e9557277" compoundref="_compare_two_values_8cs" startline="19" endline="81">CanThisBeUsed</referencedby>
+        <referencedby refid="class_compare_two_values_1a50c35ae41277971eddbb00d86cd18e2c" compoundref="_compare_two_values_8cs" startline="86" endline="96">CompareTwoValues</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_compare_two_values_1a613c3f16dc8c13f7c29e18a2ce0ba67b" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string CompareTwoValues.value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/CompareTwoValues.cs" line="11" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/CompareTwoValues.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_compare_two_values_1ac7e246af887a7ee46f774952e9557277" compoundref="_compare_two_values_8cs" startline="19" endline="81">CanThisBeUsed</referencedby>
+        <referencedby refid="class_compare_two_values_1a50c35ae41277971eddbb00d86cd18e2c" compoundref="_compare_two_values_8cs" startline="86" endline="96">CompareTwoValues</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_compare_two_values_1a30791e464313b086d6d0e63b2de5e697" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string CompareTwoValues.mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/CompareTwoValues.cs" line="13" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/CompareTwoValues.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_compare_two_values_1ac7e246af887a7ee46f774952e9557277" compoundref="_compare_two_values_8cs" startline="19" endline="81">CanThisBeUsed</referencedby>
+        <referencedby refid="class_compare_two_values_1a50c35ae41277971eddbb00d86cd18e2c" compoundref="_compare_two_values_8cs" startline="86" endline="96">CompareTwoValues</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_compare_two_values_1a20ae9eb0ff4cd54a034ee3ae1e426385" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CompareTwoValues.target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/CompareTwoValues.cs" line="15" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/CompareTwoValues.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_compare_two_values_1ac7e246af887a7ee46f774952e9557277" compoundref="_compare_two_values_8cs" startline="19" endline="81">CanThisBeUsed</referencedby>
+        <referencedby refid="class_compare_two_values_1a50c35ae41277971eddbb00d86cd18e2c" compoundref="_compare_two_values_8cs" startline="86" endline="96">CompareTwoValues</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_compare_two_values_1ac7e246af887a7ee46f774952e9557277" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool CompareTwoValues.CanThisBeUsed</definition>
+        <argsstring>()</argsstring>
+        <name>CanThisBeUsed</name>
+        <reimplements refid="class_condition_1ad3758954bf17f24844e813a5919a2874">CanThisBeUsed</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/CompareTwoValues.cs" line="19" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/CompareTwoValues.cs" bodystart="19" bodyend="81"/>
+        <references refid="class_being_1a8b3d22d5c9725bcb89664a2d7d5694d5" compoundref="_being_8cs" startline="38" endline="71">Being.GetStatValue</references>
+        <references refid="class_compare_two_values_1a30791e464313b086d6d0e63b2de5e697" compoundref="_compare_two_values_8cs" startline="13">mode</references>
+        <references refid="class_compare_two_values_1acb2c1ddcb8df248f6d2e344432eb4f9e" compoundref="_compare_two_values_8cs" startline="9">p</references>
+        <references refid="class_compare_two_values_1a20ae9eb0ff4cd54a034ee3ae1e426385" compoundref="_compare_two_values_8cs" startline="15">target</references>
+        <references refid="class_compare_two_values_1a613c3f16dc8c13f7c29e18a2ce0ba67b" compoundref="_compare_two_values_8cs" startline="11">value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_compare_two_values_1a50c35ae41277971eddbb00d86cd18e2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CompareTwoValues.CompareTwoValues</definition>
+        <argsstring>(BattleManager battleManager, Being parentBeing, string conditionName, Being p, string value, string mode, int target)</argsstring>
+        <name>CompareTwoValues</name>
+        <param>
+          <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+          <declname>battleManager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>parentBeing</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>conditionName</declname>
+        </param>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/CompareTwoValues.cs" line="86" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/CompareTwoValues.cs" bodystart="86" bodyend="96"/>
+        <references refid="class_compare_two_values_1a30791e464313b086d6d0e63b2de5e697" compoundref="_compare_two_values_8cs" startline="13">mode</references>
+        <references refid="class_compare_two_values_1acb2c1ddcb8df248f6d2e344432eb4f9e" compoundref="_compare_two_values_8cs" startline="9">p</references>
+        <references refid="class_compare_two_values_1a20ae9eb0ff4cd54a034ee3ae1e426385" compoundref="_compare_two_values_8cs" startline="15">target</references>
+        <references refid="class_compare_two_values_1a613c3f16dc8c13f7c29e18a2ce0ba67b" compoundref="_compare_two_values_8cs" startline="11">value</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="61">
+        <label>Condition</label>
+        <link refid="class_condition"/>
+      </node>
+      <node id="60">
+        <label>CompareTwoValues</label>
+        <link refid="class_compare_two_values"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="63">
+        <label>Condition</label>
+        <link refid="class_condition"/>
+        <childnode refid="64" relation="usage">
+          <edgelabel>parentAbility</edgelabel>
+        </childnode>
+        <childnode refid="69" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="65" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="62">
+        <label>CompareTwoValues</label>
+        <link refid="class_compare_two_values"/>
+        <childnode refid="63" relation="public-inheritance">
+        </childnode>
+        <childnode refid="69" relation="usage">
+          <edgelabel>p</edgelabel>
+        </childnode>
+      </node>
+      <node id="69">
+        <label>Being</label>
+        <link refid="class_being"/>
+        <childnode refid="64" relation="usage">
+          <edgelabel>selectedAbility</edgelabel>
+        </childnode>
+        <childnode refid="63" relation="usage">
+          <edgelabel>condition</edgelabel>
+        </childnode>
+      </node>
+      <node id="64">
+        <label>Ability</label>
+        <link refid="class_ability"/>
+        <childnode refid="65" relation="usage">
+          <edgelabel>battlemanager</edgelabel>
+        </childnode>
+      </node>
+      <node id="65">
+        <label>BattleManager</label>
+        <link refid="class_battle_manager"/>
+        <childnode refid="66" relation="public-inheritance">
+        </childnode>
+        <childnode refid="67" relation="usage">
+          <edgelabel>mainState</edgelabel>
+        </childnode>
+        <childnode refid="68" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="66">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="68">
+        <label>BeingFactory</label>
+        <link refid="class_being_factory"/>
+        <childnode refid="66" relation="public-inheritance">
+        </childnode>
+        <childnode refid="65" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="67">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="66" relation="public-inheritance">
+        </childnode>
+        <childnode refid="65" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+        <childnode refid="68" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/CompareTwoValues.cs" line="5" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/CompareTwoValues.cs" bodystart="4" bodyend="99"/>
+    <listofallmembers>
+      <member refid="class_condition_1a7547a121ba397b441439d994cd8246b1" prot="public" virt="non-virtual"><scope>CompareTwoValues</scope><name>battleManager</name></member>
+      <member refid="class_compare_two_values_1ac7e246af887a7ee46f774952e9557277" prot="public" virt="virtual"><scope>CompareTwoValues</scope><name>CanThisBeUsed</name></member>
+      <member refid="class_compare_two_values_1a50c35ae41277971eddbb00d86cd18e2c" prot="public" virt="non-virtual"><scope>CompareTwoValues</scope><name>CompareTwoValues</name></member>
+      <member refid="class_condition_1ad2270c61a0f492990cccb977faf4e007" prot="public" virt="non-virtual"><scope>CompareTwoValues</scope><name>Condition</name></member>
+      <member refid="class_condition_1a0d4dc76caf50991138b95d71408c18ff" prot="public" virt="non-virtual"><scope>CompareTwoValues</scope><name>GetConditionName</name></member>
+      <member refid="class_compare_two_values_1a30791e464313b086d6d0e63b2de5e697" prot="private" virt="non-virtual"><scope>CompareTwoValues</scope><name>mode</name></member>
+      <member refid="class_compare_two_values_1acb2c1ddcb8df248f6d2e344432eb4f9e" prot="private" virt="non-virtual"><scope>CompareTwoValues</scope><name>p</name></member>
+      <member refid="class_condition_1a9daca5094be459a0d023b8c1ecdec6b7" prot="public" virt="non-virtual"><scope>CompareTwoValues</scope><name>parentAbility</name></member>
+      <member refid="class_condition_1a5e1cc13cbc82d4a42cb20feb67646583" prot="public" virt="non-virtual"><scope>CompareTwoValues</scope><name>parentBeing</name></member>
+      <member refid="class_compare_two_values_1a20ae9eb0ff4cd54a034ee3ae1e426385" prot="private" virt="non-virtual"><scope>CompareTwoValues</scope><name>target</name></member>
+      <member refid="class_compare_two_values_1a613c3f16dc8c13f7c29e18a2ce0ba67b" prot="private" virt="non-virtual"><scope>CompareTwoValues</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_less_than" kind="class" prot="public">
+    <compoundname>LessThan</compoundname>
+    <basecompoundref refid="class_condition" prot="public" virt="non-virtual">Condition</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_less_than_1ac04a027cd70a722ccddc20d006da0d43" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string LessThan.mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/LessThan.cs" line="10" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/LessThan.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_less_than_1acfcca37dbca9b9153c1b015f354083ac" compoundref="_less_than_8cs" startline="17" endline="35">CanThisBeUsed</referencedby>
+        <referencedby refid="class_less_than_1ab71d958c1ad27a08004e6c505b395242" compoundref="_less_than_8cs" startline="38" endline="42">LessThan</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_less_than_1a688ea25f2abba2e3fb7eb6860839cc51" prot="private" static="no" mutable="no">
+        <type><ref refid="class_being" kindref="compound">Being</ref></type>
+        <definition>Being LessThan.p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/LessThan.cs" line="12" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/LessThan.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_less_than_1ab71d958c1ad27a08004e6c505b395242" compoundref="_less_than_8cs" startline="38" endline="42">LessThan</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_less_than_1a5dfd52eece07e4e9dc0c38689e5dc1a4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LessThan.target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/LessThan.cs" line="13" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/LessThan.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_less_than_1acfcca37dbca9b9153c1b015f354083ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool LessThan.CanThisBeUsed</definition>
+        <argsstring>()</argsstring>
+        <name>CanThisBeUsed</name>
+        <reimplements refid="class_condition_1ad3758954bf17f24844e813a5919a2874">CanThisBeUsed</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/LessThan.cs" line="17" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/LessThan.cs" bodystart="17" bodyend="35"/>
+        <references refid="class_less_than_1ac04a027cd70a722ccddc20d006da0d43" compoundref="_less_than_8cs" startline="10">mode</references>
+      </memberdef>
+      <memberdef kind="function" id="class_less_than_1ab71d958c1ad27a08004e6c505b395242" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>LessThan.LessThan</definition>
+        <argsstring>(BattleManager battleManager, Being parentBeing, string conditionName, string mode, Being p, int target)</argsstring>
+        <name>LessThan</name>
+        <param>
+          <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+          <declname>battleManager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>parentBeing</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>conditionName</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/LessThan.cs" line="38" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/LessThan.cs" bodystart="38" bodyend="42"/>
+        <references refid="class_less_than_1ac04a027cd70a722ccddc20d006da0d43" compoundref="_less_than_8cs" startline="10">mode</references>
+        <references refid="class_less_than_1a688ea25f2abba2e3fb7eb6860839cc51" compoundref="_less_than_8cs" startline="12">p</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="163">
+        <label>LessThan</label>
+        <link refid="class_less_than"/>
+        <childnode refid="164" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="164">
+        <label>Condition</label>
+        <link refid="class_condition"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="165">
+        <label>LessThan</label>
+        <link refid="class_less_than"/>
+        <childnode refid="166" relation="public-inheritance">
+        </childnode>
+        <childnode refid="172" relation="usage">
+          <edgelabel>p</edgelabel>
+        </childnode>
+      </node>
+      <node id="166">
+        <label>Condition</label>
+        <link refid="class_condition"/>
+        <childnode refid="167" relation="usage">
+          <edgelabel>parentAbility</edgelabel>
+        </childnode>
+        <childnode refid="172" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="168" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="172">
+        <label>Being</label>
+        <link refid="class_being"/>
+        <childnode refid="167" relation="usage">
+          <edgelabel>selectedAbility</edgelabel>
+        </childnode>
+        <childnode refid="166" relation="usage">
+          <edgelabel>condition</edgelabel>
+        </childnode>
+      </node>
+      <node id="167">
+        <label>Ability</label>
+        <link refid="class_ability"/>
+        <childnode refid="168" relation="usage">
+          <edgelabel>battlemanager</edgelabel>
+        </childnode>
+      </node>
+      <node id="168">
+        <label>BattleManager</label>
+        <link refid="class_battle_manager"/>
+        <childnode refid="169" relation="public-inheritance">
+        </childnode>
+        <childnode refid="170" relation="usage">
+          <edgelabel>mainState</edgelabel>
+        </childnode>
+        <childnode refid="171" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="169">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="171">
+        <label>BeingFactory</label>
+        <link refid="class_being_factory"/>
+        <childnode refid="169" relation="public-inheritance">
+        </childnode>
+        <childnode refid="168" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="170">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="169" relation="public-inheritance">
+        </childnode>
+        <childnode refid="168" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+        <childnode refid="171" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/LessThan.cs" line="6" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/LessThan.cs" bodystart="5" bodyend="45"/>
+    <listofallmembers>
+      <member refid="class_condition_1a7547a121ba397b441439d994cd8246b1" prot="public" virt="non-virtual"><scope>LessThan</scope><name>battleManager</name></member>
+      <member refid="class_less_than_1acfcca37dbca9b9153c1b015f354083ac" prot="public" virt="virtual"><scope>LessThan</scope><name>CanThisBeUsed</name></member>
+      <member refid="class_condition_1ad2270c61a0f492990cccb977faf4e007" prot="public" virt="non-virtual"><scope>LessThan</scope><name>Condition</name></member>
+      <member refid="class_condition_1a0d4dc76caf50991138b95d71408c18ff" prot="public" virt="non-virtual"><scope>LessThan</scope><name>GetConditionName</name></member>
+      <member refid="class_less_than_1ab71d958c1ad27a08004e6c505b395242" prot="public" virt="non-virtual"><scope>LessThan</scope><name>LessThan</name></member>
+      <member refid="class_less_than_1ac04a027cd70a722ccddc20d006da0d43" prot="private" virt="non-virtual"><scope>LessThan</scope><name>mode</name></member>
+      <member refid="class_less_than_1a688ea25f2abba2e3fb7eb6860839cc51" prot="private" virt="non-virtual"><scope>LessThan</scope><name>p</name></member>
+      <member refid="class_condition_1a9daca5094be459a0d023b8c1ecdec6b7" prot="public" virt="non-virtual"><scope>LessThan</scope><name>parentAbility</name></member>
+      <member refid="class_condition_1a5e1cc13cbc82d4a42cb20feb67646583" prot="public" virt="non-virtual"><scope>LessThan</scope><name>parentBeing</name></member>
+      <member refid="class_less_than_1a5dfd52eece07e4e9dc0c38689e5dc1a4" prot="private" virt="non-virtual"><scope>LessThan</scope><name>target</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

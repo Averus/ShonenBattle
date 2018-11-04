@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_battle_manager_8cs" kind="file">
+    <compoundname>BattleManager.cs</compoundname>
+    <innerclass refid="class_battle_manager" prot="public">BattleManager</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_battle_manager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_battle_manager" kindref="compound">BattleManager</ref><sp/>:<sp/>MonoBehaviour<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_battle_manager_1ad4b3afb30d49d50322a2815f547abcc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_main" kindref="compound">Main</ref><sp/><ref refid="class_battle_manager_1ad4b3afb30d49d50322a2815f547abcc7" kindref="member">mainState</ref>;</highlight></codeline>
+<codeline lineno="10" refid="class_battle_manager_1a03412169d7da172a7dff648be7b376f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_being_factory" kindref="compound">BeingFactory</ref><sp/><ref refid="class_battle_manager_1a03412169d7da172a7dff648be7b376f6" kindref="member">beingFactory</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_battle_manager_1a14847f4442b25d631380fb1514f33949" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;Being&gt;<sp/><ref refid="class_battle_manager_1a14847f4442b25d631380fb1514f33949" kindref="member">combatants</ref>;</highlight></codeline>
+<codeline lineno="14" refid="class_battle_manager_1a029132bb83b9cca9891e52e0bf24752d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_battle_manager_1a029132bb83b9cca9891e52e0bf24752d" kindref="member">currentElement</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_battle_manager_1a556792508a036f56880cc33979adb8d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_battle_manager_1a556792508a036f56880cc33979adb8d3" kindref="member">textSpeed</ref><sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3b" kindref="member">CombatStates</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3ba03f75fdb8eb27d5a3e66baf023bf9d32" kindref="member">INITIATIVESORT</ref>,<sp/><ref refid="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3ba4761218e46f6d9a403fddb9c53d1f7a1" kindref="member">STARTTURN</ref>,<sp/><ref refid="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3ba7e7356a6e4c3a11b5b3c22df8735f5f7" kindref="member">CALCULATETOHIT</ref>,<sp/><ref refid="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3baf9cbdf9a3a1fc67a20bde0625b870892" kindref="member">CALCULATEDEFENCE</ref>,<sp/><ref refid="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3bad044ba814b7757ee6772421e4d7d832c" kindref="member">CALCULATEEFFECT</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23" refid="class_battle_manager_1a214296a9971dff2a5b7b4261800d7594" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3b" kindref="member">CombatStates</ref><sp/><ref refid="class_battle_manager_1a214296a9971dff2a5b7b4261800d7594" kindref="member">currentState</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Use<sp/>this<sp/>for<sp/>initialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_battle_manager_1ae78b7ff68d7c3fe476cd0e788b775410" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_battle_manager_1ae78b7ff68d7c3fe476cd0e788b775410" kindref="member">Start</ref><sp/>()<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_battle_manager_1ad4b3afb30d49d50322a2815f547abcc7" kindref="member">mainState</ref><sp/>=<sp/>GetComponent&lt;Main&gt;();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_battle_manager_1a03412169d7da172a7dff648be7b376f6" kindref="member">beingFactory</ref><sp/>=<sp/>GetComponent&lt;BeingFactory&gt;();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_battle_manager_1a14847f4442b25d631380fb1514f33949" kindref="member">combatants</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>List&lt;Being&gt;();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_battle_manager_1ab5f7d47077513e4bc7315154f1f5ef96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_battle_manager_1ab5f7d47077513e4bc7315154f1f5ef96" kindref="member">StartCombat</ref>()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_battle_manager_1a029132bb83b9cca9891e52e0bf24752d" kindref="member">currentElement</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StartCoroutine(<ref refid="class_battle_manager_1a228378f569e306b1567e24c135715de7" kindref="member">StartTurn</ref>(<ref refid="class_battle_manager_1a14847f4442b25d631380fb1514f33949" kindref="member">combatants</ref>[<ref refid="class_battle_manager_1a029132bb83b9cca9891e52e0bf24752d" kindref="member">currentElement</ref>]));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="class_battle_manager_1a9377bfedc2c1003b4584dd02a3b87105" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_battle_manager_1a9377bfedc2c1003b4584dd02a3b87105" kindref="member">NextTurn</ref>()</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_battle_manager_1a14847f4442b25d631380fb1514f33949" kindref="member">combatants</ref>.Count<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.Log(</highlight><highlight class="stringliteral">&quot;ERROR:<sp/>Cannot<sp/>move<sp/>to<sp/>next<sp/>turn<sp/>as<sp/>there<sp/>are<sp/>no<sp/>combatants&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_battle_manager_1a029132bb83b9cca9891e52e0bf24752d" kindref="member">currentElement</ref><sp/>&lt;=<sp/><ref refid="class_battle_manager_1a14847f4442b25d631380fb1514f33949" kindref="member">combatants</ref>.Count<sp/>-1)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_battle_manager_1a14847f4442b25d631380fb1514f33949" kindref="member">combatants</ref>[<ref refid="class_battle_manager_1a029132bb83b9cca9891e52e0bf24752d" kindref="member">currentElement</ref>].condition<sp/>==<sp/><ref refid="class_being" kindref="compound">Being</ref>.<ref refid="class_being_1ac361aac6adf2b1fd8f371e5d0a11f0d1" kindref="member">Condition</ref>.normal)<sp/></highlight><highlight class="comment">//check<sp/>if<sp/>the<sp/>next<sp/>Being<sp/>in<sp/>the<sp/>initiative<sp/>order<sp/>is<sp/>not<sp/>unconcious,<sp/>asleep<sp/>etc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_battle_manager_1a14847f4442b25d631380fb1514f33949" kindref="member">combatants</ref>[<ref refid="class_battle_manager_1a029132bb83b9cca9891e52e0bf24752d" kindref="member">currentElement</ref>].playerControlled<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Players<sp/>turn</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_battle_manager_1a029132bb83b9cca9891e52e0bf24752d" kindref="member">currentElement</ref><sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_battle_manager_1a029132bb83b9cca9891e52e0bf24752d" kindref="member">currentElement</ref><sp/>&gt;<sp/><ref refid="class_battle_manager_1a14847f4442b25d631380fb1514f33949" kindref="member">combatants</ref>.Count<sp/>-1)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.Log(</highlight><highlight class="stringliteral">&quot;End<sp/>of<sp/>the<sp/>round&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_battle_manager_1a5183d7e1ca0397c7143e2c6d0ff3438e" kindref="member">NewRound</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.Log(</highlight><highlight class="stringliteral">&quot;moving<sp/>to<sp/>next<sp/>turn<sp/>from<sp/>inside<sp/>NextTurn&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StartCoroutine(BeingTurn(<ref refid="class_battle_manager_1a14847f4442b25d631380fb1514f33949" kindref="member">combatants</ref>[<ref refid="class_battle_manager_1a029132bb83b9cca9891e52e0bf24752d" kindref="member">currentElement</ref>]));</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.Log(</highlight><highlight class="stringliteral">&quot;Everyone<sp/>has<sp/>gone&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="class_battle_manager_1a5183d7e1ca0397c7143e2c6d0ff3438e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_battle_manager_1a5183d7e1ca0397c7143e2c6d0ff3438e" kindref="member">NewRound</ref>()</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_battle_manager_1a029132bb83b9cca9891e52e0bf24752d" kindref="member">currentElement</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StartCoroutine(<ref refid="class_battle_manager_1a228378f569e306b1567e24c135715de7" kindref="member">StartTurn</ref>(<ref refid="class_battle_manager_1a14847f4442b25d631380fb1514f33949" kindref="member">combatants</ref>[<ref refid="class_battle_manager_1a029132bb83b9cca9891e52e0bf24752d" kindref="member">currentElement</ref>]));</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="class_battle_manager_1a228378f569e306b1567e24c135715de7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>IEnumerator<sp/><ref refid="class_battle_manager_1a228378f569e306b1567e24c135715de7" kindref="member">StartTurn</ref>(<ref refid="class_being" kindref="compound">Being</ref><sp/>being)<sp/></highlight><highlight class="comment">//should<sp/>perhaps<sp/>be<sp/>called<sp/>Select<sp/>ability</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.Log(</highlight><highlight class="stringliteral">&quot;starting<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>being.beingName<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;s<sp/>turn&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Any<sp/>looking<sp/>for<sp/>passive<sp/>or<sp/>some<sp/>such<sp/>would<sp/>go<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>being.GetUseableAbilities();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>being.SelectAnAbility();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>yield<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>WaitForSeconds(<ref refid="class_battle_manager_1a556792508a036f56880cc33979adb8d3" kindref="member">textSpeed</ref>);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StartCoroutine(<ref refid="class_battle_manager_1ae0caafb1566d5bdab37b39ac6d27c5b0" kindref="member">CalculateToHit</ref>(being,<sp/>being.<ref refid="class_being_1a561fcd3010e578d185f8c6fd708d8ea8" kindref="member">selectedAbility</ref>,<sp/>being.<ref refid="class_being_1adae2fe62ed8790c7d11115c17a2ffdcd" kindref="member">selectedTargets</ref>));</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//NextTurn();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="class_battle_manager_1ae0caafb1566d5bdab37b39ac6d27c5b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>IEnumerator<sp/><ref refid="class_battle_manager_1ae0caafb1566d5bdab37b39ac6d27c5b0" kindref="member">CalculateToHit</ref>(<ref refid="class_being" kindref="compound">Being</ref><sp/>being,<sp/><ref refid="class_ability" kindref="compound">Ability</ref><sp/>ability,<sp/>List&lt;Being&gt;<sp/>targets)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//any<sp/>looking<sp/>for<sp/>passives<sp/>etc<sp/>would<sp/>come<sp/>here.<sp/>//this<sp/>would<sp/>include<sp/>effects<sp/>like<sp/>&apos;Goblin<sp/>punch<sp/>gets<sp/>+5<sp/>to<sp/>hit<sp/>against<sp/>Goblins&apos;<sp/>&lt;--<sp/>that<sp/>would<sp/>be<sp/>a<sp/>separate<sp/>passive<sp/>ability<sp/>to<sp/>Goblin<sp/>Punch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>targets.Count;<sp/>i++)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ii<sp/>=<sp/>0;<sp/>ii<sp/>&lt;<sp/>ability.effects.Count;<sp/>ii++)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ability.<ref refid="class_ability_1a228ccfd5d79068dff64c36a8ddc7a39a" kindref="member">effects</ref>[ii]<sp/>is<sp/><ref refid="class_modulate_to_hit_self" kindref="compound">ModulateToHitSelf</ref>)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ability.effects[ii].Use(being);<sp/></highlight><highlight class="comment">//here<sp/>I&apos;m<sp/>hardcoding<sp/>the<sp/>ModulateToHitSelf<sp/>functionality<sp/>and<sp/>it&apos;s<sp/>pretty<sp/>inelegent.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dex<sp/>=<sp/>being.GetStatValue(</highlight><highlight class="stringliteral">&quot;DEX&quot;</highlight><highlight class="normal">,<sp/>2);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>random<sp/>=<sp/>Random.Range(1,<sp/>101);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>toHit<sp/>=<sp/>being.GetStatValue(</highlight><highlight class="stringliteral">&quot;POWERLEVEL&quot;</highlight><highlight class="normal">,<sp/>2)<sp/>+<sp/>((dex<sp/>/<sp/>100)<sp/>*<sp/>ability.ranks)<sp/>+<sp/>random;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.Log(being.GetStatValue(</highlight><highlight class="stringliteral">&quot;POWERLEVEL&quot;</highlight><highlight class="normal">,<sp/>2)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>+<sp/>(&quot;</highlight><highlight class="normal"><sp/>+<sp/>(dex<sp/>/<sp/>100)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>*<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>ability.ranks<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>+<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>random<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>toHit);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.Log(</highlight><highlight class="stringliteral">&quot;Calculating<sp/>to<sp/>hit...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.Log(</highlight><highlight class="stringliteral">&quot;To<sp/>Hit<sp/>value<sp/>is<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>toHit);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>is<sp/>called<sp/>once<sp/>per<sp/>frame</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="class_battle_manager_1a5975f2475d79a4c93d7c52b37682e91e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_battle_manager_1a5975f2475d79a4c93d7c52b37682e91e" kindref="member">Update</ref><sp/>()<sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="class_battle_manager_1aea83074d2bedf9b13de2afde98f467c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_battle_manager_1aea83074d2bedf9b13de2afde98f467c3" kindref="member">BattleManager</ref>(<ref refid="class_main" kindref="compound">Main</ref><sp/>main,<sp/><ref refid="class_being_factory" kindref="compound">BeingFactory</ref><sp/>bf)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_battle_manager_1ad4b3afb30d49d50322a2815f547abcc7" kindref="member">mainState</ref><sp/>=<sp/>main;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_battle_manager_1a03412169d7da172a7dff648be7b376f6" kindref="member">beingFactory</ref><sp/>=<sp/>bf;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs"/>
+  </compounddef>
+</doxygen>

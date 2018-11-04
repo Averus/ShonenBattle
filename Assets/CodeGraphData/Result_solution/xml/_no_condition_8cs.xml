@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_no_condition_8cs" kind="file">
+    <compoundname>NoCondition.cs</compoundname>
+    <innerclass refid="class_no_condition" prot="public">NoCondition</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_no_condition" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_no_condition" kindref="compound">NoCondition</ref><sp/>:<sp/><ref refid="class_condition" kindref="compound">Condition</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7" refid="class_no_condition_1a98b029d02c537b38e156a25e5981a7a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_no_condition_1a98b029d02c537b38e156a25e5981a7a1" kindref="member">CanThisBeUsed</ref>()</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_no_condition_1a6072d66d2805095dad9e2311943e59dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_no_condition_1a6072d66d2805095dad9e2311943e59dc" kindref="member">NoCondition</ref>(<ref refid="class_battle_manager" kindref="compound">BattleManager</ref><sp/><ref refid="class_condition_1a7547a121ba397b441439d994cd8246b1" kindref="member">battleManager</ref>,<sp/><ref refid="class_being" kindref="compound">Being</ref><sp/><ref refid="class_condition_1a5e1cc13cbc82d4a42cb20feb67646583" kindref="member">parentBeing</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_condition_1aec29b26eb673fa507a9e3847e4ac0449" kindref="member">conditionName</ref>)<sp/>:<sp/>base(battleManager,<sp/>parentBeing,<sp/>conditionName)<sp/></highlight><highlight class="comment">//This<sp/>should<sp/>grab<sp/>the<sp/>battleManager<sp/>from<sp/>the<sp/>base<sp/>constructor<sp/>(Condition)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/NoCondition.cs"/>
+  </compounddef>
+</doxygen>

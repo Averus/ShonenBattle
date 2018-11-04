@@ -1,0 +1,376 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_battle_manager" kind="class" prot="public">
+    <compoundname>BattleManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3b" prot="public" static="no">
+        <name>CombatStates</name>
+        <enumvalue id="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3ba03f75fdb8eb27d5a3e66baf023bf9d32" prot="public">
+          <name>INITIATIVESORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3ba4761218e46f6d9a403fddb9c53d1f7a1" prot="public">
+          <name>STARTTURN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3ba7e7356a6e4c3a11b5b3c22df8735f5f7" prot="public">
+          <name>CALCULATETOHIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3baf9cbdf9a3a1fc67a20bde0625b870892" prot="public">
+          <name>CALCULATEDEFENCE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3bad044ba814b7757ee6772421e4d7d832c" prot="public">
+          <name>CALCULATEEFFECT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" line="20" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" bodystart="19" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_battle_manager_1ad4b3afb30d49d50322a2815f547abcc7" prot="public" static="no" mutable="no">
+        <type><ref refid="class_main" kindref="compound">Main</ref></type>
+        <definition>Main BattleManager.mainState</definition>
+        <argsstring></argsstring>
+        <name>mainState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" line="9" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_battle_manager_1aea83074d2bedf9b13de2afde98f467c3" compoundref="_battle_manager_8cs" startline="154" endline="158">BattleManager</referencedby>
+        <referencedby refid="class_battle_manager_1ae78b7ff68d7c3fe476cd0e788b775410" compoundref="_battle_manager_8cs" startline="27" endline="34">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_battle_manager_1a03412169d7da172a7dff648be7b376f6" prot="public" static="no" mutable="no">
+        <type><ref refid="class_being_factory" kindref="compound">BeingFactory</ref></type>
+        <definition>BeingFactory BattleManager.beingFactory</definition>
+        <argsstring></argsstring>
+        <name>beingFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" line="10" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_battle_manager_1aea83074d2bedf9b13de2afde98f467c3" compoundref="_battle_manager_8cs" startline="154" endline="158">BattleManager</referencedby>
+        <referencedby refid="class_battle_manager_1ae78b7ff68d7c3fe476cd0e788b775410" compoundref="_battle_manager_8cs" startline="27" endline="34">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_battle_manager_1a14847f4442b25d631380fb1514f33949" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_being" kindref="compound">Being</ref> &gt;</type>
+        <definition>List&lt;Being&gt; BattleManager.combatants</definition>
+        <argsstring></argsstring>
+        <name>combatants</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" line="13" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_alone_1ab4794b3c154f22760f71e891deafcedb" compoundref="_alone_8cs" startline="7" endline="19">Alone.CanThisBeUsed</referencedby>
+        <referencedby refid="class_ability_1a4362f7581e6d1a6176c9eb775ba0318b" compoundref="_ability_8cs" startline="50" endline="72">Ability.CanThisBeUsed</referencedby>
+        <referencedby refid="class_battle_manager_1a5183d7e1ca0397c7143e2c6d0ff3438e" compoundref="_battle_manager_8cs" startline="88" endline="92">NewRound</referencedby>
+        <referencedby refid="class_battle_manager_1a9377bfedc2c1003b4584dd02a3b87105" compoundref="_battle_manager_8cs" startline="43" endline="86">NextTurn</referencedby>
+        <referencedby refid="class_battle_manager_1ae78b7ff68d7c3fe476cd0e788b775410" compoundref="_battle_manager_8cs" startline="27" endline="34">Start</referencedby>
+        <referencedby refid="class_battle_manager_1ab5f7d47077513e4bc7315154f1f5ef96" compoundref="_battle_manager_8cs" startline="37" endline="41">StartCombat</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_battle_manager_1a029132bb83b9cca9891e52e0bf24752d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BattleManager.currentElement</definition>
+        <argsstring></argsstring>
+        <name>currentElement</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" line="14" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_battle_manager_1a5183d7e1ca0397c7143e2c6d0ff3438e" compoundref="_battle_manager_8cs" startline="88" endline="92">NewRound</referencedby>
+        <referencedby refid="class_battle_manager_1a9377bfedc2c1003b4584dd02a3b87105" compoundref="_battle_manager_8cs" startline="43" endline="86">NextTurn</referencedby>
+        <referencedby refid="class_battle_manager_1ab5f7d47077513e4bc7315154f1f5ef96" compoundref="_battle_manager_8cs" startline="37" endline="41">StartCombat</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_battle_manager_1a556792508a036f56880cc33979adb8d3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BattleManager.textSpeed</definition>
+        <argsstring></argsstring>
+        <name>textSpeed</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" line="16" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_battle_manager_1a228378f569e306b1567e24c135715de7" compoundref="_battle_manager_8cs" startline="94" endline="108">StartTurn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_battle_manager_1a214296a9971dff2a5b7b4261800d7594" prot="public" static="no" mutable="no">
+        <type><ref refid="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3b" kindref="member">CombatStates</ref></type>
+        <definition>CombatStates BattleManager.currentState</definition>
+        <argsstring></argsstring>
+        <name>currentState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" line="23" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_battle_manager_1ae78b7ff68d7c3fe476cd0e788b775410" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BattleManager.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" line="27" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" bodystart="27" bodyend="34"/>
+        <references refid="class_battle_manager_1a03412169d7da172a7dff648be7b376f6" compoundref="_battle_manager_8cs" startline="10">beingFactory</references>
+        <references refid="class_battle_manager_1a14847f4442b25d631380fb1514f33949" compoundref="_battle_manager_8cs" startline="13">combatants</references>
+        <references refid="class_battle_manager_1ad4b3afb30d49d50322a2815f547abcc7" compoundref="_battle_manager_8cs" startline="9">mainState</references>
+      </memberdef>
+      <memberdef kind="function" id="class_battle_manager_1a5183d7e1ca0397c7143e2c6d0ff3438e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BattleManager.NewRound</definition>
+        <argsstring>()</argsstring>
+        <name>NewRound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" line="88" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" bodystart="88" bodyend="92"/>
+        <references refid="class_battle_manager_1a14847f4442b25d631380fb1514f33949" compoundref="_battle_manager_8cs" startline="13">combatants</references>
+        <references refid="class_battle_manager_1a029132bb83b9cca9891e52e0bf24752d" compoundref="_battle_manager_8cs" startline="14">currentElement</references>
+        <references refid="class_battle_manager_1a228378f569e306b1567e24c135715de7" compoundref="_battle_manager_8cs" startline="94" endline="108">StartTurn</references>
+        <referencedby refid="class_battle_manager_1a9377bfedc2c1003b4584dd02a3b87105" compoundref="_battle_manager_8cs" startline="43" endline="86">NextTurn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_battle_manager_1a228378f569e306b1567e24c135715de7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator BattleManager.StartTurn</definition>
+        <argsstring>(Being being)</argsstring>
+        <name>StartTurn</name>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>being</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" line="94" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" bodystart="94" bodyend="108"/>
+        <references refid="class_battle_manager_1ae0caafb1566d5bdab37b39ac6d27c5b0" compoundref="_battle_manager_8cs" startline="110" endline="142">CalculateToHit</references>
+        <references refid="class_being_1a561fcd3010e578d185f8c6fd708d8ea8" compoundref="_being_8cs" startline="28">Being.selectedAbility</references>
+        <references refid="class_being_1adae2fe62ed8790c7d11115c17a2ffdcd" compoundref="_being_8cs" startline="29">Being.selectedTargets</references>
+        <references refid="class_battle_manager_1a556792508a036f56880cc33979adb8d3" compoundref="_battle_manager_8cs" startline="16">textSpeed</references>
+        <referencedby refid="class_battle_manager_1a5183d7e1ca0397c7143e2c6d0ff3438e" compoundref="_battle_manager_8cs" startline="88" endline="92">NewRound</referencedby>
+        <referencedby refid="class_battle_manager_1ab5f7d47077513e4bc7315154f1f5ef96" compoundref="_battle_manager_8cs" startline="37" endline="41">StartCombat</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_battle_manager_1ae0caafb1566d5bdab37b39ac6d27c5b0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator BattleManager.CalculateToHit</definition>
+        <argsstring>(Being being, Ability ability, List&lt; Being &gt; targets)</argsstring>
+        <name>CalculateToHit</name>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>being</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ability" kindref="compound">Ability</ref></type>
+          <declname>ability</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="class_being" kindref="compound">Being</ref> &gt;</type>
+          <declname>targets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" line="110" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" bodystart="110" bodyend="142"/>
+        <references refid="class_ability_1a228ccfd5d79068dff64c36a8ddc7a39a" compoundref="_ability_8cs" startline="14">Ability.effects</references>
+        <referencedby refid="class_battle_manager_1a228378f569e306b1567e24c135715de7" compoundref="_battle_manager_8cs" startline="94" endline="108">StartTurn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_battle_manager_1a5975f2475d79a4c93d7c52b37682e91e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BattleManager.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" line="147" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" bodystart="147" bodyend="152"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_battle_manager_1ab5f7d47077513e4bc7315154f1f5ef96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BattleManager.StartCombat</definition>
+        <argsstring>()</argsstring>
+        <name>StartCombat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" line="37" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" bodystart="37" bodyend="41"/>
+        <references refid="class_battle_manager_1a14847f4442b25d631380fb1514f33949" compoundref="_battle_manager_8cs" startline="13">combatants</references>
+        <references refid="class_battle_manager_1a029132bb83b9cca9891e52e0bf24752d" compoundref="_battle_manager_8cs" startline="14">currentElement</references>
+        <references refid="class_battle_manager_1a228378f569e306b1567e24c135715de7" compoundref="_battle_manager_8cs" startline="94" endline="108">StartTurn</references>
+      </memberdef>
+      <memberdef kind="function" id="class_battle_manager_1a9377bfedc2c1003b4584dd02a3b87105" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BattleManager.NextTurn</definition>
+        <argsstring>()</argsstring>
+        <name>NextTurn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" line="43" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" bodystart="43" bodyend="86"/>
+        <references refid="class_battle_manager_1a14847f4442b25d631380fb1514f33949" compoundref="_battle_manager_8cs" startline="13">combatants</references>
+        <references refid="class_battle_manager_1a029132bb83b9cca9891e52e0bf24752d" compoundref="_battle_manager_8cs" startline="14">currentElement</references>
+        <references refid="class_battle_manager_1a5183d7e1ca0397c7143e2c6d0ff3438e" compoundref="_battle_manager_8cs" startline="88" endline="92">NewRound</references>
+      </memberdef>
+      <memberdef kind="function" id="class_battle_manager_1aea83074d2bedf9b13de2afde98f467c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BattleManager.BattleManager</definition>
+        <argsstring>(Main main, BeingFactory bf)</argsstring>
+        <name>BattleManager</name>
+        <param>
+          <type><ref refid="class_main" kindref="compound">Main</ref></type>
+          <declname>main</declname>
+        </param>
+        <param>
+          <type><ref refid="class_being_factory" kindref="compound">BeingFactory</ref></type>
+          <declname>bf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" line="154" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" bodystart="154" bodyend="158"/>
+        <references refid="class_battle_manager_1a03412169d7da172a7dff648be7b376f6" compoundref="_battle_manager_8cs" startline="10">beingFactory</references>
+        <references refid="class_battle_manager_1ad4b3afb30d49d50322a2815f547abcc7" compoundref="_battle_manager_8cs" startline="9">mainState</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="20">
+        <label>BattleManager</label>
+        <link refid="class_battle_manager"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="22">
+        <label>BattleManager</label>
+        <link refid="class_battle_manager"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>mainState</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="25">
+        <label>BeingFactory</label>
+        <link refid="class_being_factory"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" line="5" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/BattleManager.cs" bodystart="5" bodyend="159"/>
+    <listofallmembers>
+      <member refid="class_battle_manager_1aea83074d2bedf9b13de2afde98f467c3" prot="public" virt="non-virtual"><scope>BattleManager</scope><name>BattleManager</name></member>
+      <member refid="class_battle_manager_1a03412169d7da172a7dff648be7b376f6" prot="public" virt="non-virtual"><scope>BattleManager</scope><name>beingFactory</name></member>
+      <member refid="class_battle_manager_1ae0caafb1566d5bdab37b39ac6d27c5b0" prot="private" virt="non-virtual"><scope>BattleManager</scope><name>CalculateToHit</name></member>
+      <member refid="class_battle_manager_1a14847f4442b25d631380fb1514f33949" prot="public" virt="non-virtual"><scope>BattleManager</scope><name>combatants</name></member>
+      <member refid="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3b" prot="public" virt="non-virtual"><scope>BattleManager</scope><name>CombatStates</name></member>
+      <member refid="class_battle_manager_1a029132bb83b9cca9891e52e0bf24752d" prot="public" virt="non-virtual"><scope>BattleManager</scope><name>currentElement</name></member>
+      <member refid="class_battle_manager_1a214296a9971dff2a5b7b4261800d7594" prot="public" virt="non-virtual"><scope>BattleManager</scope><name>currentState</name></member>
+      <member refid="class_battle_manager_1ad4b3afb30d49d50322a2815f547abcc7" prot="public" virt="non-virtual"><scope>BattleManager</scope><name>mainState</name></member>
+      <member refid="class_battle_manager_1a5183d7e1ca0397c7143e2c6d0ff3438e" prot="private" virt="non-virtual"><scope>BattleManager</scope><name>NewRound</name></member>
+      <member refid="class_battle_manager_1a9377bfedc2c1003b4584dd02a3b87105" prot="public" virt="non-virtual"><scope>BattleManager</scope><name>NextTurn</name></member>
+      <member refid="class_battle_manager_1ae78b7ff68d7c3fe476cd0e788b775410" prot="private" virt="non-virtual"><scope>BattleManager</scope><name>Start</name></member>
+      <member refid="class_battle_manager_1ab5f7d47077513e4bc7315154f1f5ef96" prot="public" virt="non-virtual"><scope>BattleManager</scope><name>StartCombat</name></member>
+      <member refid="class_battle_manager_1a228378f569e306b1567e24c135715de7" prot="private" virt="non-virtual"><scope>BattleManager</scope><name>StartTurn</name></member>
+      <member refid="class_battle_manager_1a556792508a036f56880cc33979adb8d3" prot="public" virt="non-virtual"><scope>BattleManager</scope><name>textSpeed</name></member>
+      <member refid="class_battle_manager_1a5975f2475d79a4c93d7c52b37682e91e" prot="private" virt="non-virtual"><scope>BattleManager</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

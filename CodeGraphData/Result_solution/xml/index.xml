@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="class_ability" kind="class"><name>Ability</name>
+    <member refid="class_ability_1a6eebb7b0147bfa79aa971f3fe16a0c0e" kind="variable"><name>battlemanager</name></member>
+    <member refid="class_ability_1ad1a1f24d99c8b5d6d8cb570a06403eb3" kind="variable"><name>abilityName</name></member>
+    <member refid="class_ability_1af93f467e81307b0cc85fbaf39d0e6da9" kind="variable"><name>ranks</name></member>
+    <member refid="class_ability_1ae67754da6c99d99e70275e90ca1e492f" kind="variable"><name>numberOfTargets</name></member>
+    <member refid="class_ability_1a2d3ccff2472c6e66303c24bd02ce466d" kind="variable"><name>conditions</name></member>
+    <member refid="class_ability_1a228ccfd5d79068dff64c36a8ddc7a39a" kind="variable"><name>effects</name></member>
+    <member refid="class_ability_1ae596bcf36c0d36cb3d1f376f4f7263ad" kind="variable"><name>animations</name></member>
+    <member refid="class_ability_1a085612b42ff4aab3f7f2edfb5d32aba3" kind="variable"><name>targetingCriteria</name></member>
+    <member refid="class_ability_1ae9d85b6a143740687f32f0dd2ad40cd5" kind="variable"><name>validTargets</name></member>
+    <member refid="class_ability_1aedfd1c0855381a203798f8aaa0876dbb" kind="function"><name>checkForValidTargets</name></member>
+    <member refid="class_ability_1a4362f7581e6d1a6176c9eb775ba0318b" kind="function"><name>CanThisBeUsed</name></member>
+    <member refid="class_ability_1a0472d3aca8ab9280471162179ce13d8b" kind="function"><name>Use</name></member>
+    <member refid="class_ability_1a958c59da6ae71a434d370d58302c66eb" kind="function"><name>Use</name></member>
+    <member refid="class_ability_1a07a26a3f1bc7f3142bffc087e2052800" kind="function"><name>Ability</name></member>
+  </compound>
+  <compound refid="class_alone" kind="class"><name>Alone</name>
+    <member refid="class_alone_1ab4794b3c154f22760f71e891deafcedb" kind="function"><name>CanThisBeUsed</name></member>
+    <member refid="class_alone_1a0f9a9fe4a7641e88f0663bb198ba6356" kind="function"><name>Alone</name></member>
+  </compound>
+  <compound refid="class_at_percentage" kind="class"><name>AtPercentage</name>
+    <member refid="class_at_percentage_1a502c96846f51fcb96110bf3dbcc45101" kind="function"><name>Start</name></member>
+    <member refid="class_at_percentage_1a90f498dd454c7083b07a2af894807487" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="class_battle_manager" kind="class"><name>BattleManager</name>
+    <member refid="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3b" kind="enum"><name>CombatStates</name></member>
+    <member refid="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3ba03f75fdb8eb27d5a3e66baf023bf9d32" kind="enumvalue"><name>INITIATIVESORT</name></member>
+    <member refid="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3ba4761218e46f6d9a403fddb9c53d1f7a1" kind="enumvalue"><name>STARTTURN</name></member>
+    <member refid="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3ba7e7356a6e4c3a11b5b3c22df8735f5f7" kind="enumvalue"><name>CALCULATETOHIT</name></member>
+    <member refid="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3baf9cbdf9a3a1fc67a20bde0625b870892" kind="enumvalue"><name>CALCULATEDEFENCE</name></member>
+    <member refid="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3bad044ba814b7757ee6772421e4d7d832c" kind="enumvalue"><name>CALCULATEEFFECT</name></member>
+    <member refid="class_battle_manager_1ad4b3afb30d49d50322a2815f547abcc7" kind="variable"><name>mainState</name></member>
+    <member refid="class_battle_manager_1a03412169d7da172a7dff648be7b376f6" kind="variable"><name>beingFactory</name></member>
+    <member refid="class_battle_manager_1a14847f4442b25d631380fb1514f33949" kind="variable"><name>combatants</name></member>
+    <member refid="class_battle_manager_1a029132bb83b9cca9891e52e0bf24752d" kind="variable"><name>currentElement</name></member>
+    <member refid="class_battle_manager_1a556792508a036f56880cc33979adb8d3" kind="variable"><name>textSpeed</name></member>
+    <member refid="class_battle_manager_1a214296a9971dff2a5b7b4261800d7594" kind="variable"><name>currentState</name></member>
+    <member refid="class_battle_manager_1ae78b7ff68d7c3fe476cd0e788b775410" kind="function"><name>Start</name></member>
+    <member refid="class_battle_manager_1a5183d7e1ca0397c7143e2c6d0ff3438e" kind="function"><name>NewRound</name></member>
+    <member refid="class_battle_manager_1a228378f569e306b1567e24c135715de7" kind="function"><name>StartTurn</name></member>
+    <member refid="class_battle_manager_1ae0caafb1566d5bdab37b39ac6d27c5b0" kind="function"><name>CalculateToHit</name></member>
+    <member refid="class_battle_manager_1a5975f2475d79a4c93d7c52b37682e91e" kind="function"><name>Update</name></member>
+    <member refid="class_battle_manager_1ab5f7d47077513e4bc7315154f1f5ef96" kind="function"><name>StartCombat</name></member>
+    <member refid="class_battle_manager_1a9377bfedc2c1003b4584dd02a3b87105" kind="function"><name>NextTurn</name></member>
+    <member refid="class_battle_manager_1aea83074d2bedf9b13de2afde98f467c3" kind="function"><name>BattleManager</name></member>
+  </compound>
+  <compound refid="class_behaviour" kind="class"><name>Behaviour</name>
+    <member refid="class_behaviour_1a08f3f3523a5b859666dba194460e5e90" kind="variable"><name>battleManager</name></member>
+    <member refid="class_behaviour_1ad5ab96a1100642a91a91d22024be347c" kind="variable"><name>parentBeing</name></member>
+    <member refid="class_behaviour_1aafc5d2b0ae7f5f14dce7a33c11799ed9" kind="variable"><name>behaviourName</name></member>
+    <member refid="class_behaviour_1a04af641f94492bf25646eccd0eb717e6" kind="variable"><name>conditions</name></member>
+    <member refid="class_behaviour_1ac0a19314976b037f24fe91f1f5ff3317" kind="variable"><name>selectionCriteria</name></member>
+    <member refid="class_behaviour_1a8fb1e3415dda4b06c3bf7d08cbf10ecd" kind="function"><name>CanThisBeDone</name></member>
+    <member refid="class_behaviour_1a33fa649883ed7d5adbe6ac9c2f420665" kind="function"><name>GetAppropriateAbilities</name></member>
+    <member refid="class_behaviour_1a4ef2d8a9c55b5d9cd67e1ec14df3328a" kind="function"><name>Behaviour</name></member>
+  </compound>
+  <compound refid="class_being" kind="class"><name>Being</name>
+    <member refid="class_being_1ac361aac6adf2b1fd8f371e5d0a11f0d1" kind="enum"><name>Condition</name></member>
+    <member refid="class_being_1ac361aac6adf2b1fd8f371e5d0a11f0d1afea087517c26fadd409bd4b9dc642555" kind="enumvalue"><name>normal</name></member>
+    <member refid="class_being_1ac361aac6adf2b1fd8f371e5d0a11f0d1a27a1546b009722535dfbcc5758fa6822" kind="enumvalue"><name>dazed</name></member>
+    <member refid="class_being_1ac361aac6adf2b1fd8f371e5d0a11f0d1a6012b5293d0c7397efd784be681cd35c" kind="enumvalue"><name>staggered</name></member>
+    <member refid="class_being_1ac361aac6adf2b1fd8f371e5d0a11f0d1ab798af21196c498d8aa9f9f42c228b71" kind="enumvalue"><name>unconcious</name></member>
+    <member refid="class_being_1ab3e87a74053ea5b9a6b3f479c475c981" kind="variable"><name>playerControlled</name></member>
+    <member refid="class_being_1a428a5e914c33035e17fb68591b77cbd5" kind="variable"><name>beingName</name></member>
+    <member refid="class_being_1a9517a6cff71c0b6acfab27e4ef07288d" kind="variable"><name>stats</name></member>
+    <member refid="class_being_1a3a6a8bff4af7218edac62ba61ed0daa9" kind="variable"><name>statModulations</name></member>
+    <member refid="class_being_1a1e1b8f83e2fd42ff31bb74faf3d2c792" kind="variable"><name>condition</name></member>
+    <member refid="class_being_1abe7023738ff810cfca1271a28bdca075" kind="variable"><name>behaviours</name></member>
+    <member refid="class_being_1ad5863b7f57de8618f1c67657b7029ffc" kind="variable"><name>abilities</name></member>
+    <member refid="class_being_1a56524b22f62ee16858cdf9a36d287950" kind="variable"><name>useableAbilities</name></member>
+    <member refid="class_being_1a561fcd3010e578d185f8c6fd708d8ea8" kind="variable"><name>selectedAbility</name></member>
+    <member refid="class_being_1adae2fe62ed8790c7d11115c17a2ffdcd" kind="variable"><name>selectedTargets</name></member>
+    <member refid="class_being_1a8b3d22d5c9725bcb89664a2d7d5694d5" kind="function"><name>GetStatValue</name></member>
+    <member refid="class_being_1a64fc2a2159c66931f2cda151df0451ff" kind="function"><name>GetStat</name></member>
+    <member refid="class_being_1aea92abba73116af19e06df3758c476ee" kind="function"><name>GetUseableAbilities</name></member>
+    <member refid="class_being_1a9ab922a1da91d98902cea7e24c3b4b55" kind="function"><name>SelectAnAbility</name></member>
+    <member refid="class_being_1a52e41a9867126e2adc3ba9eb069e3ea0" kind="function"><name>SelectTargets</name></member>
+  </compound>
+  <compound refid="class_being_factory" kind="class"><name>BeingFactory</name>
+    <member refid="class_being_factory_1ad4a540dd284e45cc024d5193263d9d3a" kind="variable"><name>battleManager</name></member>
+    <member refid="class_being_factory_1a0f2ea0a58361d393c01e95eba1822ca5" kind="function"><name>Start</name></member>
+    <member refid="class_being_factory_1a6f8600623467feda4535cb420b0a6690" kind="function"><name>CreateBeing</name></member>
+    <member refid="class_being_factory_1a62ec2f35a163d5306d1e3c4bdb40956a" kind="function"><name>BeingFactory</name></member>
+  </compound>
+  <compound refid="class_buff_to_hit" kind="class"><name>BuffToHit</name>
+    <member refid="class_buff_to_hit_1aea7d812a52a48f1591522c84b0316a34" kind="variable"><name>buff</name></member>
+    <member refid="class_buff_to_hit_1ab2b4d6b1f912587437e687076bc09ec0" kind="variable"><name>modulator</name></member>
+    <member refid="class_buff_to_hit_1a736c1e39502cee6ee9e1f290322898e4" kind="function"><name>Use</name></member>
+    <member refid="class_buff_to_hit_1a97a03f1fdb754e1cf6b7dccb93b0368f" kind="function"><name>BuffToHit</name></member>
+  </compound>
+  <compound refid="class_compare_two_values" kind="class"><name>CompareTwoValues</name>
+    <member refid="class_compare_two_values_1acb2c1ddcb8df248f6d2e344432eb4f9e" kind="variable"><name>p</name></member>
+    <member refid="class_compare_two_values_1a613c3f16dc8c13f7c29e18a2ce0ba67b" kind="variable"><name>value</name></member>
+    <member refid="class_compare_two_values_1a30791e464313b086d6d0e63b2de5e697" kind="variable"><name>mode</name></member>
+    <member refid="class_compare_two_values_1a20ae9eb0ff4cd54a034ee3ae1e426385" kind="variable"><name>target</name></member>
+    <member refid="class_compare_two_values_1ac7e246af887a7ee46f774952e9557277" kind="function"><name>CanThisBeUsed</name></member>
+    <member refid="class_compare_two_values_1a50c35ae41277971eddbb00d86cd18e2c" kind="function"><name>CompareTwoValues</name></member>
+  </compound>
+  <compound refid="class_condition" kind="class"><name>Condition</name>
+    <member refid="class_condition_1a7547a121ba397b441439d994cd8246b1" kind="variable"><name>battleManager</name></member>
+    <member refid="class_condition_1a5e1cc13cbc82d4a42cb20feb67646583" kind="variable"><name>parentBeing</name></member>
+    <member refid="class_condition_1a9daca5094be459a0d023b8c1ecdec6b7" kind="variable"><name>parentAbility</name></member>
+    <member refid="class_condition_1aec29b26eb673fa507a9e3847e4ac0449" kind="variable"><name>conditionName</name></member>
+    <member refid="class_condition_1a0d4dc76caf50991138b95d71408c18ff" kind="function"><name>GetConditionName</name></member>
+    <member refid="class_condition_1ad3758954bf17f24844e813a5919a2874" kind="function"><name>CanThisBeUsed</name></member>
+    <member refid="class_condition_1ad2270c61a0f492990cccb977faf4e007" kind="function"><name>Condition</name></member>
+  </compound>
+  <compound refid="class_costs_m_p" kind="class"><name>CostsMP</name>
+    <member refid="class_costs_m_p_1a2a36da3975bf3021f3d152255b7baaeb" kind="variable"><name>cost</name></member>
+    <member refid="class_costs_m_p_1a174877b5cbb4bb7eaa88846b205bf11c" kind="function"><name>Use</name></member>
+    <member refid="class_costs_m_p_1a0bb43dc719b7d6581d91564d1164f25c" kind="function"><name>CostsMP</name></member>
+  </compound>
+  <compound refid="class_damage" kind="class"><name>Damage</name>
+    <member refid="class_damage_1aceaa410b10e5c0fc6511c505fe3c9bd7" kind="variable"><name>damage</name></member>
+    <member refid="class_damage_1a3ecf5a9b32a1120fc560069e10ce398f" kind="function"><name>Use</name></member>
+    <member refid="class_damage_1a53cf208ad633117a427134e5d13ca19e" kind="function"><name>Damage</name></member>
+  </compound>
+  <compound refid="class_damage_self" kind="class"><name>DamageSelf</name>
+    <member refid="class_damage_self_1ad11f1dcc7e822b12f40e276ca94b8b7d" kind="variable"><name>damage</name></member>
+    <member refid="class_damage_self_1af2637efe9b696f2ab2a9e84c22b458bf" kind="function"><name>Use</name></member>
+    <member refid="class_damage_self_1a1a6aab01d9371b6bc61eee083b520284" kind="function"><name>DamageSelf</name></member>
+  </compound>
+  <compound refid="class_effect" kind="class"><name>Effect</name>
+    <member refid="class_effect_1ac5dffe56d653b75f816b7855c90f1d87" kind="variable"><name>battleManager</name></member>
+    <member refid="class_effect_1aeb4b0db75413b945faae306f2650a854" kind="variable"><name>parentBeing</name></member>
+    <member refid="class_effect_1aab3f7eee5bc2a8eaf2cbe0ed4313f427" kind="variable"><name>parentAbility</name></member>
+    <member refid="class_effect_1ab0d2647d792f5374565264e4494b85a9" kind="variable"><name>effectName</name></member>
+    <member refid="class_effect_1afaf800832717bed94f92ced8016285f6" kind="variable"><name>UsedInState</name></member>
+    <member refid="class_effect_1abdeb43a60f3aaba84f676eadbf0b7efc" kind="function"><name>Use</name></member>
+    <member refid="class_effect_1aeb5675bc461e64280c6381979d0fae60" kind="function"><name>Effect</name></member>
+  </compound>
+  <compound refid="class_greater_than" kind="class"><name>GreaterThan</name>
+    <member refid="class_greater_than_1ae10190cdb6202fa8306e76fbc005db9c" kind="variable"><name>mode</name></member>
+    <member refid="class_greater_than_1a4b11f7706dc4632ca863e343ce58dc72" kind="variable"><name>p</name></member>
+    <member refid="class_greater_than_1a3c6206b7c3b583946368571b1502de0b" kind="variable"><name>target</name></member>
+    <member refid="class_greater_than_1a968be964ff7485f6be1aa3dd7024dd56" kind="function"><name>CanThisBeUsed</name></member>
+    <member refid="class_greater_than_1a43cda4ea92e4a4e723804de661e604cc" kind="function"><name>GreaterThan</name></member>
+  </compound>
+  <compound refid="class_heal_self" kind="class"><name>HealSelf</name>
+    <member refid="class_heal_self_1a22d31c1ebf1503278eb5e17e81774382" kind="variable"><name>healByValue</name></member>
+    <member refid="class_heal_self_1a00b04952bb58e1a22e30ddc8fb323107" kind="function"><name>Use</name></member>
+    <member refid="class_heal_self_1af2e19a6d66319dc861f633a8dde89f23" kind="function"><name>HealSelf</name></member>
+  </compound>
+  <compound refid="class_includes_effect" kind="class"><name>IncludesEffect</name>
+    <member refid="class_includes_effect_1acc36c04b6b2fc1981c1a7732f3ca079e" kind="variable"><name>effectName</name></member>
+    <member refid="class_includes_effect_1ae3ecce8552949da9199f319e71feecdc" kind="function"><name>Check</name></member>
+    <member refid="class_includes_effect_1a9b1ddd8d0ff47188f157cc86bf9fb043" kind="function"><name>IncludesEffect</name></member>
+  </compound>
+  <compound refid="class_less_than" kind="class"><name>LessThan</name>
+    <member refid="class_less_than_1ac04a027cd70a722ccddc20d006da0d43" kind="variable"><name>mode</name></member>
+    <member refid="class_less_than_1a688ea25f2abba2e3fb7eb6860839cc51" kind="variable"><name>p</name></member>
+    <member refid="class_less_than_1a5dfd52eece07e4e9dc0c38689e5dc1a4" kind="variable"><name>target</name></member>
+    <member refid="class_less_than_1acfcca37dbca9b9153c1b015f354083ac" kind="function"><name>CanThisBeUsed</name></member>
+    <member refid="class_less_than_1ab71d958c1ad27a08004e6c505b395242" kind="function"><name>LessThan</name></member>
+  </compound>
+  <compound refid="class_main" kind="class"><name>Main</name>
+    <member refid="class_main_1aae34c2c96593c6170bd80a37be299bb1" kind="enum"><name>GameStates</name></member>
+    <member refid="class_main_1aae34c2c96593c6170bd80a37be299bb1a14d0b0e872355d0bf01b18cc2d4eb670" kind="enumvalue"><name>BATTLE</name></member>
+    <member refid="class_main_1a972af12adb7b1056713bbab3b3ee0af3" kind="variable"><name>gameState</name></member>
+    <member refid="class_main_1aa9ad5333eb06842a1ff93c11dae4f0c6" kind="variable"><name>battleManager</name></member>
+    <member refid="class_main_1a3e8c0d7969e0472fdf85326ad1db03ed" kind="variable"><name>beingFactory</name></member>
+    <member refid="class_main_1a12eb7f6752454cc3cdc2f1f5702eb801" kind="function"><name>Start</name></member>
+    <member refid="class_main_1ae84e1ae284e16e270bea9f0362598a34" kind="function"><name>waitToStart</name></member>
+  </compound>
+  <compound refid="class_modulate_to_hit_self" kind="class"><name>ModulateToHitSelf</name>
+    <member refid="class_modulate_to_hit_self_1aa02b0124a95f7b41e1a935f34d6d6441" kind="variable"><name>modulator</name></member>
+    <member refid="class_modulate_to_hit_self_1a3944529c2a3b86f55562ee027ce3f031" kind="variable"><name>value</name></member>
+    <member refid="class_modulate_to_hit_self_1ae779ee6cc0d17c1889cc96eed5cad563" kind="function"><name>Use</name></member>
+    <member refid="class_modulate_to_hit_self_1a61a4fa2d2d8ddcbf7f5f3e8c974edb1e" kind="function"><name>ModulateToHitSelf</name></member>
+  </compound>
+  <compound refid="class_new_behaviour_script" kind="class"><name>NewBehaviourScript</name>
+    <member refid="class_new_behaviour_script_1a00758b2d025a65a93a604d0b01beafe1" kind="function"><name>Start</name></member>
+    <member refid="class_new_behaviour_script_1ae278a9cde8cbe53d8095f38f0d787463" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="class_no_condition" kind="class"><name>NoCondition</name>
+    <member refid="class_no_condition_1a98b029d02c537b38e156a25e5981a7a1" kind="function"><name>CanThisBeUsed</name></member>
+    <member refid="class_no_condition_1a6072d66d2805095dad9e2311943e59dc" kind="function"><name>NoCondition</name></member>
+  </compound>
+  <compound refid="class_others" kind="class"><name>Others</name>
+    <member refid="class_others_1af22a4ac1625bb02bf2d0f1a6800bd3ab" kind="function"><name>CanThisBeTargeted</name></member>
+    <member refid="class_others_1a2ca91913fcb259165aaeec82310ce4ed" kind="function"><name>Others</name></member>
+  </compound>
+  <compound refid="class_selection_criteria" kind="class"><name>SelectionCriteria</name>
+    <member refid="class_selection_criteria_1a9d23c93479bf9df8fbc82ca7cfb3f078" kind="variable"><name>battleManager</name></member>
+    <member refid="class_selection_criteria_1abe0caeb6ff8f8a62965f89af96b5977c" kind="variable"><name>parentBeing</name></member>
+    <member refid="class_selection_criteria_1ad0a73aea8531c8d0dcd1a76a42ddc7c2" kind="variable"><name>parentAbility</name></member>
+    <member refid="class_selection_criteria_1a43921a270333dde26742c522aa2400ef" kind="variable"><name>selectionCriteriaName</name></member>
+    <member refid="class_selection_criteria_1a8b1e44611916c1b4eba31dd4f9162a02" kind="function"><name>Check</name></member>
+    <member refid="class_selection_criteria_1af4b413d34d4b29f1618947f003db11b2" kind="function"><name>SelectionCriteria</name></member>
+  </compound>
+  <compound refid="class_self" kind="class"><name>Self</name>
+    <member refid="class_self_1a92c572a68f5dd72d1b7c82350e2d9c40" kind="function"><name>CanThisBeTargeted</name></member>
+    <member refid="class_self_1ae691c80f726befa300499081f6f261f6" kind="function"><name>Self</name></member>
+  </compound>
+  <compound refid="class_stat" kind="class"><name>Stat</name>
+    <member refid="class_stat_1af49803fa299e7d5e5e93152a7721d4bd" kind="variable"><name>statName</name></member>
+    <member refid="class_stat_1ad307f45ea753074938523c44ed9e2637" kind="variable"><name>max</name></member>
+    <member refid="class_stat_1a1a6f18c8aec195f581be74f1e1685544" kind="variable"><name>baseValue</name></member>
+    <member refid="class_stat_1a6862ead797ba924624f58baca5c4ca83" kind="variable"><name>current</name></member>
+    <member refid="class_stat_1ae91ba3770e2350e7c570f5b231251129" kind="function"><name>Stat</name></member>
+  </compound>
+  <compound refid="class_stat_modulation" kind="class"><name>StatModulation</name>
+    <member refid="class_stat_modulation_1a9db10adbfedc8cd460f455e365677168" kind="variable"><name>targetStat</name></member>
+    <member refid="class_stat_modulation_1a1241091ab9ef08f721d7b3718dc3e95a" kind="variable"><name>modifier</name></member>
+    <member refid="class_stat_modulation_1aea376ba46da590ec66b35980ca86b572" kind="variable"><name>value</name></member>
+    <member refid="class_stat_modulation_1a50c45f790343c2496c17946a789d646c" kind="function"><name>Use</name></member>
+    <member refid="class_stat_modulation_1a705e63abf491aaa3c23a36240401f9f1" kind="function"><name>StatModulation</name></member>
+  </compound>
+  <compound refid="class_targeting_criteria" kind="class"><name>TargetingCriteria</name>
+    <member refid="class_targeting_criteria_1a53a29a55b6d8508737fe20c41fc408b0" kind="variable"><name>battleManager</name></member>
+    <member refid="class_targeting_criteria_1adf088b14853867eca5f70b4175e8c32a" kind="variable"><name>parentBeing</name></member>
+    <member refid="class_targeting_criteria_1a43be31f00d78b7434d007d884784003c" kind="variable"><name>parentAbility</name></member>
+    <member refid="class_targeting_criteria_1a50a40effb92015a7b17329b84b2a36d8" kind="function"><name>CanThisBeTargeted</name></member>
+    <member refid="class_targeting_criteria_1ab265c3de65d098d16f7585d72d818eb1" kind="function"><name>TargetingCriteria</name></member>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_unity_engine" kind="namespace"><name>UnityEngine</name>
+  </compound>
+  <compound refid="_ability_8cs" kind="file"><name>Ability.cs</name>
+  </compound>
+  <compound refid="_behaviour_8cs" kind="file"><name>Behaviour.cs</name>
+  </compound>
+  <compound refid="_condition_8cs" kind="file"><name>Condition.cs</name>
+  </compound>
+  <compound refid="_alone_8cs" kind="file"><name>Alone.cs</name>
+  </compound>
+  <compound refid="_at_percentage_8cs" kind="file"><name>AtPercentage.cs</name>
+  </compound>
+  <compound refid="_compare_two_values_8cs" kind="file"><name>CompareTwoValues.cs</name>
+  </compound>
+  <compound refid="_greater_than_8cs" kind="file"><name>GreaterThan.cs</name>
+  </compound>
+  <compound refid="_less_than_8cs" kind="file"><name>LessThan.cs</name>
+  </compound>
+  <compound refid="_no_condition_8cs" kind="file"><name>NoCondition.cs</name>
+  </compound>
+  <compound refid="_effect_8cs" kind="file"><name>Effect.cs</name>
+  </compound>
+  <compound refid="_buff_to_hit_8cs" kind="file"><name>BuffToHit.cs</name>
+  </compound>
+  <compound refid="_costs_m_p_8cs" kind="file"><name>CostsMP.cs</name>
+  </compound>
+  <compound refid="_damage_8cs" kind="file"><name>Damage.cs</name>
+  </compound>
+  <compound refid="_damage_self_8cs" kind="file"><name>DamageSelf.cs</name>
+  </compound>
+  <compound refid="_heal_self_8cs" kind="file"><name>HealSelf.cs</name>
+  </compound>
+  <compound refid="_modulate_to_hit_self_8cs" kind="file"><name>ModulateToHitSelf.cs</name>
+  </compound>
+  <compound refid="_selection_criteria_8cs" kind="file"><name>SelectionCriteria.cs</name>
+  </compound>
+  <compound refid="_includes_effect_8cs" kind="file"><name>IncludesEffect.cs</name>
+  </compound>
+  <compound refid="_stat_8cs" kind="file"><name>Stat.cs</name>
+  </compound>
+  <compound refid="_stat_modulation_8cs" kind="file"><name>StatModulation.cs</name>
+  </compound>
+  <compound refid="_targeting_criteria_8cs" kind="file"><name>TargetingCriteria.cs</name>
+  </compound>
+  <compound refid="_others_8cs" kind="file"><name>Others.cs</name>
+  </compound>
+  <compound refid="_self_8cs" kind="file"><name>Self.cs</name>
+  </compound>
+  <compound refid="_battle_manager_8cs" kind="file"><name>BattleManager.cs</name>
+  </compound>
+  <compound refid="_being_8cs" kind="file"><name>Being.cs</name>
+  </compound>
+  <compound refid="_being_factory_8cs" kind="file"><name>BeingFactory.cs</name>
+  </compound>
+  <compound refid="_main_8cs" kind="file"><name>Main.cs</name>
+  </compound>
+  <compound refid="_new_behaviour_script_8cs" kind="file"><name>NewBehaviourScript.cs</name>
+  </compound>
+  <compound refid="dir_6e220d2a3a649aa88a850f2888177b6d" kind="dir"><name>C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities</name>
+  </compound>
+  <compound refid="dir_7a08b3ef645ac23aa2e31d85092d6608" kind="dir"><name>C:/Users/Tim/Documents/ShonenBattle/Assets</name>
+  </compound>
+  <compound refid="dir_7c541173d5be58a135770bdd16bb2746" kind="dir"><name>C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions</name>
+  </compound>
+  <compound refid="dir_0ad65da18f302b9f45fe3778ab1ff78b" kind="dir"><name>C:/Users/Tim/Documents</name>
+  </compound>
+  <compound refid="dir_2715d255b0c6c13616308a5049ca8ab5" kind="dir"><name>C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects</name>
+  </compound>
+  <compound refid="dir_6141201e2bff44885273516750bb0d38" kind="dir"><name>C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria</name>
+  </compound>
+  <compound refid="dir_8c43cc5207e3ceada3bad3fe60cecb19" kind="dir"><name>C:/Users/Tim/Documents/ShonenBattle</name>
+  </compound>
+  <compound refid="dir_ff9779c2382e5ccb945144d41941c5e1" kind="dir"><name>C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/TargetingCriteria</name>
+  </compound>
+  <compound refid="dir_41ccbab540dd8e53bb6d68ae1ca17a7c" kind="dir"><name>C:/Users/Tim</name>
+  </compound>
+  <compound refid="dir_8ceffd4ee35c3518d4e8bdc7e638efe8" kind="dir"><name>C:/Users</name>
+  </compound>
+</doxygenindex>

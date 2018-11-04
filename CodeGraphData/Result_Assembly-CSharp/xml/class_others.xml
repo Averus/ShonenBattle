@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_others" kind="class" prot="public">
+    <compoundname>Others</compoundname>
+    <basecompoundref refid="class_targeting_criteria" prot="public" virt="non-virtual">TargetingCriteria</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_others_1af22a4ac1625bb02bf2d0f1a6800bd3ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool Others.CanThisBeTargeted</definition>
+        <argsstring>(Being potentialTarget)</argsstring>
+        <name>CanThisBeTargeted</name>
+        <reimplements refid="class_targeting_criteria_1a50a40effb92015a7b17329b84b2a36d8">CanThisBeTargeted</reimplements>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>potentialTarget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/TargetingCriteria/Others.cs" line="9" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/TargetingCriteria/Others.cs" bodystart="9" bodyend="17"/>
+        <references refid="class_targeting_criteria_1adf088b14853867eca5f70b4175e8c32a" compoundref="_targeting_criteria_8cs" startline="9">TargetingCriteria.parentBeing</references>
+      </memberdef>
+      <memberdef kind="function" id="class_others_1a2ca91913fcb259165aaeec82310ce4ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Others.Others</definition>
+        <argsstring>(BattleManager battleManager, Being parentBeing, Ability parentAbility)</argsstring>
+        <name>Others</name>
+        <param>
+          <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+          <declname>battleManager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>parentBeing</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ability" kindref="compound">Ability</ref></type>
+          <declname>parentAbility</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/TargetingCriteria/Others.cs" line="20" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/TargetingCriteria/Others.cs" bodystart="20" bodyend="26"/>
+        <references refid="class_targeting_criteria_1a53a29a55b6d8508737fe20c41fc408b0" compoundref="_targeting_criteria_8cs" startline="8">TargetingCriteria.battleManager</references>
+        <references refid="class_targeting_criteria_1a43be31f00d78b7434d007d884784003c" compoundref="_targeting_criteria_8cs" startline="10">TargetingCriteria.parentAbility</references>
+        <references refid="class_targeting_criteria_1adf088b14853867eca5f70b4175e8c32a" compoundref="_targeting_criteria_8cs" startline="9">TargetingCriteria.parentBeing</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="205">
+        <label>TargetingCriteria</label>
+        <link refid="class_targeting_criteria"/>
+      </node>
+      <node id="204">
+        <label>Others</label>
+        <link refid="class_others"/>
+        <childnode refid="205" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="214">
+        <label>Condition</label>
+        <link refid="class_condition"/>
+        <childnode refid="208" relation="usage">
+          <edgelabel>parentAbility</edgelabel>
+        </childnode>
+        <childnode refid="213" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="209" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="213">
+        <label>Being</label>
+        <link refid="class_being"/>
+        <childnode refid="208" relation="usage">
+          <edgelabel>selectedAbility</edgelabel>
+        </childnode>
+        <childnode refid="214" relation="usage">
+          <edgelabel>condition</edgelabel>
+        </childnode>
+      </node>
+      <node id="208">
+        <label>Ability</label>
+        <link refid="class_ability"/>
+        <childnode refid="209" relation="usage">
+          <edgelabel>battlemanager</edgelabel>
+        </childnode>
+      </node>
+      <node id="207">
+        <label>TargetingCriteria</label>
+        <link refid="class_targeting_criteria"/>
+        <childnode refid="208" relation="usage">
+          <edgelabel>parentAbility</edgelabel>
+        </childnode>
+        <childnode refid="213" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="209" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="209">
+        <label>BattleManager</label>
+        <link refid="class_battle_manager"/>
+        <childnode refid="210" relation="public-inheritance">
+        </childnode>
+        <childnode refid="211" relation="usage">
+          <edgelabel>mainState</edgelabel>
+        </childnode>
+        <childnode refid="212" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="206">
+        <label>Others</label>
+        <link refid="class_others"/>
+        <childnode refid="207" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="210">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="212">
+        <label>BeingFactory</label>
+        <link refid="class_being_factory"/>
+        <childnode refid="210" relation="public-inheritance">
+        </childnode>
+        <childnode refid="209" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="211">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="210" relation="public-inheritance">
+        </childnode>
+        <childnode refid="209" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+        <childnode refid="212" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/TargetingCriteria/Others.cs" line="6" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/TargetingCriteria/Others.cs" bodystart="6" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_targeting_criteria_1a53a29a55b6d8508737fe20c41fc408b0" prot="public" virt="non-virtual"><scope>Others</scope><name>battleManager</name></member>
+      <member refid="class_others_1af22a4ac1625bb02bf2d0f1a6800bd3ab" prot="public" virt="virtual"><scope>Others</scope><name>CanThisBeTargeted</name></member>
+      <member refid="class_others_1a2ca91913fcb259165aaeec82310ce4ed" prot="public" virt="non-virtual"><scope>Others</scope><name>Others</name></member>
+      <member refid="class_targeting_criteria_1a43be31f00d78b7434d007d884784003c" prot="public" virt="non-virtual"><scope>Others</scope><name>parentAbility</name></member>
+      <member refid="class_targeting_criteria_1adf088b14853867eca5f70b4175e8c32a" prot="public" virt="non-virtual"><scope>Others</scope><name>parentBeing</name></member>
+      <member refid="class_targeting_criteria_1ab265c3de65d098d16f7585d72d818eb1" prot="public" virt="non-virtual"><scope>Others</scope><name>TargetingCriteria</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

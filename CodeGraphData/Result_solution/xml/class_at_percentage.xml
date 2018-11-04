@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_at_percentage" kind="class" prot="public">
+    <compoundname>AtPercentage</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_at_percentage_1a502c96846f51fcb96110bf3dbcc45101" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AtPercentage.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/AtPercentage.cs" line="7" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/AtPercentage.cs" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_at_percentage_1a90f498dd454c7083b07a2af894807487" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AtPercentage.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/AtPercentage.cs" line="12" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/AtPercentage.cs" bodystart="12" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="16">
+        <label>AtPercentage</label>
+        <link refid="class_at_percentage"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="18">
+        <label>AtPercentage</label>
+        <link refid="class_at_percentage"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/AtPercentage.cs" line="4" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/AtPercentage.cs" bodystart="4" bodyend="15"/>
+    <listofallmembers>
+      <member refid="class_at_percentage_1a502c96846f51fcb96110bf3dbcc45101" prot="private" virt="non-virtual"><scope>AtPercentage</scope><name>Start</name></member>
+      <member refid="class_at_percentage_1a90f498dd454c7083b07a2af894807487" prot="private" virt="non-virtual"><scope>AtPercentage</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

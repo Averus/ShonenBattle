@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_heal_self_8cs" kind="file">
+    <compoundname>HealSelf.cs</compoundname>
+    <innerclass refid="class_heal_self" prot="public">HealSelf</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_heal_self" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_heal_self" kindref="compound">HealSelf</ref><sp/>:<sp/><ref refid="class_effect" kindref="compound">Effect</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_heal_self_1a22d31c1ebf1503278eb5e17e81774382" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_heal_self_1a22d31c1ebf1503278eb5e17e81774382" kindref="member">healByValue</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_heal_self_1a00b04952bb58e1a22e30ddc8fb323107" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_heal_self_1a00b04952bb58e1a22e30ddc8fb323107" kindref="member">Use</ref>(<ref refid="class_being" kindref="compound">Being</ref><sp/>target)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_stat" kindref="compound">Stat</ref><sp/>hp<sp/>=<sp/>parentBeing.GetStat(</highlight><highlight class="stringliteral">&quot;HP&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hp.current<sp/>+=<sp/><ref refid="class_heal_self_1a22d31c1ebf1503278eb5e17e81774382" kindref="member">healByValue</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.Log(parentBeing.beingName<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>heals<sp/>itself<sp/>for<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="class_heal_self_1a22d31c1ebf1503278eb5e17e81774382" kindref="member">healByValue</ref><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>hp.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.Log(parentBeing.beingName<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>HP<sp/>at<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>hp.current);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_heal_self_1af2e19a6d66319dc861f633a8dde89f23" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_heal_self_1af2e19a6d66319dc861f633a8dde89f23" kindref="member">HealSelf</ref>(<ref refid="class_battle_manager" kindref="compound">BattleManager</ref><sp/><ref refid="class_effect_1ac5dffe56d653b75f816b7855c90f1d87" kindref="member">battleManager</ref>,<sp/><ref refid="class_being" kindref="compound">Being</ref><sp/><ref refid="class_effect_1aeb4b0db75413b945faae306f2650a854" kindref="member">parentBeing</ref>,<sp/><ref refid="class_ability" kindref="compound">Ability</ref><sp/><ref refid="class_effect_1aab3f7eee5bc2a8eaf2cbe0ed4313f427" kindref="member">parentAbility</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_effect_1ab0d2647d792f5374565264e4494b85a9" kindref="member">effectName</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>healAmount)<sp/>:<sp/>base<sp/>(battleManager,<sp/>parentBeing,<sp/>parentAbility,<sp/>effectName)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_heal_self_1a22d31c1ebf1503278eb5e17e81774382" kindref="member">healByValue</ref><sp/>=<sp/>healAmount;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/HealSelf.cs"/>
+  </compounddef>
+</doxygen>

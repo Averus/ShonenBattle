@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_7c541173d5be58a135770bdd16bb2746" kind="dir">
+    <compoundname>C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions</compoundname>
+    <innerfile refid="_alone_8cs">Alone.cs</innerfile>
+    <innerfile refid="_at_percentage_8cs">AtPercentage.cs</innerfile>
+    <innerfile refid="_compare_two_values_8cs">CompareTwoValues.cs</innerfile>
+    <innerfile refid="_greater_than_8cs">GreaterThan.cs</innerfile>
+    <innerfile refid="_less_than_8cs">LessThan.cs</innerfile>
+    <innerfile refid="_no_condition_8cs">NoCondition.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/"/>
+  </compounddef>
+</doxygen>

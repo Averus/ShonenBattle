@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_condition" kind="class" prot="public" abstract="yes">
+    <compoundname>Condition</compoundname>
+    <derivedcompoundref refid="class_alone" prot="public" virt="non-virtual">Alone</derivedcompoundref>
+    <derivedcompoundref refid="class_compare_two_values" prot="public" virt="non-virtual">CompareTwoValues</derivedcompoundref>
+    <derivedcompoundref refid="class_greater_than" prot="public" virt="non-virtual">GreaterThan</derivedcompoundref>
+    <derivedcompoundref refid="class_less_than" prot="public" virt="non-virtual">LessThan</derivedcompoundref>
+    <derivedcompoundref refid="class_no_condition" prot="public" virt="non-virtual">NoCondition</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_condition_1a7547a121ba397b441439d994cd8246b1" prot="public" static="no" mutable="no">
+        <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+        <definition>BattleManager Condition.battleManager</definition>
+        <argsstring></argsstring>
+        <name>battleManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Condition.cs" line="8" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Condition.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_alone_1a0f9a9fe4a7641e88f0663bb198ba6356" compoundref="_alone_8cs" startline="23" endline="26">Alone.Alone</referencedby>
+        <referencedby refid="class_alone_1ab4794b3c154f22760f71e891deafcedb" compoundref="_alone_8cs" startline="7" endline="19">Alone.CanThisBeUsed</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_condition_1a5e1cc13cbc82d4a42cb20feb67646583" prot="public" static="no" mutable="no">
+        <type><ref refid="class_being" kindref="compound">Being</ref></type>
+        <definition>Being Condition.parentBeing</definition>
+        <argsstring></argsstring>
+        <name>parentBeing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Condition.cs" line="9" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Condition.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_condition_1a9daca5094be459a0d023b8c1ecdec6b7" prot="public" static="no" mutable="no">
+        <type><ref refid="class_ability" kindref="compound">Ability</ref></type>
+        <definition>Ability Condition.parentAbility</definition>
+        <argsstring></argsstring>
+        <name>parentAbility</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Condition.cs" line="10" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Condition.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_condition_1aec29b26eb673fa507a9e3847e4ac0449" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Condition.conditionName</definition>
+        <argsstring></argsstring>
+        <name>conditionName</name>
+        <initializer>= &quot;BLANK CONDITION&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Condition.cs" line="12" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Condition.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_condition_1ad2270c61a0f492990cccb977faf4e007" compoundref="_condition_8cs" startline="24" endline="28">Condition</referencedby>
+        <referencedby refid="class_condition_1a0d4dc76caf50991138b95d71408c18ff" compoundref="_condition_8cs" startline="14" endline="17">GetConditionName</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_condition_1a0d4dc76caf50991138b95d71408c18ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Condition.GetConditionName</definition>
+        <argsstring>()</argsstring>
+        <name>GetConditionName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Condition.cs" line="14" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Condition.cs" bodystart="14" bodyend="17"/>
+        <references refid="class_condition_1aec29b26eb673fa507a9e3847e4ac0449" compoundref="_condition_8cs" startline="12">conditionName</references>
+      </memberdef>
+      <memberdef kind="function" id="class_condition_1ad3758954bf17f24844e813a5919a2874" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract bool</type>
+        <definition>abstract bool Condition.CanThisBeUsed</definition>
+        <argsstring>()</argsstring>
+        <name>CanThisBeUsed</name>
+        <reimplementedby refid="class_no_condition_1a98b029d02c537b38e156a25e5981a7a1">CanThisBeUsed</reimplementedby>
+        <reimplementedby refid="class_alone_1ab4794b3c154f22760f71e891deafcedb">CanThisBeUsed</reimplementedby>
+        <reimplementedby refid="class_greater_than_1a968be964ff7485f6be1aa3dd7024dd56">CanThisBeUsed</reimplementedby>
+        <reimplementedby refid="class_less_than_1acfcca37dbca9b9153c1b015f354083ac">CanThisBeUsed</reimplementedby>
+        <reimplementedby refid="class_compare_two_values_1ac7e246af887a7ee46f774952e9557277">CanThisBeUsed</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Condition.cs" line="20" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_condition_1ad2270c61a0f492990cccb977faf4e007" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Condition.Condition</definition>
+        <argsstring>(BattleManager battleManager, Being parentBeing, string conditionName)</argsstring>
+        <name>Condition</name>
+        <param>
+          <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+          <declname>battleManager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>parentBeing</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>conditionName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Condition.cs" line="24" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Condition.cs" bodystart="24" bodyend="28"/>
+        <references refid="class_condition_1aec29b26eb673fa507a9e3847e4ac0449" compoundref="_condition_8cs" startline="12">conditionName</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="74">
+        <label>LessThan</label>
+        <link refid="class_less_than"/>
+        <childnode refid="70" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>Condition</label>
+        <link refid="class_condition"/>
+      </node>
+      <node id="72">
+        <label>CompareTwoValues</label>
+        <link refid="class_compare_two_values"/>
+        <childnode refid="70" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>Alone</label>
+        <link refid="class_alone"/>
+        <childnode refid="70" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>GreaterThan</label>
+        <link refid="class_greater_than"/>
+        <childnode refid="70" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>NoCondition</label>
+        <link refid="class_no_condition"/>
+        <childnode refid="70" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="76">
+        <label>Condition</label>
+        <link refid="class_condition"/>
+        <childnode refid="77" relation="usage">
+          <edgelabel>parentAbility</edgelabel>
+        </childnode>
+        <childnode refid="82" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="78" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="82">
+        <label>Being</label>
+        <link refid="class_being"/>
+        <childnode refid="77" relation="usage">
+          <edgelabel>selectedAbility</edgelabel>
+        </childnode>
+        <childnode refid="76" relation="usage">
+          <edgelabel>condition</edgelabel>
+        </childnode>
+      </node>
+      <node id="77">
+        <label>Ability</label>
+        <link refid="class_ability"/>
+        <childnode refid="78" relation="usage">
+          <edgelabel>battlemanager</edgelabel>
+        </childnode>
+      </node>
+      <node id="78">
+        <label>BattleManager</label>
+        <link refid="class_battle_manager"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+        <childnode refid="80" relation="usage">
+          <edgelabel>mainState</edgelabel>
+        </childnode>
+        <childnode refid="81" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="79">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="81">
+        <label>BeingFactory</label>
+        <link refid="class_being_factory"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+        <childnode refid="78" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="80">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+        <childnode refid="78" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+        <childnode refid="81" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Condition.cs" line="4" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Condition.cs" bodystart="4" bodyend="30"/>
+    <listofallmembers>
+      <member refid="class_condition_1a7547a121ba397b441439d994cd8246b1" prot="public" virt="non-virtual"><scope>Condition</scope><name>battleManager</name></member>
+      <member refid="class_condition_1ad3758954bf17f24844e813a5919a2874" prot="public" virt="pure-virtual"><scope>Condition</scope><name>CanThisBeUsed</name></member>
+      <member refid="class_condition_1ad2270c61a0f492990cccb977faf4e007" prot="public" virt="non-virtual"><scope>Condition</scope><name>Condition</name></member>
+      <member refid="class_condition_1aec29b26eb673fa507a9e3847e4ac0449" prot="private" virt="non-virtual"><scope>Condition</scope><name>conditionName</name></member>
+      <member refid="class_condition_1a0d4dc76caf50991138b95d71408c18ff" prot="public" virt="non-virtual"><scope>Condition</scope><name>GetConditionName</name></member>
+      <member refid="class_condition_1a9daca5094be459a0d023b8c1ecdec6b7" prot="public" virt="non-virtual"><scope>Condition</scope><name>parentAbility</name></member>
+      <member refid="class_condition_1a5e1cc13cbc82d4a42cb20feb67646583" prot="public" virt="non-virtual"><scope>Condition</scope><name>parentBeing</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

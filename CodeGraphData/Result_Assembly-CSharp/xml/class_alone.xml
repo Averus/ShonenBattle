@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_alone" kind="class" prot="public">
+    <compoundname>Alone</compoundname>
+    <basecompoundref refid="class_condition" prot="public" virt="non-virtual">Condition</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_alone_1ab4794b3c154f22760f71e891deafcedb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool Alone.CanThisBeUsed</definition>
+        <argsstring>()</argsstring>
+        <name>CanThisBeUsed</name>
+        <reimplements refid="class_condition_1ad3758954bf17f24844e813a5919a2874">CanThisBeUsed</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/Alone.cs" line="7" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/Alone.cs" bodystart="7" bodyend="19"/>
+        <references refid="class_condition_1a7547a121ba397b441439d994cd8246b1" compoundref="_condition_8cs" startline="8">Condition.battleManager</references>
+        <references refid="class_battle_manager_1a14847f4442b25d631380fb1514f33949" compoundref="_battle_manager_8cs" startline="13">BattleManager.combatants</references>
+      </memberdef>
+      <memberdef kind="function" id="class_alone_1a0f9a9fe4a7641e88f0663bb198ba6356" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Alone.Alone</definition>
+        <argsstring>(BattleManager battleManager, Being parentBeing, string conditionName)</argsstring>
+        <name>Alone</name>
+        <param>
+          <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+          <declname>battleManager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>parentBeing</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>conditionName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/Alone.cs" line="23" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/Alone.cs" bodystart="23" bodyend="26"/>
+        <references refid="class_condition_1a7547a121ba397b441439d994cd8246b1" compoundref="_condition_8cs" startline="8">Condition.battleManager</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7">
+        <label>Condition</label>
+        <link refid="class_condition"/>
+      </node>
+      <node id="6">
+        <label>Alone</label>
+        <link refid="class_alone"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>Condition</label>
+        <link refid="class_condition"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>parentAbility</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Alone</label>
+        <link refid="class_alone"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Being</label>
+        <link refid="class_being"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>selectedAbility</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>condition</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Ability</label>
+        <link refid="class_ability"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>battlemanager</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>BattleManager</label>
+        <link refid="class_battle_manager"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>mainState</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="14">
+        <label>BeingFactory</label>
+        <link refid="class_being_factory"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/Alone.cs" line="4" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/Alone.cs" bodystart="4" bodyend="27"/>
+    <listofallmembers>
+      <member refid="class_alone_1a0f9a9fe4a7641e88f0663bb198ba6356" prot="public" virt="non-virtual"><scope>Alone</scope><name>Alone</name></member>
+      <member refid="class_condition_1a7547a121ba397b441439d994cd8246b1" prot="public" virt="non-virtual"><scope>Alone</scope><name>battleManager</name></member>
+      <member refid="class_alone_1ab4794b3c154f22760f71e891deafcedb" prot="public" virt="virtual"><scope>Alone</scope><name>CanThisBeUsed</name></member>
+      <member refid="class_condition_1ad2270c61a0f492990cccb977faf4e007" prot="public" virt="non-virtual"><scope>Alone</scope><name>Condition</name></member>
+      <member refid="class_condition_1a0d4dc76caf50991138b95d71408c18ff" prot="public" virt="non-virtual"><scope>Alone</scope><name>GetConditionName</name></member>
+      <member refid="class_condition_1a9daca5094be459a0d023b8c1ecdec6b7" prot="public" virt="non-virtual"><scope>Alone</scope><name>parentAbility</name></member>
+      <member refid="class_condition_1a5e1cc13cbc82d4a42cb20feb67646583" prot="public" virt="non-virtual"><scope>Alone</scope><name>parentBeing</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

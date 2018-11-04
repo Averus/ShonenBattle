@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_7a08b3ef645ac23aa2e31d85092d6608" kind="dir">
+    <compoundname>C:/Users/Tim/Documents/ShonenBattle/Assets</compoundname>
+    <innerdir refid="dir_6e220d2a3a649aa88a850f2888177b6d">C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities</innerdir>
+    <innerfile refid="_battle_manager_8cs">BattleManager.cs</innerfile>
+    <innerfile refid="_being_8cs">Being.cs</innerfile>
+    <innerfile refid="_being_factory_8cs">BeingFactory.cs</innerfile>
+    <innerfile refid="_main_8cs">Main.cs</innerfile>
+    <innerfile refid="_new_behaviour_script_8cs">NewBehaviourScript.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/"/>
+  </compounddef>
+</doxygen>

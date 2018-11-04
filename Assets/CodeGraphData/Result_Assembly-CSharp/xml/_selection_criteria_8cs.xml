@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_selection_criteria_8cs" kind="file">
+    <compoundname>SelectionCriteria.cs</compoundname>
+    <innerclass refid="class_selection_criteria" prot="public">SelectionCriteria</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_selection_criteria" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_selection_criteria" kindref="compound">SelectionCriteria</ref><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_selection_criteria_1a9d23c93479bf9df8fbc82ca7cfb3f078" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_battle_manager" kindref="compound">BattleManager</ref><sp/><ref refid="class_selection_criteria_1a9d23c93479bf9df8fbc82ca7cfb3f078" kindref="member">battleManager</ref>;</highlight></codeline>
+<codeline lineno="8" refid="class_selection_criteria_1abe0caeb6ff8f8a62965f89af96b5977c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_being" kindref="compound">Being</ref><sp/><ref refid="class_selection_criteria_1abe0caeb6ff8f8a62965f89af96b5977c" kindref="member">parentBeing</ref>;</highlight></codeline>
+<codeline lineno="9" refid="class_selection_criteria_1ad0a73aea8531c8d0dcd1a76a42ddc7c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_ability" kindref="compound">Ability</ref><sp/><ref refid="class_selection_criteria_1ad0a73aea8531c8d0dcd1a76a42ddc7c2" kindref="member">parentAbility</ref>;</highlight></codeline>
+<codeline lineno="10" refid="class_selection_criteria_1a43921a270333dde26742c522aa2400ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_selection_criteria_1a43921a270333dde26742c522aa2400ef" kindref="member">selectionCriteriaName</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_selection_criteria_1a8b1e44611916c1b4eba31dd4f9162a02" kindref="member">Check</ref>(<ref refid="class_ability" kindref="compound">Ability</ref><sp/>abil);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_selection_criteria_1af4b413d34d4b29f1618947f003db11b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_selection_criteria_1af4b413d34d4b29f1618947f003db11b2" kindref="member">SelectionCriteria</ref>(<ref refid="class_battle_manager" kindref="compound">BattleManager</ref><sp/><ref refid="class_selection_criteria_1a9d23c93479bf9df8fbc82ca7cfb3f078" kindref="member">battleManager</ref>,<sp/><ref refid="class_being" kindref="compound">Being</ref><sp/><ref refid="class_selection_criteria_1abe0caeb6ff8f8a62965f89af96b5977c" kindref="member">parentBeing</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_selection_criteria_1a43921a270333dde26742c522aa2400ef" kindref="member">selectionCriteriaName</ref>)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.battleManager<sp/>=<sp/><ref refid="class_selection_criteria_1a9d23c93479bf9df8fbc82ca7cfb3f078" kindref="member">battleManager</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.parentBeing<sp/>=<sp/><ref refid="class_selection_criteria_1abe0caeb6ff8f8a62965f89af96b5977c" kindref="member">parentBeing</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.selectionCriteriaName<sp/>=<sp/><ref refid="class_selection_criteria_1a43921a270333dde26742c522aa2400ef" kindref="member">selectionCriteriaName</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria.cs"/>
+  </compounddef>
+</doxygen>

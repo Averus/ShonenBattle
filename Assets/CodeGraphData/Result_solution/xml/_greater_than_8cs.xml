@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_greater_than_8cs" kind="file">
+    <compoundname>GreaterThan.cs</compoundname>
+    <innerclass refid="class_greater_than" prot="public">GreaterThan</innerclass>
+    <innernamespace refid="namespace_system">System</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_greater_than" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_greater_than" kindref="compound">GreaterThan</ref><sp/>:<sp/><ref refid="class_condition" kindref="compound">Condition</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7" refid="class_greater_than_1ae10190cdb6202fa8306e76fbc005db9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_greater_than_1ae10190cdb6202fa8306e76fbc005db9c" kindref="member">mode</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_greater_than_1a4b11f7706dc4632ca863e343ce58dc72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_being" kindref="compound">Being</ref><sp/><ref refid="class_greater_than_1a4b11f7706dc4632ca863e343ce58dc72" kindref="member">p</ref>;</highlight></codeline>
+<codeline lineno="10" refid="class_greater_than_1a3c6206b7c3b583946368571b1502de0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_greater_than_1a3c6206b7c3b583946368571b1502de0b" kindref="member">target</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_greater_than_1a968be964ff7485f6be1aa3dd7024dd56" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_greater_than_1a968be964ff7485f6be1aa3dd7024dd56" kindref="member">CanThisBeUsed</ref>()</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_greater_than_1a43cda4ea92e4a4e723804de661e604cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_greater_than_1a43cda4ea92e4a4e723804de661e604cc" kindref="member">GreaterThan</ref>(<ref refid="class_battle_manager" kindref="compound">BattleManager</ref><sp/><ref refid="class_condition_1a7547a121ba397b441439d994cd8246b1" kindref="member">battleManager</ref>,<sp/><ref refid="class_being" kindref="compound">Being</ref><sp/><ref refid="class_condition_1a5e1cc13cbc82d4a42cb20feb67646583" kindref="member">parentBeing</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_condition_1aec29b26eb673fa507a9e3847e4ac0449" kindref="member">conditionName</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_greater_than_1ae10190cdb6202fa8306e76fbc005db9c" kindref="member">mode</ref>,<sp/><ref refid="class_being" kindref="compound">Being</ref><sp/><ref refid="class_greater_than_1a4b11f7706dc4632ca863e343ce58dc72" kindref="member">p</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_greater_than_1a3c6206b7c3b583946368571b1502de0b" kindref="member">target</ref>)<sp/>:<sp/>base(battleManager,<sp/>parentBeing,<sp/>conditionName)<sp/></highlight><highlight class="comment">//This<sp/>should<sp/>grab<sp/>the<sp/>battleManager<sp/>from<sp/>the<sp/>base<sp/>constructor<sp/>(Condition)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.mode<sp/>=<sp/><ref refid="class_greater_than_1ae10190cdb6202fa8306e76fbc005db9c" kindref="member">mode</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.p<sp/>=<sp/><ref refid="class_greater_than_1a4b11f7706dc4632ca863e343ce58dc72" kindref="member">p</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.target<sp/>=<sp/><ref refid="class_greater_than_1a3c6206b7c3b583946368571b1502de0b" kindref="member">target</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions/GreaterThan.cs"/>
+  </compounddef>
+</doxygen>

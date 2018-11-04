@@ -1,0 +1,403 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_being" kind="class" prot="public">
+    <compoundname>Being</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_being_1ac361aac6adf2b1fd8f371e5d0a11f0d1" prot="public" static="no">
+        <name>Condition</name>
+        <enumvalue id="class_being_1ac361aac6adf2b1fd8f371e5d0a11f0d1afea087517c26fadd409bd4b9dc642555" prot="public">
+          <name>normal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_being_1ac361aac6adf2b1fd8f371e5d0a11f0d1a27a1546b009722535dfbcc5758fa6822" prot="public">
+          <name>dazed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_being_1ac361aac6adf2b1fd8f371e5d0a11f0d1a6012b5293d0c7397efd784be681cd35c" prot="public">
+          <name>staggered</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_being_1ac361aac6adf2b1fd8f371e5d0a11f0d1ab798af21196c498d8aa9f9f42c228b71" prot="public">
+          <name>unconcious</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" line="19" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_being_1ab3e87a74053ea5b9a6b3f479c475c981" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Being.playerControlled</definition>
+        <argsstring></argsstring>
+        <name>playerControlled</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" line="8" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_being_1a428a5e914c33035e17fb68591b77cbd5" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Being.beingName</definition>
+        <argsstring></argsstring>
+        <name>beingName</name>
+        <initializer>= &quot;Unknown&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" line="11" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_being_1a64fc2a2159c66931f2cda151df0451ff" compoundref="_being_8cs" startline="73" endline="93">GetStat</referencedby>
+        <referencedby refid="class_being_1a8b3d22d5c9725bcb89664a2d7d5694d5" compoundref="_being_8cs" startline="38" endline="71">GetStatValue</referencedby>
+        <referencedby refid="class_being_1a52e41a9867126e2adc3ba9eb069e3ea0" compoundref="_being_8cs" startline="149" endline="165">SelectTargets</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_being_1a9517a6cff71c0b6acfab27e4ef07288d" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_stat" kindref="compound">Stat</ref> &gt;</type>
+        <definition>List&lt;Stat&gt; Being.stats</definition>
+        <argsstring></argsstring>
+        <name>stats</name>
+        <initializer>= new List&lt;<ref refid="class_stat" kindref="compound">Stat</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" line="14" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_being_1a64fc2a2159c66931f2cda151df0451ff" compoundref="_being_8cs" startline="73" endline="93">GetStat</referencedby>
+        <referencedby refid="class_being_1a8b3d22d5c9725bcb89664a2d7d5694d5" compoundref="_being_8cs" startline="38" endline="71">GetStatValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_being_1a3a6a8bff4af7218edac62ba61ed0daa9" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_stat_modulation" kindref="compound">StatModulation</ref> &gt;</type>
+        <definition>List&lt;StatModulation&gt; Being.statModulations</definition>
+        <argsstring></argsstring>
+        <name>statModulations</name>
+        <initializer>= new List&lt;<ref refid="class_stat_modulation" kindref="compound">StatModulation</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" line="15" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_being_1a1e1b8f83e2fd42ff31bb74faf3d2c792" prot="public" static="no" mutable="no">
+        <type><ref refid="class_being_1ac361aac6adf2b1fd8f371e5d0a11f0d1" kindref="member">Condition</ref></type>
+        <definition>Condition Being.condition</definition>
+        <argsstring></argsstring>
+        <name>condition</name>
+        <initializer>= Condition.normal</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" line="20" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_being_1abe7023738ff810cfca1271a28bdca075" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_behaviour" kindref="compound">Behaviour</ref> &gt;</type>
+        <definition>List&lt;Behaviour&gt; Being.behaviours</definition>
+        <argsstring></argsstring>
+        <name>behaviours</name>
+        <initializer>= new List&lt;<ref refid="class_behaviour" kindref="compound">Behaviour</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" line="23" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_being_1a9ab922a1da91d98902cea7e24c3b4b55" compoundref="_being_8cs" startline="113" endline="147">SelectAnAbility</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_being_1ad5863b7f57de8618f1c67657b7029ffc" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_ability" kindref="compound">Ability</ref> &gt;</type>
+        <definition>List&lt;Ability&gt; Being.abilities</definition>
+        <argsstring></argsstring>
+        <name>abilities</name>
+        <initializer>= new List&lt;<ref refid="class_ability" kindref="compound">Ability</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" line="25" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_being_1aea92abba73116af19e06df3758c476ee" compoundref="_being_8cs" startline="98" endline="111">GetUseableAbilities</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_being_1a56524b22f62ee16858cdf9a36d287950" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_ability" kindref="compound">Ability</ref> &gt;</type>
+        <definition>List&lt;Ability&gt; Being.useableAbilities</definition>
+        <argsstring></argsstring>
+        <name>useableAbilities</name>
+        <initializer>= new List&lt;<ref refid="class_ability" kindref="compound">Ability</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" line="26" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_being_1a9ab922a1da91d98902cea7e24c3b4b55" compoundref="_being_8cs" startline="113" endline="147">SelectAnAbility</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_being_1a561fcd3010e578d185f8c6fd708d8ea8" prot="public" static="no" mutable="no">
+        <type><ref refid="class_ability" kindref="compound">Ability</ref></type>
+        <definition>Ability Being.selectedAbility</definition>
+        <argsstring></argsstring>
+        <name>selectedAbility</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" line="28" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_being_1a9ab922a1da91d98902cea7e24c3b4b55" compoundref="_being_8cs" startline="113" endline="147">SelectAnAbility</referencedby>
+        <referencedby refid="class_being_1a52e41a9867126e2adc3ba9eb069e3ea0" compoundref="_being_8cs" startline="149" endline="165">SelectTargets</referencedby>
+        <referencedby refid="class_battle_manager_1a228378f569e306b1567e24c135715de7" compoundref="_battle_manager_8cs" startline="94" endline="108">BattleManager.StartTurn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_being_1adae2fe62ed8790c7d11115c17a2ffdcd" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_being" kindref="compound">Being</ref> &gt;</type>
+        <definition>List&lt;Being&gt; Being.selectedTargets</definition>
+        <argsstring></argsstring>
+        <name>selectedTargets</name>
+        <initializer>= new List&lt;<ref refid="class_being" kindref="compound">Being</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" line="29" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_battle_manager_1a228378f569e306b1567e24c135715de7" compoundref="_battle_manager_8cs" startline="94" endline="108">BattleManager.StartTurn</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_being_1a8b3d22d5c9725bcb89664a2d7d5694d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Being.GetStatValue</definition>
+        <argsstring>(string stat, int subStat)</argsstring>
+        <name>GetStatValue</name>
+        <param>
+          <type>string</type>
+          <declname>stat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>subStat</declname>
+        </param>
+        <briefdescription>
+<para>Returns the value of a substat, 0 = Max, 1 = Base, 2 = current </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the <ref refid="class_stat" kindref="compound">Stat</ref></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 = Max, 1 = Base, 2 = current</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" line="38" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" bodystart="38" bodyend="71"/>
+        <references refid="class_being_1a428a5e914c33035e17fb68591b77cbd5" compoundref="_being_8cs" startline="11">beingName</references>
+        <references refid="class_being_1a9517a6cff71c0b6acfab27e4ef07288d" compoundref="_being_8cs" startline="14">stats</references>
+        <referencedby refid="class_compare_two_values_1ac7e246af887a7ee46f774952e9557277" compoundref="_compare_two_values_8cs" startline="19" endline="81">CompareTwoValues.CanThisBeUsed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_being_1a64fc2a2159c66931f2cda151df0451ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_stat" kindref="compound">Stat</ref></type>
+        <definition>Stat Being.GetStat</definition>
+        <argsstring>(string statName)</argsstring>
+        <name>GetStat</name>
+        <param>
+          <type>string</type>
+          <declname>statName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" line="73" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" bodystart="73" bodyend="93"/>
+        <references refid="class_being_1a428a5e914c33035e17fb68591b77cbd5" compoundref="_being_8cs" startline="11">beingName</references>
+        <references refid="class_being_1a9517a6cff71c0b6acfab27e4ef07288d" compoundref="_being_8cs" startline="14">stats</references>
+        <referencedby refid="class_costs_m_p_1a174877b5cbb4bb7eaa88846b205bf11c" compoundref="_costs_m_p_8cs" startline="9" endline="18">CostsMP.Use</referencedby>
+        <referencedby refid="class_damage_1a3ecf5a9b32a1120fc560069e10ce398f" compoundref="_damage_8cs" startline="12" endline="20">Damage.Use</referencedby>
+        <referencedby refid="class_modulate_to_hit_self_1ae779ee6cc0d17c1889cc96eed5cad563" compoundref="_modulate_to_hit_self_8cs" startline="14" endline="24">ModulateToHitSelf.Use</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_being_1aea92abba73116af19e06df3758c476ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Being.GetUseableAbilities</definition>
+        <argsstring>()</argsstring>
+        <name>GetUseableAbilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" line="98" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" bodystart="98" bodyend="111"/>
+        <references refid="class_being_1ad5863b7f57de8618f1c67657b7029ffc" compoundref="_being_8cs" startline="25">abilities</references>
+      </memberdef>
+      <memberdef kind="function" id="class_being_1a9ab922a1da91d98902cea7e24c3b4b55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Being.SelectAnAbility</definition>
+        <argsstring>()</argsstring>
+        <name>SelectAnAbility</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" line="113" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" bodystart="113" bodyend="147"/>
+        <references refid="class_being_1abe7023738ff810cfca1271a28bdca075" compoundref="_being_8cs" startline="23">behaviours</references>
+        <references refid="class_being_1a561fcd3010e578d185f8c6fd708d8ea8" compoundref="_being_8cs" startline="28">selectedAbility</references>
+        <references refid="class_being_1a56524b22f62ee16858cdf9a36d287950" compoundref="_being_8cs" startline="26">useableAbilities</references>
+      </memberdef>
+      <memberdef kind="function" id="class_being_1a52e41a9867126e2adc3ba9eb069e3ea0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Being.SelectTargets</definition>
+        <argsstring>(Ability ability)</argsstring>
+        <name>SelectTargets</name>
+        <param>
+          <type><ref refid="class_ability" kindref="compound">Ability</ref></type>
+          <declname>ability</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" line="149" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" bodystart="149" bodyend="165"/>
+        <references refid="class_being_1a428a5e914c33035e17fb68591b77cbd5" compoundref="_being_8cs" startline="11">beingName</references>
+        <references refid="class_being_1a561fcd3010e578d185f8c6fd708d8ea8" compoundref="_being_8cs" startline="28">selectedAbility</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="42">
+        <label>Condition</label>
+        <link refid="class_condition"/>
+        <childnode refid="37" relation="usage">
+          <edgelabel>parentAbility</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>Being</label>
+        <link refid="class_being"/>
+        <childnode refid="37" relation="usage">
+          <edgelabel>selectedAbility</edgelabel>
+        </childnode>
+        <childnode refid="42" relation="usage">
+          <edgelabel>condition</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Ability</label>
+        <link refid="class_ability"/>
+        <childnode refid="38" relation="usage">
+          <edgelabel>battlemanager</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>BattleManager</label>
+        <link refid="class_battle_manager"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>mainState</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="41">
+        <label>BeingFactory</label>
+        <link refid="class_being_factory"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="40">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" line="5" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Being.cs" bodystart="5" bodyend="167"/>
+    <listofallmembers>
+      <member refid="class_being_1ad5863b7f57de8618f1c67657b7029ffc" prot="public" virt="non-virtual"><scope>Being</scope><name>abilities</name></member>
+      <member refid="class_being_1abe7023738ff810cfca1271a28bdca075" prot="public" virt="non-virtual"><scope>Being</scope><name>behaviours</name></member>
+      <member refid="class_being_1a428a5e914c33035e17fb68591b77cbd5" prot="public" virt="non-virtual"><scope>Being</scope><name>beingName</name></member>
+      <member refid="class_being_1a1e1b8f83e2fd42ff31bb74faf3d2c792" prot="public" virt="non-virtual"><scope>Being</scope><name>condition</name></member>
+      <member refid="class_being_1ac361aac6adf2b1fd8f371e5d0a11f0d1" prot="public" virt="non-virtual"><scope>Being</scope><name>Condition</name></member>
+      <member refid="class_being_1a64fc2a2159c66931f2cda151df0451ff" prot="public" virt="non-virtual"><scope>Being</scope><name>GetStat</name></member>
+      <member refid="class_being_1a8b3d22d5c9725bcb89664a2d7d5694d5" prot="public" virt="non-virtual"><scope>Being</scope><name>GetStatValue</name></member>
+      <member refid="class_being_1aea92abba73116af19e06df3758c476ee" prot="public" virt="non-virtual"><scope>Being</scope><name>GetUseableAbilities</name></member>
+      <member refid="class_being_1ab3e87a74053ea5b9a6b3f479c475c981" prot="public" virt="non-virtual"><scope>Being</scope><name>playerControlled</name></member>
+      <member refid="class_being_1a9ab922a1da91d98902cea7e24c3b4b55" prot="public" virt="non-virtual"><scope>Being</scope><name>SelectAnAbility</name></member>
+      <member refid="class_being_1a561fcd3010e578d185f8c6fd708d8ea8" prot="public" virt="non-virtual"><scope>Being</scope><name>selectedAbility</name></member>
+      <member refid="class_being_1adae2fe62ed8790c7d11115c17a2ffdcd" prot="public" virt="non-virtual"><scope>Being</scope><name>selectedTargets</name></member>
+      <member refid="class_being_1a52e41a9867126e2adc3ba9eb069e3ea0" prot="public" virt="non-virtual"><scope>Being</scope><name>SelectTargets</name></member>
+      <member refid="class_being_1a3a6a8bff4af7218edac62ba61ed0daa9" prot="public" virt="non-virtual"><scope>Being</scope><name>statModulations</name></member>
+      <member refid="class_being_1a9517a6cff71c0b6acfab27e4ef07288d" prot="public" virt="non-virtual"><scope>Being</scope><name>stats</name></member>
+      <member refid="class_being_1a56524b22f62ee16858cdf9a36d287950" prot="public" virt="non-virtual"><scope>Being</scope><name>useableAbilities</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

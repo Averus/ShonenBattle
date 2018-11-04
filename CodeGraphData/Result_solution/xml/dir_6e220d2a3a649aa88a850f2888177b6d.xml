@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_6e220d2a3a649aa88a850f2888177b6d" kind="dir">
+    <compoundname>C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities</compoundname>
+    <innerdir refid="dir_7c541173d5be58a135770bdd16bb2746">C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Conditions</innerdir>
+    <innerdir refid="dir_2715d255b0c6c13616308a5049ca8ab5">C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects</innerdir>
+    <innerdir refid="dir_6141201e2bff44885273516750bb0d38">C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/SelectionCriteria</innerdir>
+    <innerdir refid="dir_ff9779c2382e5ccb945144d41941c5e1">C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/TargetingCriteria</innerdir>
+    <innerfile refid="_ability_8cs">Ability.cs</innerfile>
+    <innerfile refid="_behaviour_8cs">Behaviour.cs</innerfile>
+    <innerfile refid="_condition_8cs">Condition.cs</innerfile>
+    <innerfile refid="_effect_8cs">Effect.cs</innerfile>
+    <innerfile refid="_selection_criteria_8cs">SelectionCriteria.cs</innerfile>
+    <innerfile refid="_stat_8cs">Stat.cs</innerfile>
+    <innerfile refid="_stat_modulation_8cs">StatModulation.cs</innerfile>
+    <innerfile refid="_targeting_criteria_8cs">TargetingCriteria.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/"/>
+  </compounddef>
+</doxygen>

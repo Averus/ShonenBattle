@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_main" kind="class" prot="public">
+    <compoundname>Main</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_main_1aae34c2c96593c6170bd80a37be299bb1" prot="public" static="no">
+        <name>GameStates</name>
+        <enumvalue id="class_main_1aae34c2c96593c6170bd80a37be299bb1a14d0b0e872355d0bf01b18cc2d4eb670" prot="public">
+          <name>BATTLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Main.cs" line="7" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Main.cs" bodystart="7" bodyend="7"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_main_1a972af12adb7b1056713bbab3b3ee0af3" prot="public" static="no" mutable="no">
+        <type><ref refid="class_main_1aae34c2c96593c6170bd80a37be299bb1" kindref="member">GameStates</ref></type>
+        <definition>GameStates Main.gameState</definition>
+        <argsstring></argsstring>
+        <name>gameState</name>
+        <initializer>= new <ref refid="class_main_1aae34c2c96593c6170bd80a37be299bb1" kindref="member">GameStates</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Main.cs" line="8" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Main.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_main_1ae84e1ae284e16e270bea9f0362598a34" compoundref="_main_8cs" startline="29" endline="51">waitToStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1aa9ad5333eb06842a1ff93c11dae4f0c6" prot="public" static="no" mutable="no">
+        <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+        <definition>BattleManager Main.battleManager</definition>
+        <argsstring></argsstring>
+        <name>battleManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Main.cs" line="11" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Main.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_main_1a12eb7f6752454cc3cdc2f1f5702eb801" compoundref="_main_8cs" startline="15" endline="27">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a3e8c0d7969e0472fdf85326ad1db03ed" prot="public" static="no" mutable="no">
+        <type><ref refid="class_being_factory" kindref="compound">BeingFactory</ref></type>
+        <definition>BeingFactory Main.beingFactory</definition>
+        <argsstring></argsstring>
+        <name>beingFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Main.cs" line="12" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Main.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_main_1a12eb7f6752454cc3cdc2f1f5702eb801" compoundref="_main_8cs" startline="15" endline="27">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_main_1a12eb7f6752454cc3cdc2f1f5702eb801" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Main.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Main.cs" line="15" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Main.cs" bodystart="15" bodyend="27"/>
+        <references refid="class_main_1aa9ad5333eb06842a1ff93c11dae4f0c6" compoundref="_main_8cs" startline="11">battleManager</references>
+        <references refid="class_main_1a3e8c0d7969e0472fdf85326ad1db03ed" compoundref="_main_8cs" startline="12">beingFactory</references>
+        <references refid="class_main_1ae84e1ae284e16e270bea9f0362598a34" compoundref="_main_8cs" startline="29" endline="51">waitToStart</references>
+      </memberdef>
+      <memberdef kind="function" id="class_main_1ae84e1ae284e16e270bea9f0362598a34" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator Main.waitToStart</definition>
+        <argsstring>()</argsstring>
+        <name>waitToStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Main.cs" line="29" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Main.cs" bodystart="29" bodyend="51"/>
+        <references refid="class_main_1a972af12adb7b1056713bbab3b3ee0af3" compoundref="_main_8cs" startline="8">gameState</references>
+        <referencedby refid="class_main_1a12eb7f6752454cc3cdc2f1f5702eb801" compoundref="_main_8cs" startline="15" endline="27">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="174">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="173">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="174" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="177">
+        <label>BattleManager</label>
+        <link refid="class_battle_manager"/>
+        <childnode refid="176" relation="public-inheritance">
+        </childnode>
+        <childnode refid="175" relation="usage">
+          <edgelabel>mainState</edgelabel>
+        </childnode>
+        <childnode refid="178" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="176">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="178">
+        <label>BeingFactory</label>
+        <link refid="class_being_factory"/>
+        <childnode refid="176" relation="public-inheritance">
+        </childnode>
+        <childnode refid="177" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="175">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="176" relation="public-inheritance">
+        </childnode>
+        <childnode refid="177" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+        <childnode refid="178" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Main.cs" line="5" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Main.cs" bodystart="5" bodyend="53"/>
+    <listofallmembers>
+      <member refid="class_main_1aa9ad5333eb06842a1ff93c11dae4f0c6" prot="public" virt="non-virtual"><scope>Main</scope><name>battleManager</name></member>
+      <member refid="class_main_1a3e8c0d7969e0472fdf85326ad1db03ed" prot="public" virt="non-virtual"><scope>Main</scope><name>beingFactory</name></member>
+      <member refid="class_main_1a972af12adb7b1056713bbab3b3ee0af3" prot="public" virt="non-virtual"><scope>Main</scope><name>gameState</name></member>
+      <member refid="class_main_1aae34c2c96593c6170bd80a37be299bb1" prot="public" virt="non-virtual"><scope>Main</scope><name>GameStates</name></member>
+      <member refid="class_main_1a12eb7f6752454cc3cdc2f1f5702eb801" prot="private" virt="non-virtual"><scope>Main</scope><name>Start</name></member>
+      <member refid="class_main_1ae84e1ae284e16e270bea9f0362598a34" prot="private" virt="non-virtual"><scope>Main</scope><name>waitToStart</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

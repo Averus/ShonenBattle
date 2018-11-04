@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_ff9779c2382e5ccb945144d41941c5e1" kind="dir">
+    <compoundname>C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/TargetingCriteria</compoundname>
+    <innerfile refid="_others_8cs">Others.cs</innerfile>
+    <innerfile refid="_self_8cs">Self.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/TargetingCriteria/"/>
+  </compounddef>
+</doxygen>

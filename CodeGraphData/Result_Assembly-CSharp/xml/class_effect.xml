@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_effect" kind="class" prot="public" abstract="yes">
+    <compoundname>Effect</compoundname>
+    <derivedcompoundref refid="class_buff_to_hit" prot="public" virt="non-virtual">BuffToHit</derivedcompoundref>
+    <derivedcompoundref refid="class_costs_m_p" prot="public" virt="non-virtual">CostsMP</derivedcompoundref>
+    <derivedcompoundref refid="class_damage" prot="public" virt="non-virtual">Damage</derivedcompoundref>
+    <derivedcompoundref refid="class_damage_self" prot="public" virt="non-virtual">DamageSelf</derivedcompoundref>
+    <derivedcompoundref refid="class_heal_self" prot="public" virt="non-virtual">HealSelf</derivedcompoundref>
+    <derivedcompoundref refid="class_modulate_to_hit_self" prot="public" virt="non-virtual">ModulateToHitSelf</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_effect_1ac5dffe56d653b75f816b7855c90f1d87" prot="public" static="no" mutable="no">
+        <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+        <definition>BattleManager Effect.battleManager</definition>
+        <argsstring></argsstring>
+        <name>battleManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effect.cs" line="6" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effect.cs" bodystart="6" bodyend="-1"/>
+        <referencedby refid="class_costs_m_p_1a0bb43dc719b7d6581d91564d1164f25c" compoundref="_costs_m_p_8cs" startline="20" endline="26">CostsMP.CostsMP</referencedby>
+        <referencedby refid="class_effect_1aeb5675bc461e64280c6381979d0fae60" compoundref="_effect_8cs" startline="17" endline="23">Effect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_effect_1aeb4b0db75413b945faae306f2650a854" prot="public" static="no" mutable="no">
+        <type><ref refid="class_being" kindref="compound">Being</ref></type>
+        <definition>Being Effect.parentBeing</definition>
+        <argsstring></argsstring>
+        <name>parentBeing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effect.cs" line="7" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effect.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_costs_m_p_1a0bb43dc719b7d6581d91564d1164f25c" compoundref="_costs_m_p_8cs" startline="20" endline="26">CostsMP.CostsMP</referencedby>
+        <referencedby refid="class_effect_1aeb5675bc461e64280c6381979d0fae60" compoundref="_effect_8cs" startline="17" endline="23">Effect</referencedby>
+        <referencedby refid="class_modulate_to_hit_self_1ae779ee6cc0d17c1889cc96eed5cad563" compoundref="_modulate_to_hit_self_8cs" startline="14" endline="24">ModulateToHitSelf.Use</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_effect_1aab3f7eee5bc2a8eaf2cbe0ed4313f427" prot="public" static="no" mutable="no">
+        <type><ref refid="class_ability" kindref="compound">Ability</ref></type>
+        <definition>Ability Effect.parentAbility</definition>
+        <argsstring></argsstring>
+        <name>parentAbility</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effect.cs" line="8" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effect.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_costs_m_p_1a0bb43dc719b7d6581d91564d1164f25c" compoundref="_costs_m_p_8cs" startline="20" endline="26">CostsMP.CostsMP</referencedby>
+        <referencedby refid="class_effect_1aeb5675bc461e64280c6381979d0fae60" compoundref="_effect_8cs" startline="17" endline="23">Effect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_effect_1ab0d2647d792f5374565264e4494b85a9" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Effect.effectName</definition>
+        <argsstring></argsstring>
+        <name>effectName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effect.cs" line="10" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effect.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_effect_1aeb5675bc461e64280c6381979d0fae60" compoundref="_effect_8cs" startline="17" endline="23">Effect</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_effect_1afaf800832717bed94f92ced8016285f6" prot="private" static="no" mutable="no">
+        <type><ref refid="class_battle_manager_1a0c808fe5ef5596ff69d154ca96881d3b" kindref="member">BattleManager.CombatStates</ref></type>
+        <definition>BattleManager.CombatStates Effect.UsedInState</definition>
+        <argsstring></argsstring>
+        <name>UsedInState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effect.cs" line="12" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effect.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_effect_1abdeb43a60f3aaba84f676eadbf0b7efc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void Effect.Use</definition>
+        <argsstring>(Being target)</argsstring>
+        <name>Use</name>
+        <reimplementedby refid="class_heal_self_1a00b04952bb58e1a22e30ddc8fb323107">Use</reimplementedby>
+        <reimplementedby refid="class_costs_m_p_1a174877b5cbb4bb7eaa88846b205bf11c">Use</reimplementedby>
+        <reimplementedby refid="class_damage_self_1af2637efe9b696f2ab2a9e84c22b458bf">Use</reimplementedby>
+        <reimplementedby refid="class_damage_1a3ecf5a9b32a1120fc560069e10ce398f">Use</reimplementedby>
+        <reimplementedby refid="class_buff_to_hit_1a736c1e39502cee6ee9e1f290322898e4">Use</reimplementedby>
+        <reimplementedby refid="class_modulate_to_hit_self_1ae779ee6cc0d17c1889cc96eed5cad563">Use</reimplementedby>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effect.cs" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_effect_1aeb5675bc461e64280c6381979d0fae60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Effect.Effect</definition>
+        <argsstring>(BattleManager battleManager, Being parentBeing, Ability parentAbility, string effectName)</argsstring>
+        <name>Effect</name>
+        <param>
+          <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+          <declname>battleManager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>parentBeing</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ability" kindref="compound">Ability</ref></type>
+          <declname>parentAbility</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>effectName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effect.cs" line="17" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effect.cs" bodystart="17" bodyend="23"/>
+        <references refid="class_effect_1ac5dffe56d653b75f816b7855c90f1d87" compoundref="_effect_8cs" startline="6">battleManager</references>
+        <references refid="class_effect_1ab0d2647d792f5374565264e4494b85a9" compoundref="_effect_8cs" startline="10">effectName</references>
+        <references refid="class_effect_1aab3f7eee5bc2a8eaf2cbe0ed4313f427" compoundref="_effect_8cs" startline="8">parentAbility</references>
+        <references refid="class_effect_1aeb4b0db75413b945faae306f2650a854" compoundref="_effect_8cs" startline="7">parentBeing</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="122">
+        <label>ModulateToHitSelf</label>
+        <link refid="class_modulate_to_hit_self"/>
+        <childnode refid="116" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>Damage</label>
+        <link refid="class_damage"/>
+        <childnode refid="116" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>CostsMP</label>
+        <link refid="class_costs_m_p"/>
+        <childnode refid="116" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>BuffToHit</label>
+        <link refid="class_buff_to_hit"/>
+        <childnode refid="116" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>DamageSelf</label>
+        <link refid="class_damage_self"/>
+        <childnode refid="116" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>HealSelf</label>
+        <link refid="class_heal_self"/>
+        <childnode refid="116" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>Effect</label>
+        <link refid="class_effect"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="130">
+        <label>Condition</label>
+        <link refid="class_condition"/>
+        <childnode refid="124" relation="usage">
+          <edgelabel>parentAbility</edgelabel>
+        </childnode>
+        <childnode refid="129" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="125" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="129">
+        <label>Being</label>
+        <link refid="class_being"/>
+        <childnode refid="124" relation="usage">
+          <edgelabel>selectedAbility</edgelabel>
+        </childnode>
+        <childnode refid="130" relation="usage">
+          <edgelabel>condition</edgelabel>
+        </childnode>
+      </node>
+      <node id="124">
+        <label>Ability</label>
+        <link refid="class_ability"/>
+        <childnode refid="125" relation="usage">
+          <edgelabel>battlemanager</edgelabel>
+        </childnode>
+      </node>
+      <node id="125">
+        <label>BattleManager</label>
+        <link refid="class_battle_manager"/>
+        <childnode refid="126" relation="public-inheritance">
+        </childnode>
+        <childnode refid="127" relation="usage">
+          <edgelabel>mainState</edgelabel>
+        </childnode>
+        <childnode refid="128" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="126">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="128">
+        <label>BeingFactory</label>
+        <link refid="class_being_factory"/>
+        <childnode refid="126" relation="public-inheritance">
+        </childnode>
+        <childnode refid="125" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="123">
+        <label>Effect</label>
+        <link refid="class_effect"/>
+        <childnode refid="124" relation="usage">
+          <edgelabel>parentAbility</edgelabel>
+        </childnode>
+        <childnode refid="129" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="125" relation="usage">
+          <edgelabel>UsedInState</edgelabel>
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="127">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="126" relation="public-inheritance">
+        </childnode>
+        <childnode refid="125" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+        <childnode refid="128" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effect.cs" line="4" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effect.cs" bodystart="4" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_effect_1ac5dffe56d653b75f816b7855c90f1d87" prot="public" virt="non-virtual"><scope>Effect</scope><name>battleManager</name></member>
+      <member refid="class_effect_1aeb5675bc461e64280c6381979d0fae60" prot="public" virt="non-virtual"><scope>Effect</scope><name>Effect</name></member>
+      <member refid="class_effect_1ab0d2647d792f5374565264e4494b85a9" prot="public" virt="non-virtual"><scope>Effect</scope><name>effectName</name></member>
+      <member refid="class_effect_1aab3f7eee5bc2a8eaf2cbe0ed4313f427" prot="public" virt="non-virtual"><scope>Effect</scope><name>parentAbility</name></member>
+      <member refid="class_effect_1aeb4b0db75413b945faae306f2650a854" prot="public" virt="non-virtual"><scope>Effect</scope><name>parentBeing</name></member>
+      <member refid="class_effect_1abdeb43a60f3aaba84f676eadbf0b7efc" prot="public" virt="pure-virtual"><scope>Effect</scope><name>Use</name></member>
+      <member refid="class_effect_1afaf800832717bed94f92ced8016285f6" prot="private" virt="non-virtual"><scope>Effect</scope><name>UsedInState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

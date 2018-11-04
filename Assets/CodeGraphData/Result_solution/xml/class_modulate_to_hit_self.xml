@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_modulate_to_hit_self" kind="class" prot="public">
+    <compoundname>ModulateToHitSelf</compoundname>
+    <basecompoundref refid="class_effect" prot="public" virt="non-virtual">Effect</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_modulate_to_hit_self_1aa02b0124a95f7b41e1a935f34d6d6441" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ModulateToHitSelf.modulator</definition>
+        <argsstring></argsstring>
+        <name>modulator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/ModulateToHitSelf.cs" line="11" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/ModulateToHitSelf.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_modulate_to_hit_self_1a61a4fa2d2d8ddcbf7f5f3e8c974edb1e" compoundref="_modulate_to_hit_self_8cs" startline="30" endline="34">ModulateToHitSelf</referencedby>
+        <referencedby refid="class_modulate_to_hit_self_1ae779ee6cc0d17c1889cc96eed5cad563" compoundref="_modulate_to_hit_self_8cs" startline="14" endline="24">Use</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_modulate_to_hit_self_1a3944529c2a3b86f55562ee027ce3f031" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ModulateToHitSelf.value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/ModulateToHitSelf.cs" line="12" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/ModulateToHitSelf.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_modulate_to_hit_self_1a61a4fa2d2d8ddcbf7f5f3e8c974edb1e" compoundref="_modulate_to_hit_self_8cs" startline="30" endline="34">ModulateToHitSelf</referencedby>
+        <referencedby refid="class_modulate_to_hit_self_1ae779ee6cc0d17c1889cc96eed5cad563" compoundref="_modulate_to_hit_self_8cs" startline="14" endline="24">Use</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_modulate_to_hit_self_1ae779ee6cc0d17c1889cc96eed5cad563" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void ModulateToHitSelf.Use</definition>
+        <argsstring>(Being target)</argsstring>
+        <name>Use</name>
+        <reimplements refid="class_effect_1abdeb43a60f3aaba84f676eadbf0b7efc">Use</reimplements>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/ModulateToHitSelf.cs" line="14" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/ModulateToHitSelf.cs" bodystart="14" bodyend="24"/>
+        <references refid="class_being_1a64fc2a2159c66931f2cda151df0451ff" compoundref="_being_8cs" startline="73" endline="93">Being.GetStat</references>
+        <references refid="class_modulate_to_hit_self_1aa02b0124a95f7b41e1a935f34d6d6441" compoundref="_modulate_to_hit_self_8cs" startline="11">modulator</references>
+        <references refid="class_effect_1aeb4b0db75413b945faae306f2650a854" compoundref="_effect_8cs" startline="7">Effect.parentBeing</references>
+        <references refid="class_modulate_to_hit_self_1a3944529c2a3b86f55562ee027ce3f031" compoundref="_modulate_to_hit_self_8cs" startline="12">value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_modulate_to_hit_self_1a61a4fa2d2d8ddcbf7f5f3e8c974edb1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ModulateToHitSelf.ModulateToHitSelf</definition>
+        <argsstring>(BattleManager battleManager, Being parentBeing, Ability parentAbility, string effectName, string modulator, int value)</argsstring>
+        <name>ModulateToHitSelf</name>
+        <param>
+          <type><ref refid="class_battle_manager" kindref="compound">BattleManager</ref></type>
+          <declname>battleManager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_being" kindref="compound">Being</ref></type>
+          <declname>parentBeing</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ability" kindref="compound">Ability</ref></type>
+          <declname>parentAbility</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>effectName</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>modulator</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/ModulateToHitSelf.cs" line="30" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/ModulateToHitSelf.cs" bodystart="30" bodyend="34"/>
+        <references refid="class_modulate_to_hit_self_1aa02b0124a95f7b41e1a935f34d6d6441" compoundref="_modulate_to_hit_self_8cs" startline="11">modulator</references>
+        <references refid="class_modulate_to_hit_self_1a3944529c2a3b86f55562ee027ce3f031" compoundref="_modulate_to_hit_self_8cs" startline="12">value</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="179">
+        <label>ModulateToHitSelf</label>
+        <link refid="class_modulate_to_hit_self"/>
+        <childnode refid="180" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="180">
+        <label>Effect</label>
+        <link refid="class_effect"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="181">
+        <label>ModulateToHitSelf</label>
+        <link refid="class_modulate_to_hit_self"/>
+        <childnode refid="182" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>Condition</label>
+        <link refid="class_condition"/>
+        <childnode refid="183" relation="usage">
+          <edgelabel>parentAbility</edgelabel>
+        </childnode>
+        <childnode refid="188" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="184" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="188">
+        <label>Being</label>
+        <link refid="class_being"/>
+        <childnode refid="183" relation="usage">
+          <edgelabel>selectedAbility</edgelabel>
+        </childnode>
+        <childnode refid="189" relation="usage">
+          <edgelabel>condition</edgelabel>
+        </childnode>
+      </node>
+      <node id="183">
+        <label>Ability</label>
+        <link refid="class_ability"/>
+        <childnode refid="184" relation="usage">
+          <edgelabel>battlemanager</edgelabel>
+        </childnode>
+      </node>
+      <node id="184">
+        <label>BattleManager</label>
+        <link refid="class_battle_manager"/>
+        <childnode refid="185" relation="public-inheritance">
+        </childnode>
+        <childnode refid="186" relation="usage">
+          <edgelabel>mainState</edgelabel>
+        </childnode>
+        <childnode refid="187" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="185">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="187">
+        <label>BeingFactory</label>
+        <link refid="class_being_factory"/>
+        <childnode refid="185" relation="public-inheritance">
+        </childnode>
+        <childnode refid="184" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="182">
+        <label>Effect</label>
+        <link refid="class_effect"/>
+        <childnode refid="183" relation="usage">
+          <edgelabel>parentAbility</edgelabel>
+        </childnode>
+        <childnode refid="188" relation="usage">
+          <edgelabel>parentBeing</edgelabel>
+        </childnode>
+        <childnode refid="184" relation="usage">
+          <edgelabel>UsedInState</edgelabel>
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="186">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="185" relation="public-inheritance">
+        </childnode>
+        <childnode refid="184" relation="usage">
+          <edgelabel>battleManager</edgelabel>
+        </childnode>
+        <childnode refid="187" relation="usage">
+          <edgelabel>beingFactory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/ModulateToHitSelf.cs" line="7" column="1" bodyfile="C:/Users/Tim/Documents/ShonenBattle/Assets/Abilities/Effects/ModulateToHitSelf.cs" bodystart="6" bodyend="35"/>
+    <listofallmembers>
+      <member refid="class_effect_1ac5dffe56d653b75f816b7855c90f1d87" prot="public" virt="non-virtual"><scope>ModulateToHitSelf</scope><name>battleManager</name></member>
+      <member refid="class_effect_1aeb5675bc461e64280c6381979d0fae60" prot="public" virt="non-virtual"><scope>ModulateToHitSelf</scope><name>Effect</name></member>
+      <member refid="class_effect_1ab0d2647d792f5374565264e4494b85a9" prot="public" virt="non-virtual"><scope>ModulateToHitSelf</scope><name>effectName</name></member>
+      <member refid="class_modulate_to_hit_self_1a61a4fa2d2d8ddcbf7f5f3e8c974edb1e" prot="public" virt="non-virtual"><scope>ModulateToHitSelf</scope><name>ModulateToHitSelf</name></member>
+      <member refid="class_modulate_to_hit_self_1aa02b0124a95f7b41e1a935f34d6d6441" prot="private" virt="non-virtual"><scope>ModulateToHitSelf</scope><name>modulator</name></member>
+      <member refid="class_effect_1aab3f7eee5bc2a8eaf2cbe0ed4313f427" prot="public" virt="non-virtual"><scope>ModulateToHitSelf</scope><name>parentAbility</name></member>
+      <member refid="class_effect_1aeb4b0db75413b945faae306f2650a854" prot="public" virt="non-virtual"><scope>ModulateToHitSelf</scope><name>parentBeing</name></member>
+      <member refid="class_modulate_to_hit_self_1ae779ee6cc0d17c1889cc96eed5cad563" prot="public" virt="virtual"><scope>ModulateToHitSelf</scope><name>Use</name></member>
+      <member refid="class_modulate_to_hit_self_1a3944529c2a3b86f55562ee027ce3f031" prot="private" virt="non-virtual"><scope>ModulateToHitSelf</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

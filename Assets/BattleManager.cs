@@ -129,7 +129,7 @@ public class BattleManager : MonoBehaviour {
             //check to see if any effect of this ability will change the toHit values (eg it adds +5 to hit or similar)
             for (int ii = 0; ii < ability.effects.Count; ii++)
             {
-                if (ability.effects[ii] is ModulateToHitSelf) //here I'm literally only looking for one type of effect, I couldnt think of another way of doing it but it seems a but ugly.
+                if (ability.effects[ii] is ModulateToHitSelf_Effect) //here I'm literally only looking for one type of effect, I couldnt think of another way of doing it but it seems a but ugly.
                 {
                     ability.effects[ii].Use(attacker); //This should add any relevent statmodulations into the beings statmodulation list
                 }
@@ -215,6 +215,16 @@ public class BattleManager : MonoBehaviour {
             return;
         }
         Debug.Log("ERROR: " + defender.beingName + " has no defences, they should at least have a basic reflex");   
+
+
+
+        //TODO now
+        //1. consider how to implement a general list of effect tokens (stat mods, incoming damage etc)
+        //2. That list might need to be overseen by a 'resolve effects' function
+
+
+
+
     }
 
     // Update is called once per frame

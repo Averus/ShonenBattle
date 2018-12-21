@@ -57,9 +57,9 @@ public class BeingFactory : MonoBehaviour {
         //Create a new behaviour called 'heal self'
         Behaviour healSelf = new Behaviour(battleManager, p, "Heal self");
         //Create a condition that hp must be below 20 
-        CompareTwoValues hpLessThanTwenty = new CompareTwoValues(battleManager, p, "HP less than 20", p, "HP", "<", 20); //this is set to a stupidly high figure for test purposes
+        CompareTwoValues_Condition hpLessThanTwenty = new CompareTwoValues_Condition(battleManager, p, "HP less than 20", p, "HP", "<", 20); //this is set to a stupidly high figure for test purposes
         //Create a selectionCriteria for appropriate abilities that the must have a 'healself' effect
-        IncludesEffect includesHealSelf = new IncludesEffect(battleManager, p, "IncludesHealSelf", "HealSelf");
+        IncludesEffect_SelectionCriteria includesHealSelf = new IncludesEffect_SelectionCriteria(battleManager, p, "IncludesHealSelf", "HealSelf");
 
         healSelf.conditions.Add(hpLessThanTwenty); ;
         healSelf.selectionCriteria.Add(includesHealSelf);
@@ -68,10 +68,10 @@ public class BeingFactory : MonoBehaviour {
         //Create a new ability called Healself
         Ability ab = new Ability(battleManager, "Heal", true);
         //create a condition that MP must not be greater the 5 (the cost)
-        CompareTwoValues gt = new CompareTwoValues(battleManager, p, "MP greater than 5", p, "MP", ">", 5);
-        CostsMP cm = new CostsMP(battleManager, p, ab, "CostsMP", 5);
-        HealSelf hs = new HealSelf(battleManager, p, ab, "HealSelf", 10);
-        Self s = new Self(battleManager, p, ab);
+        CompareTwoValues_Condition gt = new CompareTwoValues_Condition(battleManager, p, "MP greater than 5", p, "MP", ">", 5);
+        CostsMP_Effect cm = new CostsMP_Effect(battleManager, p, ab, "CostsMP", 5);
+        HealSelf_Effect hs = new HealSelf_Effect(battleManager, p, ab, "HealSelf", 10);
+        Self_TargetingCriteria s = new Self_TargetingCriteria(battleManager, p, ab);
 
         ab.conditions.Add(gt);
         ab.effects.Add(cm);
@@ -82,10 +82,10 @@ public class BeingFactory : MonoBehaviour {
         //Create a new ability called Healall
         Ability ab2 = new Ability(battleManager, "Leech Life", true);
         //create a condition that MP must not be greater the 5 (the cost)
-        CompareTwoValues gt2 = new CompareTwoValues(battleManager, p, "MP greater than 5", p, "MP", ">", 5);
-        CostsMP cm2 = new CostsMP(battleManager, p, ab2, "CostsMP", 5);
-        HealSelf hs2 = new HealSelf(battleManager, p, ab2, "HealSelf", 10);
-        Damage d2 = new Damage(battleManager, p, ab2, "Damage", 4);
+        CompareTwoValues_Condition gt2 = new CompareTwoValues_Condition(battleManager, p, "MP greater than 5", p, "MP", ">", 5);
+        CostsMP_Effect cm2 = new CostsMP_Effect(battleManager, p, ab2, "CostsMP", 5);
+        HealSelf_Effect hs2 = new HealSelf_Effect(battleManager, p, ab2, "HealSelf", 10);
+        Damage_Effect d2 = new Damage_Effect(battleManager, p, ab2, "Damage", 4);
 
         ab2.conditions.Add(gt2);
         ab2.effects.Add(cm2);
@@ -95,8 +95,8 @@ public class BeingFactory : MonoBehaviour {
 
         //Create a new behaviour called 'just attack'
         Behaviour justAttack = new Behaviour(battleManager, p, "Just attack");
-        NoCondition noCondition = new NoCondition(battleManager, p, "NoCondition");
-        IncludesEffect includesDamage = new IncludesEffect(battleManager, p, "IncludesDamage", "Damage");
+        NoCondition_Condition noCondition = new NoCondition_Condition(battleManager, p, "NoCondition");
+        IncludesEffect_SelectionCriteria includesDamage = new IncludesEffect_SelectionCriteria(battleManager, p, "IncludesDamage", "Damage");
 
         justAttack.conditions.Add(noCondition); ;
         justAttack.selectionCriteria.Add(includesDamage);
@@ -104,10 +104,10 @@ public class BeingFactory : MonoBehaviour {
 
         //Create a new ability called Damage
         Ability ab3 = new Ability(battleManager, "Quick Punch", true);
-        NoCondition noCondition2 = new NoCondition(battleManager, p, "NoCondition");
-        Damage damage = new Damage(battleManager, p, ab3, "Damage", 7);
-        ModulateToHitSelf modSelfToHit = new ModulateToHitSelf(battleManager, p, ab3, "Modulate ToHit Self", "+", 1);
-        Others o = new Others(battleManager, p, ab3);
+        NoCondition_Condition noCondition2 = new NoCondition_Condition(battleManager, p, "NoCondition");
+        Damage_Effect damage = new Damage_Effect(battleManager, p, ab3, "Damage", 7);
+        ModulateToHitSelf_Effect modSelfToHit = new ModulateToHitSelf_Effect(battleManager, p, ab3, "Modulate ToHit Self", "+", 1);
+        Others_TargetingCriteria o = new Others_TargetingCriteria(battleManager, p, ab3);
 
         ab3.conditions.Add(noCondition2);
         ab3.effects.Add(damage);
@@ -122,9 +122,9 @@ public class BeingFactory : MonoBehaviour {
         Ability def1 = new Ability(battleManager, "Block", true);
         def1.isDefence = true;
         def1.defenceSpeed = 100;
-        Block block = new Block(battleManager, p, def1, "Block");
-        NoCondition noCondition3 = new NoCondition(battleManager, p, "NoCondition");//should be a stamian cost probably
-        Self self = new Self(battleManager, p, def1);
+        Block_DefenceEffect block = new Block_DefenceEffect(battleManager, p, def1, "Block");
+        NoCondition_Condition noCondition3 = new NoCondition_Condition(battleManager, p, "NoCondition");//should be a stamian cost probably
+        Self_TargetingCriteria self = new Self_TargetingCriteria(battleManager, p, def1);
 
         def1.effects.Add(block);
         def1.conditions.Add(noCondition3);
@@ -135,9 +135,9 @@ public class BeingFactory : MonoBehaviour {
         Ability def2 = new Ability(battleManager, "Dodge", true);
         def2.isDefence = true;
         def2.defenceSpeed = 80;
-        Dodge dodge = new Dodge(battleManager, p, def2, "Dodge");
-        NoCondition noCondition4 = new NoCondition(battleManager, p, "NoCondition");
-        Self self2 = new Self(battleManager, p, def2);
+        Dodge_DefenceEffect dodge = new Dodge_DefenceEffect(battleManager, p, def2, "Dodge");
+        NoCondition_Condition noCondition4 = new NoCondition_Condition(battleManager, p, "NoCondition");
+        Self_TargetingCriteria self2 = new Self_TargetingCriteria(battleManager, p, def2);
 
         def2.effects.Add(dodge);
         def2.conditions.Add(noCondition4);
@@ -148,9 +148,9 @@ public class BeingFactory : MonoBehaviour {
         Ability def3 = new Ability(battleManager, "Any Action", true);
         def3.isDefence = true;
         def3.defenceSpeed = 50;
-        NoCondition noCondition5 = new NoCondition(battleManager, p, "NoCondition");
-        Self self3 = new Self(battleManager, p, def3);
-        AnyAction anyAction = new AnyAction(battleManager, p, def3, "AnyAction");
+        NoCondition_Condition noCondition5 = new NoCondition_Condition(battleManager, p, "NoCondition");
+        Self_TargetingCriteria self3 = new Self_TargetingCriteria(battleManager, p, def3);
+        AnyAction_DefenceEffect anyAction = new AnyAction_DefenceEffect(battleManager, p, def3, "AnyAction");
 
         def3.effects.Add(anyAction);
         def3.conditions.Add(noCondition5);

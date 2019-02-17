@@ -2,16 +2,19 @@
 using System.Collections;
 using System.Collections.Generic;
 
+
+
+
+
 public class Ability {
 
     //Abilities can be used as defences, although most are not, in order to be used as a defence isDefence must be set to true, and a defenceSpeed must be given.
+    public bool isPassive = false;
     public bool isDefence = false;
     public int defenceSpeed = 0;
-
     BattleManager battlemanager;
     public string abilityName = "BLANK ABILITY";
     public int ranks = 0;
-
     public int numberOfTargets = 1;
 
     public List<Condition> conditions = new List<Condition>();
@@ -75,10 +78,10 @@ public class Ability {
 
     public void Use(Being target) //This is the 'active' version where a target has been supplied
     {
-        Debug.Log("Using " + abilityName);
+        //Debug.Log("Using " + abilityName);
         for (int i = 0; i < effects.Count; i++)
         {
-            effects[i].Use(target);
+            effects[i].Use(target); //mostly adds statmodulations and other token to the Beings EffectToken (not a class yet) list
         }
     }
 
@@ -121,10 +124,13 @@ public class Ability {
     }
 
 
-    public Ability(BattleManager bm, string name, bool active)
+    public Ability(BattleManager bm, string name, int ranks, int numberOfTargets, bool isPassive)
     {
         this.battlemanager = bm;
         this.abilityName = name;
+        this.ranks = ranks;
+        this.numberOfTargets = numberOfTargets;
+        this.isPassive = isPassive;
     }
 
 }

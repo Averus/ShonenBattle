@@ -9,7 +9,7 @@ public abstract class Condition {
     public Being parentBeing;
     public Ability parentAbility;
 
-    string conditionName = "BLANK CONDITION";
+    string conditionName;
 
     public string GetConditionName()
     {
@@ -23,6 +23,8 @@ public abstract class Condition {
 
     public Condition(BattleManager battleManager, Being parentBeing, string conditionName)
     {
+        this.battleManager = battleManager;
+        this.parentBeing = parentBeing;
         this.conditionName = conditionName;
 
     }

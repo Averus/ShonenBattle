@@ -13,14 +13,11 @@ public class ModulateToHitSelf_Effect : Effect
 
     public override void Use(Being target)
     {
-        if (target != parentBeing)
-        {
-            Debug.Log("ERROR: target " + target.beingName + " does not match parent being " + parentBeing.beingName + " for Effect ModulateToHitSelf");
-            return;
-        }
+        //this effect ignores the target and uses the paarent being instead. Feels not modular enough if I'm honest, we need a dashboard for effects to refer to.
 
-        StatModulation sm = new StatModulation(target.GetStat("TOHIT"), modulator, value);
-        target.statModulations.Add(sm);
+        StatModulation sm = new StatModulation(parentBeing.GetStat("TOHIT"), modulator, value);
+        battleManager.effectQueue.Add(sm);
+        //Debug.Log("TOHIT token generated for " + parentBeing.beingName);
     }
 
 

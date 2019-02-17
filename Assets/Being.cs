@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class Being{
+
+[System.Serializable]
+public class Being : MonoBehaviour{
 
     //is this Being player controlled? ------ later need to add a different AI's to equip
     public bool playerControlled = false;
@@ -13,7 +15,8 @@ public class Being{
 
     //all stats to go here
     public List<Stat> stats = new List<Stat>();
-    public List<StatModulation> statModulations = new List<StatModulation>();
+    public List<Resource> resources = new List<Resource>();
+    //public List<StatModulation> statModulations = new List<StatModulation>(); //the list of EffectTokens is now global, it contains all effects currnetly in play and is in the battlemanager
 
     //normal, dazed, staggared, unconcious, dead etc
     public enum Condition { normal, dazed, staggered, unconcious };
@@ -47,7 +50,7 @@ public class Being{
     /// <param name="stats">The name of the Stat</param>
     /// <param name="value">0 = Max, 1 = Base, 2 = current</param>
     /// <returns></returns>
-    public int GetStatValue (string stat, int subStat){
+    public float GetStatValue (string stat, int subStat){
 
         for (int i = 0; i < stats.Count; i++)
         {
@@ -77,7 +80,6 @@ public class Being{
         return 0;
 
     }
-
     public Stat GetStat (string statName)
     {
 
@@ -99,19 +101,97 @@ public class Being{
         Debug.Log("ERROR: " + beingName + " does not contain a stat named " + statName);
         return null;
     }
+    /// <summary>
+    /// Returns the value of a substat, 0 = Max, 1 = Current
+    /// </summary>
+    /// <param name="resourceName">The name of the resource</param>
+    /// <param name="value">0 = Max, 1 = Base, 2 = current</param>
+    /// <returns></returns>
+    public float GetResourceValue(string resourceName, int subStat)
+    {
+
+        for (int i = 0; i < resources.Count; i++)
+        {
+            if (resources[i].resourceName == resourceName)
+            {
+                if (subStat == 0)
+                {
+                    return resources[i].GetMax();
+                }
+                if (subStat == 1)
+                {
+                    return resources[i].GetCurrent();
+                }
+                if (subStat > 1)
+                {
+                    Debug.Log("ERROR: stat value requested not max(0) or current(1) (subStat parameter > 1) ");
+                    return 0;
+                }
+            }
+
+        }
+        Debug.Log("ERROR: " + beingName + " does not contain resource " + resourceName);
+        return 0;
+
+    }
+    public Resource GetResource(string resourceName)
+    {
+
+        if (resourceName == null)
+        {
+            Debug.Log("ERROR: resource name is null");
+            return null;
+        }
+
+        for (int i = 0; i < resources.Count; i++)
+        {
+            if (resources[i].resourceName == resourceName)
+            {
+                return resources[i];
+            }
+
+        }
+
+        Debug.Log("ERROR: " + beingName + " does not contain a resource named " + resourceName);
+        return null;
+    }
+   
 
     //GetUsableAbilities should be called once per turn. Filters abilities by which ones can be performed, checks for valid targets for each ability and populated their valid targets lists
-    public void GetUseableAbilities()
+    public void GetUseableActiveAbilities()
     {
         //Debug.Log("getting useable abilities");
         useableAbilities.Clear();
 
         for (int i = 0; i < abilities.Count; i++)
         {
-            if (abilities[i].CanThisBeUsed())
+            if (abilities[i].isPassive == false)
             {
-                useableAbilities.Add(abilities[i]);
-                //Debug.Log(abilities[i].abilityName + " added to useableAbilities list");
+                if (abilities[i].CanThisBeUsed())
+                {
+                    useableAbilities.Add(abilities[i]);
+                    //Debug.Log(abilities[i].abilityName + " added to useableAbilities list");
+                }
+
+            }
+        }
+    }
+
+    public void GetUseablePassiveAbilities()
+    {
+        //Debug.Log("getting useable abilities");
+        useableAbilities.Clear();
+
+        for (int i = 0; i < abilities.Count; i++)
+        {
+            if (abilities[i].isPassive == true) 
+            {
+                if (abilities[i].CanThisBeUsed())
+                {
+                    useableAbilities.Add(abilities[i]);
+                    //Debug.Log(abilities[i].abilityName + " added to useableAbilities list");
+                }
+
             }
         }
     }
@@ -170,6 +250,8 @@ public class Being{
 
     public void SelectTargets(Ability ability)
     {
+        selectedTargets.Clear();//get rid of any targets from a previous turn
+
         if (selectedAbility == null)
         {
             Debug.Log("ERROR: " + beingName + " has no selected target for " + ability.abilityName);

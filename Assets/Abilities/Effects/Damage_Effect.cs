@@ -13,8 +13,8 @@ public class Damage_Effect : Effect
     {
 
         StatModulation sm = new StatModulation(target.GetStat("HP"), "-", damage);
-        target.statModulations.Add(sm);
-        Debug.Log("HP minus damage StatModulation put in " + target.beingName + "'s statModulation list.");
+        battleManager.effectQueue.Add(sm);
+        //Debug.Log("HP minus damage StatModulation put in " + target.beingName + "'s statModulation list.");
 
 
     }

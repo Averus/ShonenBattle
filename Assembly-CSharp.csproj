@@ -61,35 +61,40 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Abilities\_old\StatModulation.cs" />
     <Compile Include="Assets\Abilities\Ability.cs" />
     <Compile Include="Assets\Abilities\Behaviour.cs" />
     <Compile Include="Assets\Abilities\Condition.cs" />
     <Compile Include="Assets\Abilities\Conditions\Alone_Condition.cs" />
-    <Compile Include="Assets\Abilities\Conditions\AtPercentage_Condition.cs" />
-    <Compile Include="Assets\Abilities\Conditions\CompareTwoValues_Condition.cs" />
-    <Compile Include="Assets\Abilities\Conditions\GreaterThan_Condition.cs" />
-    <Compile Include="Assets\Abilities\Conditions\LessThan_Condition.cs" />
+    <Compile Include="Assets\Abilities\Conditions\NewRound_Condition.cs" />
     <Compile Include="Assets\Abilities\Conditions\NoCondition_Condition.cs" />
+    <Compile Include="Assets\Abilities\Conditions\ResourceAtValue_Condition.cs" />
     <Compile Include="Assets\Abilities\Defence Effects\AnyAction_DefenceEffect.cs" />
     <Compile Include="Assets\Abilities\Defence Effects\Block_DefenceEffect.cs" />
     <Compile Include="Assets\Abilities\Defence Effects\Dodge_DefenceEffect.cs" />
     <Compile Include="Assets\Abilities\Effect.cs" />
     <Compile Include="Assets\Abilities\Effects\BuffToHit_Effect.cs" />
-    <Compile Include="Assets\Abilities\Effects\CostsMP_Effect.cs" />
+    <Compile Include="Assets\Abilities\Effects\CostsStat_Effect.cs" />
     <Compile Include="Assets\Abilities\Effects\Damage_Effect.cs" />
     <Compile Include="Assets\Abilities\Effects\DamageSelf_Effect.cs" />
     <Compile Include="Assets\Abilities\Effects\HealSelf_Effect.cs" />
+    <Compile Include="Assets\Abilities\Effects\ModulateResource_Effect.cs" />
+    <Compile Include="Assets\Abilities\Effects\ModulateStat_Effect.cs" />
     <Compile Include="Assets\Abilities\Effects\ModulateToHitSelf_Effect.cs" />
+    <Compile Include="Assets\Abilities\EffectToken.cs" />
+    <Compile Include="Assets\Abilities\Resource.cs" />
+    <Compile Include="Assets\Abilities\ResourceModifier.cs" />
     <Compile Include="Assets\Abilities\SelectionCriteria.cs" />
     <Compile Include="Assets\Abilities\SelectionCriteria\IncludesEffect_SelectionCriteria.cs" />
     <Compile Include="Assets\Abilities\Stat.cs" />
-    <Compile Include="Assets\Abilities\StatModulation.cs" />
+    <Compile Include="Assets\Abilities\StatModifier.cs" />
     <Compile Include="Assets\Abilities\TargetingCriteria.cs" />
     <Compile Include="Assets\Abilities\TargetingCriteria\Others_TargetingCriteria.cs" />
     <Compile Include="Assets\Abilities\TargetingCriteria\Self_TargetingCriteria.cs" />
     <Compile Include="Assets\BattleManager.cs" />
     <Compile Include="Assets\Being.cs" />
     <Compile Include="Assets\BeingFactory.cs" />
+    <Compile Include="Assets\DebugUI.cs" />
     <Compile Include="Assets\Main.cs" />
     <None Include="Assets\CodeGraphData\Result_solution\xml\_being_factory_8cs.xml" />
     <None Include="Assets\CodeGraphData\Result_Assembly-CSharp\xml\index.xml" />
